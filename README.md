@@ -1,6 +1,6 @@
 # Rental Housing Law Navigator
 
-We built this for the RealPage challenge at Hack-Nation 7, the MIT Global AI Hackathon (October 3 to 4, 2026). You give it an apartment address in California, New Jersey or Massachusetts and a date, and it tells you which housing rules apply there on that date, which ones are about to change, and where each rule comes from (the citation plus the exact sentence from the source).
+We are team Pin Cite. We built this for the RealPage challenge at Hack-Nation 7, the MIT Global AI Hackathon (October 3 to 4, 2026). You give it an apartment address in California, New Jersey or Massachusetts and a date, and it tells you which housing rules apply there on that date, which ones are about to change, and where each rule comes from (the citation plus the exact sentence from the source).
 
 **Live demo:** https://hacknation-7.vercel.app
 
@@ -26,7 +26,7 @@ The organizers do not share their scoring script or answer key with participants
 | Change tracking (T1 to T5) | 15.0 / 15 |
 | Scripted total | 74.3 / 75 |
 
-The 0.7 citation points go to answers that rest on official texts we added (the Hoboken, Jersey City and Newark ordinances, San Diego's source-of-income rule and LA's deposit-interest rule), since the citation score only accepts quotes from the supplied corpus. Our check also surfaces two of the brief's open questions. Berkeley's ban carries a review flag because the date we use, March 1, 2026, comes from Ordinance 7,974-N.S., while Ordinance 7,992-N.S. later rewrote the chapter without that clause (a law-firm alert says January 2026). California's 2026 screening-fee figure is not in the statute, which sets $30 adjusted for inflation since 1998, so a fee above $30 comes back "can't tell".
+The 0.7 citation points go to answers that rest on official texts we added (the Hoboken, Jersey City and Newark ordinances, San Diego's source-of-income rule and LA's deposit-interest rule), since the citation score only accepts quotes from the supplied corpus. Our check also surfaces the guide's open questions. Berkeley's ban carries a review flag because the date we use, March 1, 2026, comes from Ordinance 7,974-N.S., while Ordinance 7,992-N.S. later rewrote the chapter without that clause (a law-firm alert says January 2026). For Los Angeles's new RSO formula, the guide lists 2026-02-02 (LAHD) and 2026-01-24 (a landlord association); the official code's history note gives Ord. No. 188,795, effective 2026-02-02, and the card says so. California's 2026 screening-fee figure is not in the statute, which sets $30 adjusted for inflation since 1998, so a fee above $30 comes back "can't tell".
 
 ## Legal review
 

@@ -15,6 +15,9 @@ export type Building = {
   co_date?: string | null; // certificate of occupancy date (YYYY-MM-DD), only when a user enters it
 };
 
+// "No local rent control", "Prohibition on local rent control": a rule that rules out a cap.
+export const BARS_RENT_CONTROL = /\bno\b[^.;]{0,30}\b(cap|rent control)|\bbars?\b[^.;]{0,30}rent control|\bprohibit\w*\b[^.;]{0,30}rent control/i;
+
 // A state rule that yields to local law can't also preempt it (extraction marked 1946.2 both ways).
 const preempts = (r: RuleRecord) => r.may_preempt_local_rules && !r.yields_to_local_rule;
 
@@ -168,7 +171,8 @@ export function lookup(rules: RuleRecord[], b: Building, asOf: string): Evaluati
       lead = "May apply; the public data cannot settle coverage.";
     } else {
       result = "applies";
-      lead = "Applies.";
+      // A law that bars rent control applies, but it is the opposite of a cap (MA c. 40P).
+      lead = rule.category === "rent_increase_limits" && BARS_RENT_CONTROL.test(`${rule.key_value ?? ""} ${rule.title}`) ? "No rent cap: state law bars local rent control here. This rule applies." : "Applies.";
     }
 
     const detail = [...cov.reasons, ...cov.missing.map((m) => `Unknown: ${m}`)];

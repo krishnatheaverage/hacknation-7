@@ -22,7 +22,7 @@ import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import { z } from "zod";
 import { standardize, type CiteCheckEntry } from "../src/lib/law/cite";
 import { loadCorpus, parseCsv, type CorpusDoc } from "../src/lib/law/corpus";
-import { normalizeRules } from "../src/lib/law/rules";
+import { normalizeRules, sectionKey } from "../src/lib/law/rules";
 import type { RuleRecord } from "../src/lib/law/schema";
 import { verifySpan } from "../src/lib/law/spans";
 
@@ -271,6 +271,24 @@ function finishQuote(official: NonNullable<CiteCheckEntry["official_text"]>, doc
   return { doc_id, url, retrieved_at, in_supplied_corpus, quoted_span };
 }
 
+// The official code's history notes ("(Amended by Ord. No. 188,795, Eff. 2/2/26.)")
+// date each change to a section. For the section a card cites, we record them.
+function historyFor(card: RuleRecord, citation: string, docs: Doc[]): string | null {
+  const base = sectionKey(citation)?.base;
+  if (!base) return null;
+  const notes: string[] = [];
+  const exact = new RegExp(`§\\s*${base.replace(/[.]/g, "\\.")}(?![\\d.])`);
+  for (const d of docs.filter((x) => CODE_HOSTS.test(x.url) && lawText(x) && exact.test(x.cites ?? "") && sameJurisdiction(x, card))) {
+    for (const m of body(d.text).matchAll(/\((?:Amended|Added) by Ord\. No\. ([\d,]+), Eff\. (\d{1,2})\/(\d{1,2})\/(\d{2,4})\.\)/g)) {
+      const year = m[4].length === 2 ? `${Number(m[4]) >= 50 ? 19 : 20}${m[4]}` : m[4];
+      if (Number(year) < 2020) continue; // recent changes are the ones that move dates
+      notes.push(`Ord. No. ${m[1]}, effective ${year}-${m[2].padStart(2, "0")}-${m[3].padStart(2, "0")}`);
+    }
+    if (notes.length) return `Official code (${d.doc_id}) history for § ${base}: ${[...new Set(notes)].join("; ")}.`;
+  }
+  return null;
+}
+
 function needsRetry(result: Check, docs: Doc[]): boolean {
   const od = docs.find((d) => d.doc_id === result.official_doc_id);
   return Boolean(od && result.official_quote && !verifySpan(result.official_quote, body(od.text)).verified);
@@ -329,7 +347,7 @@ async function main() {
           // A failed call (rate limit, no credit) keeps the card's last good result.
           const last = previous[card.team_rule_id];
           const keep = last && (last.from_citation === card.citation || last.citation === card.citation);
-          if (keep) out[card.team_rule_id] = { ...last, official_text: last.official_text ? finishQuote(last.official_text, docs) : null };
+          if (keep) out[card.team_rule_id] = { ...last, official_text: last.official_text ? finishQuote(last.official_text, docs) : null, history: historyFor(card, last.citation, all) };
           log.push(`${card.team_rule_id} | check failed (${(err instanceof Error ? err.message : String(err)).slice(0, 120)}); ${keep ? "kept the previous result" : "citation left as is"}`);
           continue;
         }
@@ -359,6 +377,7 @@ async function main() {
           title,
           official_text: official,
           note: citation !== standardize(card.citation) ? c.note : null,
+          history: historyFor(card, citation, all),
         };
         log.push(
           [

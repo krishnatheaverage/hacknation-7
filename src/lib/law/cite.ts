@@ -30,6 +30,7 @@ export type CiteCheckEntry = {
   title: string | null;
   official_text: OfficialText | null;
   note: string | null;
+  history?: string | null; // what the official code's history notes say about the cited section's dates
 };
 
 export function applyCiteCheck(rules: RuleRecord[], checked: Record<string, CiteCheckEntry> | null): RuleRecord[] {
@@ -42,7 +43,12 @@ export function applyCiteCheck(rules: RuleRecord[], checked: Record<string, Cite
       citation: standardize(c.citation),
       title: c.title ?? r.title,
       official_text: c.official_text,
-      citation_note: c.note,
+      citation_note: [c.note, c.history].filter(Boolean).join(" ") || null,
+      // On a card already flagged for a date dispute, the code's own history note goes in the reviewer note.
+      conflict_note:
+        c.history && r.conflict_flag && /effective date/i.test(r.conflict_note ?? "") && !(r.conflict_note ?? "").includes(c.history)
+          ? `${r.conflict_note} ${c.history}`
+          : r.conflict_note,
     };
   });
 }

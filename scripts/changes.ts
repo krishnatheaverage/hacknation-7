@@ -5,7 +5,7 @@
 //   npx tsx scripts/changes.ts                      # tests from the starter pack
 //   npx tsx scripts/changes.ts --tests a.json,b.json   # add the hour-16 test file
 import fs from "node:fs";
-import { loadAddresses, parseCsv, PACK_DIR } from "../src/lib/law/corpus";
+import { loadAddresses, loadCorpus, parseCsv, PACK_DIR } from "../src/lib/law/corpus";
 import { lookup, type Evaluation } from "../src/lib/law/engine";
 import { buildingFrom, factSheet } from "../src/lib/law/facts";
 import { normalizeRules } from "../src/lib/law/rules";
@@ -102,6 +102,9 @@ function main() {
       return order.find((r) => evals.some((e) => e.result === r)) ?? null;
     };
 
+    // A flag that starts later ("Flag for review: from 2027-07-01, ...") is not a conflict yet on this date.
+    const flagged = (evals: Evaluation[], date: string) =>
+      evals.some((e) => e.conflict_flag && !((e.explanation.match(/Flag for review: from (\d{4}-\d{2}-\d{2})/)?.[1] ?? "") > date));
     const affected: string[] = [];
     const conflicts: string[] = [];
     // For a pending bill, "after" is a what-if: the bill is never reported as applying.
@@ -116,7 +119,7 @@ function main() {
           affected.push(a.id);
           beforeAfter[a.id] = { before: b, after: f };
         }
-        if ([...before, ...after].some((e) => e.conflict_flag)) conflicts.push(a.id);
+        if (flagged(before, t.as_of_before ?? DEFAULT_AS_OF) || flagged(after, t.as_of_after ?? DEFAULT_AS_OF)) conflicts.push(a.id);
       } else {
         const now = pick(lookup(ruleSet, a.building, t.as_of ?? DEFAULT_AS_OF));
         const r = strongest(now);
@@ -127,11 +130,14 @@ function main() {
               ? { before: strongest(pick(lookup(rules, a.building, t.as_of ?? DEFAULT_AS_OF))), after: r === "applies" ? "would_apply_if_enacted" : "might_apply_if_enacted" }
               : { before: null, after: r };
         }
-        if (now.some((e) => e.conflict_flag)) conflicts.push(a.id);
+        if (flagged(now, t.as_of ?? DEFAULT_AS_OF)) conflicts.push(a.id);
       }
     }
 
     const failed = mapped.filter((r) => r.status === "failed");
+    // A bill the test names that no document mentions (T1's "SB 763"): say what the test is keyed to.
+    const bills = [...new Set([...`${t.title} ${t.expected_behavior ?? ""}`.matchAll(/\b(AB|SB|A|S|H)\.?\s?(\d{2,5})\b/g)].map((m) => `${m[1]} ${m[2]}`))];
+    const missing = bills.filter((b) => !CORPUS.some((text) => new RegExp(`\\b${b.split(" ")[0]}\\.?\\s?${b.split(" ")[1]}\\b`).test(text)));
     const notes = [
       mapped.length
         ? `Matched team rules: ${mapped.map((r) => `${r.team_rule_id} (${r.citation}; ${r.status}${r.effective_date ? `, effective ${r.effective_date}` : ""})`).join("; ")}.`
@@ -139,6 +145,7 @@ function main() {
       t.type === "as_of" ? `Affected = addresses whose result changes between ${t.as_of_before} and ${t.as_of_after}.` : "",
       t.type === "pending" ? "Pending bills, never in force; affected = addresses they would reach if enacted as written." : "",
       t.type === "negative" ? `Struck or failed measures are never reported as in force.${failed.length ? ` Recorded as failed: ${failed.map((r) => r.citation).join("; ")}.` : ""}` : "",
+      missing.length && mapped.length ? `${missing.join(", ")} ${missing.length > 1 ? "are" : "is"} not in the supplied corpus; ${t.test_id} is keyed to ${(t.rule_ids ?? []).join(", ")} (${mapped.map((r) => r.citation).join("; ")}).` : "",
       `${affected.length} affected, ${conflicts.length} flagged for human review.`,
     ].filter(Boolean).join(" ");
 
@@ -149,4 +156,5 @@ function main() {
   console.log(`wrote ${OUT}`);
 }
 
+const CORPUS = loadCorpus().map((d) => d.text);
 main();

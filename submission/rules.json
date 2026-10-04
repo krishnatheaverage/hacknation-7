@@ -4228,7 +4228,7 @@
     "in_supplied_corpus": false,
     "quoted_span": "A copy of any written notice terminating a tenancy shall be filed with the Department either electronically in the manner prescribed by the Department or by means of a form approved by the Department and the City Attorney for this purpose. The landlord shall file with the Department any such written notice terminating a tenancy within three business days of service on the tenant."
    },
-   "citation_note": "Changed to the standard 'L.A. Mun. Code' form at section level because the card merges the eviction grounds (A), filing (C.9) and relocation (G) subsections, and dropped § 165.05(B)(5), which is the Just Cause Ordinance provision for non-RSO units rather than the RSO rule on this card."
+   "citation_note": "Changed to the standard 'L.A. Mun. Code' form at section level because the card merges the eviction grounds (A), filing (C.9) and relocation (G) subsections, and dropped § 165.05(B)(5), which is the Just Cause Ordinance provision for non-RSO units rather than the RSO rule on this card. Official code (O088) history for § 151.09: Ord. No. 187,763, effective 2023-03-27; Ord. No. 188,757, effective 2025-12-17; Ord. No. 188,795, effective 2026-02-02; Ord. No. 187,737, effective 2023-01-27."
   },
   {
    "team_rule_id": "r-0081",
@@ -4411,7 +4411,7 @@
     "in_supplied_corpus": false,
     "quoted_span": "This Article shall not apply until the expiration of an initial original lease or after\nsix months of continuous and lawful occupancy, whichever comes first, or to the\nfollowing types of residential real properties or residential circumstances:\n\n        (A)      Rental units subject to the Rent Stabilization Ordinance."
    },
-   "citation_note": "Replaced the nickname 'Los Angeles Just Cause Ordinance (JCO)' with the requested code cite, which Ordinance No. 187737 (O030) supports because it adds Article 5, §§ 165.00–165.08, to Chapter XVI."
+   "citation_note": "Replaced the nickname 'Los Angeles Just Cause Ordinance (JCO)' with the requested code cite, which Ordinance No. 187737 (O030) supports because it adds Article 5, §§ 165.00–165.08, to Chapter XVI. Official code (O090) history for § 165.00: Ord. No. 187,737, effective 2023-01-27."
   },
   {
    "team_rule_id": "r-0083",
@@ -4499,7 +4499,7 @@
     "in_supplied_corpus": false,
     "quoted_span": "The tenant has defaulted in the payment of rent to which the landlord is entitled; provided, however, that the landlord’s right to evict a tenant lawfully in possession of residential housing under this subsection is limited to defaults in payment where the amount due exceeds one month of fair market rent for the Los Angeles metro area set annually by the U.S. Department of Housing and Urban Development for an equivalent sized rental unit as that occupied by the tenant."
    },
-   "citation_note": "The requested cite (§ 165.00 et seq., Ord. No. 187737) was not used: the fair-market-rent threshold was added by Ord. No. 187763 to § 165.03(A) (JCO units) and § 151.09(A)(1) (RSO units), while Ord. No. 187737 had enacted only a bare nonpayment ground, so the card, which covers both RSO and JCO units, now cites both subsections and Ord. No. 187763."
+   "citation_note": "The requested cite (§ 165.00 et seq., Ord. No. 187737) was not used: the fair-market-rent threshold was added by Ord. No. 187763 to § 165.03(A) (JCO units) and § 151.09(A)(1) (RSO units), while Ord. No. 187737 had enacted only a bare nonpayment ground, so the card, which covers both RSO and JCO units, now cites both subsections and Ord. No. 187763. Official code (O088) history for § 151.09: Ord. No. 187,763, effective 2023-03-27; Ord. No. 188,757, effective 2025-12-17; Ord. No. 188,795, effective 2026-02-02; Ord. No. 187,737, effective 2023-01-27."
   },
   {
    "team_rule_id": "r-0084",
@@ -4627,7 +4627,7 @@
    "span_verified": true,
    "confidence": 0.75,
    "conflict_flag": true,
-   "conflict_note": "D042: Sources disagree: status in_force; effective date 2025-07-01 / 2026-02-02.",
+   "conflict_note": "D042: Sources disagree: status in_force; effective date 2025-07-01 / 2026-02-02. Official code (O087) history for § 151.06: Ord. No. 188,795, effective 2026-02-02; Ord. No. 188,911, effective 2026-04-20.",
    "penalty": null,
    "yields_to_local_rule": false,
    "may_preempt_local_rules": false,
@@ -4677,7 +4677,7 @@
     "in_supplied_corpus": false,
     "quoted_span": "The allowable annual rent adjustment shall be 90 percent of the\n        percentage change rounded off to the nearest whole number as determined by\n        the Department. If the allowable annual rent adjustment is less than one percent,\n        a landlord may increase the maximum or maximum adjusted rent by up to one\n        percent. In no event, however, may an annual rent increase under this\n        subsection exceed four percent."
    },
-   "citation_note": "Replaced the nickname-style cite with the lawyer's § 151.06 and § 151.02 and added Ord. No. 188795, which O032 shows amended § 151.06 effective Feb. 2, 2026 to end the utility and dependent add-ons; the whole section is cited because the card merges several subsections."
+   "citation_note": "Replaced the nickname-style cite with the lawyer's § 151.06 and § 151.02 and added Ord. No. 188795, which O032 shows amended § 151.06 effective Feb. 2, 2026 to end the utility and dependent add-ons; the whole section is cited because the card merges several subsections. Official code (O087) history for § 151.06: Ord. No. 188,795, effective 2026-02-02; Ord. No. 188,911, effective 2026-04-20."
   },
   {
    "team_rule_id": "r-0088",
@@ -4769,7 +4769,7 @@
     "in_supplied_corpus": false,
     "quoted_span": "A tenant shall be given the unpaid accrued interest in the form of either a direct payment or a credit against the tenant’s rent. The landlord shall choose between these two methods of payment and notify the tenant in writing of the landlord’s choice. The landlord may elect to pay the accrued interest on a monthly or yearly basis."
    },
-   "citation_note": null
+   "citation_note": "Official code (O086) history for § 151.06.02: Ord. No. 187,122, effective 2021-08-08."
   },
   {
    "team_rule_id": "r-0089",

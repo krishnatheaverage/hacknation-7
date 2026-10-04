@@ -91,7 +91,8 @@ const client = new Anthropic({ maxRetries: 6 });
 
 async function extractDoc(doc: CorpusDoc): Promise<DocResult> {
   const cacheFile = path.join(auditDir, `${doc.doc_id}.json`);
-  if (!flag("fresh") && !onlyDocs?.includes(doc.doc_id) && fs.existsSync(cacheFile)) {
+  const fresh = onlyDocs ? onlyDocs.includes(doc.doc_id) : flag("fresh"); // with --docs, only those are re-read
+  if (!fresh && fs.existsSync(cacheFile)) {
     return { ...(JSON.parse(fs.readFileSync(cacheFile, "utf8")) as DocResult), cached: true };
   }
 
