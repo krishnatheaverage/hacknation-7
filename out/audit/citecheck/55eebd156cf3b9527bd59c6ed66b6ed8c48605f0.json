@@ -1,0 +1,23 @@
+{
+ "key": "55eebd156cf3b9527bd59c6ed66b6ed8c48605f0",
+ "team_rule_id": "r-0097",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D083",
+  "O040",
+  "O041",
+  "O042"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Cal. Civ. Code § 1947.9(a)(1)(A); S.F. Admin. Code § 37.9(m)",
+  "citation_basis": "Cal. Civ. Code § 1947.9(a)(1)(A): O040 (§ 37.9(m)) and D083 (§ 1947.9); S.F. Admin. Code § 37.9(m): O040",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "condition": null,
+  "condition_quote": null,
+  "note": "Pinpointed to § 1947.9(a)(1)(A) and added S.F. Admin. Code § 37.9(m), the provision that sets the annually indexed San Francisco daily amount, both as shown in O040. No supplied document is the official text of either law: D083 is a Rent Board rate page, and O040 is the Rent Board's own copy of ch. 37, which says it is not the official record. The card's own quote stays from the supplied corpus (D083)."
+ }
+}

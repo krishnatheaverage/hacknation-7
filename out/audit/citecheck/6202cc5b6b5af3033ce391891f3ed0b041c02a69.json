@@ -1,0 +1,24 @@
+{
+ "key": "6202cc5b6b5af3033ce391891f3ed0b041c02a69",
+ "team_rule_id": "r-0099",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D083",
+  "D082",
+  "O040",
+  "O041",
+  "O042"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "S.F. Admin. Code § 37.9A(e)",
+  "citation_basis": "§ 37.9A and subsection (e), with (e)(1)(A)–(D) and (e)(2): O040 (Rent Board's published text of Admin. Code ch. 37, version 6/29/26); the dollar figures for notices served 3/01/26–2/28/27: D083 and D082",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "condition": null,
+  "condition_quote": null,
+  "note": "The citation follows the lawyer's form and adds her pinpoint (e), which O040 supports: the base amounts and the 62-or-older/disabled add-on are in § 37.9A(e)(1), the post-September 1, 2022 amounts are in (e)(2), and the annual adjustment is in (e)(1)(D); O040 cannot be quoted as the law because it carries the Rent Board's disclaimer that it is not the official record (American Legal is the official publisher), and the card's own quote stays from the supplied corpus page D083, a Rent Board rates page that is not the law's text."
+ }
+}

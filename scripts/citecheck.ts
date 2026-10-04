@@ -344,7 +344,13 @@ async function main() {
   const cards = process.argv.includes("--cards") ? process.argv[process.argv.indexOf("--cards") + 1].split(/\s*,\s*/) : null;
   const picked = (r: RuleRecord) => (only ? only.includes(r.jurisdiction) : true) && (cards ? cards.includes(r.team_rule_id) : true);
   const todo = rules.filter(picked);
-  if (only || cards) for (const r of rules) if (!picked(r) && previous[r.team_rule_id]) out[r.team_rule_id] = previous[r.team_rule_id];
+  // New cards shift ids, so an earlier result is found by the citation it was made for.
+  const earlier = (r: RuleRecord): CiteCheckEntry | undefined => {
+    const byId = previous[r.team_rule_id];
+    if (byId && (byId.from_citation === r.citation || byId.citation === r.citation)) return byId;
+    return Object.values(previous).find((e) => e.from_citation === r.citation);
+  };
+  if (only || cards) for (const r of rules) if (!picked(r) && earlier(r)) out[r.team_rule_id] = earlier(r)!;
   await Promise.all(
     Array.from({ length: 6 }, async () => {
       while (next < todo.length) {
@@ -356,9 +362,9 @@ async function main() {
         } catch (err) {
           failed++;
           // A failed call (rate limit, no credit) keeps the card's last good result.
-          const last = previous[card.team_rule_id];
-          const keep = last && (last.from_citation === card.citation || last.citation === card.citation);
-          if (keep) out[card.team_rule_id] = { ...last, official_text: last.official_text ? finishQuote(last.official_text, docs) : null, history: historyFor(card, last.citation, all) };
+          const last = earlier(card);
+          const keep = Boolean(last);
+          if (last) out[card.team_rule_id] = { ...last, official_text: last.official_text ? finishQuote(last.official_text, docs) : null, history: historyFor(card, last.citation, all) };
           log.push(`${card.team_rule_id} | check failed (${(err instanceof Error ? err.message : String(err)).slice(0, 120)}); ${keep ? "kept the previous result" : "citation left as is"}`);
           continue;
         }

@@ -1,5 +1,5 @@
 {
- "hash": "100fe5cde93116debf906e5ce6e2adfc3a170e59",
+ "hash": "5a256eedcce74002134f80bdb8c63ee38f2a44d3",
  "key": "Berkeley, CA / just_cause_eviction",
  "ids": [
   "r-0053",
@@ -14,7 +14,7 @@
    {
     "card": "r-0055",
     "describes": "r-0054",
-    "reason": "r-0055 is a chart of which unit types are covered by or exempt from Berkeley's just cause eviction protections. It sets no separate requirement or figure. r-0054 is the just cause rule (including the nonpayment threshold) under the same ordinance, and it applies to fully and partially covered units."
+    "reason": "r-0055 is a coverage chart listing which Berkeley unit types are covered by or exempt from the just cause protections. The just cause requirement itself is stated in r-0054 under the same Rent Ordinance."
    }
   ]
  }

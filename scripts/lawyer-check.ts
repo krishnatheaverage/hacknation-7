@@ -29,6 +29,15 @@ const families = (r: RuleRecord) => [family(r.citation), renamed[r.team_rule_id]
 function current(row: Row): RuleRecord | null {
   const same = rules.filter((r) => r.jurisdiction === row.jurisdiction && r.category === row.category);
   const fam = family(row.citation);
+  // A row with no section number (a page title as citation) goes to the same-source card
+  // whose title shares the most words with hers.
+  if (!fam) {
+    const words = new Set(row.title.toLowerCase().match(/[a-z]{4,}/g) ?? []);
+    const overlap = (r: RuleRecord) => (r.title.toLowerCase().match(/[a-z]{4,}/g) ?? []).filter((w) => words.has(w)).length;
+    const score = (r: RuleRecord) => overlap(r) * 2 + Number(r.source_doc_id === row.source_doc_id || (r.consolidation_note ?? "").includes(row.source_doc_id));
+    const best = [...same].sort((a, b) => score(b) - score(a))[0];
+    if (best && overlap(best) >= 2) return best;
+  }
   const direct = same.find((r) => r.source_doc_id === row.source_doc_id && (!fam || families(r).includes(fam)));
   if (direct) return direct;
   const merged = same.find((r) => (r.consolidation_note ?? "").includes(row.source_doc_id) && (!fam || families(r).includes(fam) || !family(r.citation)));
@@ -72,7 +81,11 @@ for (const row of rows) {
     const ours = cur.effective_date ?? "";
     // A merged subsection keeps its own date in the card's note ("§ X(c)(4) applies from ...").
     const kept = Boolean(row.lawyer_date) && (cur.consolidation_note ?? "").includes(`${row.citation} applies from ${row.lawyer_date}`);
-    const ok = row.lawyer_date ? kept || ours.startsWith(row.lawyer_date) || (ours.length > 0 && row.lawyer_date.startsWith(ours)) : ours === "";
+    // A card that dates its figure ("1.6% for March 1, 2026 – ...") states her date there.
+    const [y, mo, d] = (row.lawyer_date || "0-0-0").split("-").map(Number);
+    const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][mo - 1];
+    const inFigure = Boolean(row.lawyer_date) && !ours && [row.lawyer_date, `${month} ${d}, ${y}`, `${mo}/${String(d).padStart(2, "0")}/${String(y).slice(2)}`, `${mo}/${d}/${String(y).slice(2)}`].some((f) => (cur.key_value ?? "").includes(f));
+    const ok = row.lawyer_date ? kept || inFigure || ours.startsWith(row.lawyer_date) || (ours.length > 0 && row.lawyer_date.startsWith(ours)) : ours === "";
     if (ok) out.date_agree++;
     else lines.push(`DATE   ${row.reviewed_id} ${row.citation.slice(0, 50)}: lawyer ${row.lawyer_date || "blank"}, ours ${ours || "blank"} (${cur.team_rule_id})`);
   }
@@ -83,7 +96,8 @@ for (const row of rows) {
     out.merges_total++;
     const target = byOldId.get(dup[1]);
     const t = target ? current(target) : null;
-    if (cur && t && cur.team_rule_id === t.team_rule_id) out.merges_done++;
+    // Done when both rows land on one card, or the duplicate no longer exists apart from it.
+    if (t && (!cur || cur.team_rule_id === t.team_rule_id)) out.merges_done++;
     else lines.push(`MERGE  ${row.reviewed_id} -> ${dup[1]}: still separate (${cur?.team_rule_id ?? "gone"} vs ${t?.team_rule_id ?? "gone"})`);
   }
 

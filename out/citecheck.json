@@ -83,6 +83,21 @@
   "note": null,
   "history": null
  },
+ "r-0019": {
+  "from_citation": "Cal. Civ. Code § 1950.5",
+  "citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. (e), (g), (h)",
+  "title": null,
+  "official_text": {
+   "doc_id": "D025",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+   "retrieved_at": "2026-10-01T22:35Z",
+   "in_supplied_corpus": true,
+   "quoted_span": "Except as provided in paragraph (2), (3), or (5), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy."
+  },
+  "note": "Kept the lawyer's pinpoint (c) and AB 12 parenthetical (O002 confirms Assembly Bill No. 12, Chapter 733, approved 2023), but dropped (m) and (n) because the supplied D025 copy is cut off inside (h)(4) and no document states them; D025 also shows a later amendment (adding (c)(4) and renumbering the small-landlord rule to (c)(5)) whose act no document names, so the card's quote stays from the supplied corpus (D025).",
+  "history": null,
+  "condition": null
+ },
  "r-0023": {
   "from_citation": "H.5222 (194th General Court; new draft of H.1564)",
   "citation": "H.5222 (194th General Court; new draft of H.1564)",
@@ -373,21 +388,37 @@
   "note": "Added § 13.78.018 because the card's rule that contrary lease terms are unenforceable comes from that section, and added the enacting ordinance number from the code's history notes.",
   "history": null
  },
- "r-0054": {
-  "from_citation": "Berkeley Measure BB (Nov. 2024) amending Berkeley Rent Stabilization and Eviction for Good Cause Ordinance",
-  "citation": "Berkeley Mun. Code § 13.76.130(A)(1) (Ord. No. 7,950-N.S., Berkeley Tenant Protection and Right to Organize Act, approved by voters Nov. 5, 2024)",
+ "r-0053": {
+  "from_citation": "Berkeley Ellis Implementation Ordinance (relocation assistance)",
+  "citation": "Berkeley Mun. Code § 13.77.055(A) (Ord. 7507-NS); see also id. § 13.77.055(A)(2), (C)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O092",
+   "url": "https://berkeley.municipal.codes/BMC/13.77",
+   "retrieved_at": "2026-10-04 00:44 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "The tenants of any residential rental unit who are required to move as a result of the owner’s withdrawal of the accommodation from rent or lease shall be entitled to a relocation payment in the sum of $15,000 from the owner. The landlord is required to provide an additional $5,000 relocation assistance to tenant households that qualify as low-income; or include disabled or elderly tenants; minor children; or tenancies which began prior to January 1, 1999. The relocation fees set forth above shall be increased in accordance with the rules set forth in subsection 13.77.055A.2 below."
+  },
+  "note": "The lawyer's chapter cite was narrowed to § 13.77.055(A), with (A)(2) (inflation indexing) and (C) (additional payment) as see-also subsections, and Ord. 7507-NS was added as the last amendment, all per the codified text in O092; her parenthetical \"Ellis Implementation Ordinance\" was dropped because that name appears only on the Rent Board news page (D004) and, as \"Ellis Act Implementation Ordinance,\" in the staff report (O051), not in the code text captured in O092. The card's own quote comes from D004, a Rent Board news page in the supplied corpus, which is not the law's text, and the 2026 amounts ($19,413 and $6,471) are stated only in D004 and the O051 staff report.",
+  "history": null,
+  "condition": "You count as a tenant for these payments only if you have a written or oral agreement with the owner to live in the unit or have paid rent to the owner."
+ },
+ "r-0056": {
+  "from_citation": "Berkeley Rent Stabilization and Good Cause for Eviction Ordinance (relocation assistance, owner move-in)",
+  "citation": "Berkeley Mun. Code § 13.76.130(A)(8)(g) (Rent Stabilization and Eviction for Just Cause Ordinance, Ord. No. 7,950-N.S.); see also id. § 13.76.130(A)(8)(h)",
   "title": null,
   "official_text": {
    "doc_id": "O096",
    "url": "https://berkeley.municipal.codes/BMC/13.76",
    "retrieved_at": "2026-10-04 00:47 UTC",
    "in_supplied_corpus": false,
-   "quoted_span": "This subsection shall not constitute grounds where the amount of rent demanded is less than one month of fair market rent for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the U.S. Department of Housing and Urban Development for the fiscal year in which the rent is demanded."
+   "quoted_span": "Where a landlord recovers possession of a unit under Subsection 13.76.130(A)(8), the landlord is required to provide standard relocation assistance to tenant households where at least one occupant has resided in the unit for one year or more in the amount of $15,000. The landlord is required to provide an additional $5,000 relocation assistance to tenant households that qualify as low-income; or include disabled or elderly tenants; minor children; or tenancies which began prior to January 1, 1999."
   },
-  "note": "Replaced the Measure BB nickname citation with the codified section the lawyer requested, narrowed to subsection (A)(1) where the nonpayment threshold sits, added the amending ordinance number 7,950-N.S. that O050 shows, and used the ordinance's own short title instead of 'Measure BB', which its text does not use.",
-  "history": null
+  "note": "The lawyer's § 13.76.130(A) was narrowed to (A)(8)(g), where the codified text in O096 places the owner move-in relocation rule, with the CPI indexing in (A)(8)(h) added as see also; the parenthetical uses the chapter's own short title and Ord. No. 7,950-N.S. from O050 and O096's history note, the 2026 dollar amounts come from the Rent Board's indexing (O051, D004) rather than the code text, and the card's quoted span stays from D004, an agency news page in the supplied corpus that is not the law's text.",
+  "history": null,
+  "condition": "You get the standard owner move-in relocation payment only if at least one person in your household has lived in the unit for one year or more, and the additional payment only if your household is low-income, includes a disabled or elderly (60+) tenant or a minor child, or your tenancy began before January 1, 1999."
  },
- "r-0058": {
+ "r-0057": {
   "from_citation": "Berkeley Mun. Code § 13.76.110A (Rent Board Regulation 1148)",
   "citation": "Berkeley Mun. Code § 13.76.110 (Ord. No. 7,950-N.S., approved by voters Nov. 5, 2024); Berkeley Rent Stabilization Board Reg. 1148 (Annual General Adjustment Order for 2026)",
   "title": null,
@@ -629,6 +660,21 @@
   "note": "Changed to the standard 'L.A. Mun. Code' form at section level because the card merges the eviction grounds (A), filing (C.9) and relocation (G) subsections, and dropped § 165.05(B)(5), which is the Just Cause Ordinance provision for non-RSO units rather than the RSO rule on this card.",
   "history": "Official code (O088) history for § 151.09: Ord. No. 187,763, effective 2023-03-27; Ord. No. 188,757, effective 2025-12-17; Ord. No. 188,795, effective 2026-02-02; Ord. No. 187,737, effective 2023-01-27."
  },
+ "r-0081": {
+  "from_citation": "LAMC § 151.09.G (RSO); LAMC § 165.06 (JCO) (see also LAMC §§ 151.09.A, 165.03, 151.30, 47.06-47.07; RAC Regulations § 960.00)",
+  "citation": "L.A. Mun. Code § 151.09(G) (Rent Stabilization Ordinance) (as amended through Ord. No. 188795); L.A. Mun. Code § 165.06(A) (Just Cause for Eviction Ordinance) (Ord. No. 187737, as amended through Ord. No. 188795); see also id. § 165.06(G), § 165.06(A)(6), § 165.05(B)(2), § 165.05(B)(3), § 165.05(B)(4), § 165.07; L.A. Mun. Code § 151.09(A), § 151.30(E), §§ 47.06, 47.07",
+  "title": null,
+  "official_text": {
+   "doc_id": "O091",
+   "url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-361750",
+   "retrieved_at": "2026-10-04 00:42 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "The landlord shall perform the acts described in this section within 15 days of service of a written notice of termination described in California Civil Code Section 1946."
+  },
+  "note": "Replaced the 'LAMC' shorthand and nickname-only forms with house-style 'L.A. Mun. Code' cites naming Ord. No. 187737 (which added the JCO, per O090) and Ord. No. 188795 (which last amended §§ 151.09(G) and 165.06, per O032/O091), split the old range into separate pinpoints for the declaration (§ 165.05(B)) and remedies (§ 165.07) rules, and dropped RAC Regulations § 960.00 since the card states no escrow rule; the card's own quote stays from the LAHD bulletin D043, which is agency guidance rather than the law's text.",
+  "history": "Official code (O088) history for § 151.09: Ord. No. 187,763, effective 2023-03-27; Ord. No. 188,757, effective 2025-12-17; Ord. No. 188,795, effective 2026-02-02; Ord. No. 187,737, effective 2023-01-27.",
+  "condition": "You are not owed relocation assistance under the Just Cause Ordinance if the Housing Department finds your unit became unsafe because of a fire, flood, earthquake or other event the owner did not cause or contribute to, or if you are a resident manager being replaced by a new manager in the same unit."
+ },
  "r-0082": {
   "from_citation": "Los Angeles Just Cause Ordinance (JCO)",
   "citation": "L.A. Mun. Code § 165.00 et seq. (Ord. No. 187737)",
@@ -693,14 +739,6 @@
   "note": null,
   "history": "Official code (O086) history for § 151.06.02: Ord. No. 187,122, effective 2021-08-08."
  },
- "r-0089": {
-  "from_citation": "Newark Mun. Code § 19:2-3 (Ord. 6 PSF-A(S), 9-5-17)",
-  "citation": "Newark Mun. Code § 19:2-3.1 (Ord. 6 PSF-A(S), 9-5-17)",
-  "title": null,
-  "official_text": null,
-  "note": "Narrowed the pinpoint from § 19:2-3 to § 19:2-3.1 (Determination of Rents), the subsection D070 shows holding the 4% cap and the compliance and registration bar; D070 is a City of Newark Division of Rent Control web page quoting the code, not the code's text, so the card's quote comes only from that agency page and no supplied document is the official law text.",
-  "history": null
- },
  "r-0090": {
   "from_citation": "San Diego Mun. Code § 98.1103 (O-21955 N.S.; see also §§ 98.1102, 98.1104)",
   "citation": "San Diego Mun. Code § 98.1103(b) (Ord. O-21955 N.S.); see also id. §§ 98.1103(a), 98.1102, 98.1104(a)",
@@ -714,6 +752,21 @@
   },
   "note": "The citation now pinpoints § 98.1103(b), the landlord-use ban; it lists the sale ban in (a), the \"two or more landlords\" definition in § 98.1102 and the remedies in § 98.1104(a) as see-also cites, and puts the ordinance in house form; the quote now comes from the adopted code text (D074), because the card's own quote stays from the supplied corpus D076, which is only the unadopted draft O-2025-107, whose definition and fee terms differ from the adopted law.",
   "history": null
+ },
+ "r-0093": {
+  "from_citation": "San Diego Mun. Code § 98.0704 (Ord. O-21647 N.S., amended by O-21769 N.S.)",
+  "citation": "San Diego Mun. Code § 98.0704 (Ord. O-21647 N.S., as amended through Ord. O-21769 N.S.); see also id. §§ 98.0704(a), (b), 98.0706(b)(1), (e)",
+  "title": null,
+  "official_text": {
+   "doc_id": "D073",
+   "url": "https://docs.sandiego.gov/municode/municodechapter09/ch09art08division07.pdf",
+   "retrieved_at": "2026-10-01T22:37Z",
+   "in_supplied_corpus": true,
+   "quoted_span": "A landlord shall not terminate a tenancy without just cause. For purposes of this \nDivision, just cause includes at-fault just cause and no-fault just cause."
+  },
+  "note": "Changed 'amended by' to 'as amended through Ord. O-21769 N.S.' per the § 98.0704 history note in D073 and added see-also cites to the at-fault and no-fault cause lists (§ 98.0704(a), (b)), the 30/60-day notice rule (§ 98.0706(b)(1)) and the void-notice rule (§ 98.0706(e)) that the card also states; the card's quote stays, taken from D073, the official code text in the supplied corpus.",
+  "history": null,
+  "condition": null
  },
  "r-0094": {
   "from_citation": "San Diego Mun. Code § 98.0706(c) (Ord. O-21647 N.S.)",
@@ -757,7 +810,7 @@
   "note": "Added pinpoint (b) for the ban on use and per-unit, per-month violations, a see also for (a) on sales and for (d) on remedies (cited only by the D002 law-firm alert because O040's excerpt is truncated), and the enacting Ord. No. 224-24 and amending Ord. No. 169-25 shown in O040; the card's quoted span still comes from D081, a supplied-corpus SF.gov news page that is not the law's text, and O040 is the Rent Board's published text, which it says is not the official record.",
   "history": null
  },
- "r-0097": {
+ "r-0098": {
   "from_citation": "S.F. Admin. Code § 37.9(a)",
   "citation": "S.F. Admin. Code § 37.9(a) (as amended by Ord. No. 03-26); see also id. §§ 37.9(c), 37.2(r)",
   "title": null,
@@ -766,140 +819,6 @@
   "history": null
  },
  "r-0101": {
-  "from_citation": "S.F. Admin. Code § 37.3",
-  "citation": "S.F. Admin. Code § 37.3(a)(1) (as amended through Ord. No. 3-26)",
-  "title": null,
-  "official_text": null,
-  "note": "Narrowed the lawyer's § 37.3(a) to § 37.3(a)(1) and added Ord. No. 3-26 because O040, the Rent Board's text of § 37.3, places the annual CPI-based increase rule in (a)(1) with that ordinance last in its history note; the card's own quote stays from D080, a Rent Board news page that is not law text, and no quote is given because O040 itself says it is not the official record (American Legal is the official publisher).",
-  "history": null
- },
- "r-0103": {
-  "from_citation": "San Francisco Fair Chance Ordinance",
-  "citation": "S.F. Police Code art. 49, § 4906 (Ord. No. 17-14) (Fair Chance Ordinance); see also id. § 4911",
-  "title": null,
-  "official_text": {
-   "doc_id": "O041",
-   "url": "https://sfbos.archive.sf.gov/ftp/uploadedfiles/bdsupvrs/ordinances14/o0017-14.pdf",
-   "retrieved_at": "2026-10-04 00:19 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "18 ffii> It shall be unlawful (or any Housing Provider to produce or disseminate any \n19 advertisement related to Affordable Housing that expresses, directly or indirectly, that any person \n20 with an arrest or conviction record will not be considered (or the rental or lease of real property or \n21 may not apply for the rental or lease of real property, except as required by local, state."
-  },
-  "note": "Replaced the nickname with the lawyer's form but moved the pinpoint from § 4901, a policy section per O041, to § 4906, the housing-decisions section (numbered 4906 in O041 and O042), added Ord. No. 17-14 from O041 and § 4911 for the HRC complaint process, and did not cite the 2018 amendment (File No. 171170) because O042 is a committee draft with a blank ordinance number; the card's own quote comes from D078, an HRC agency web page in the supplied corpus that is not the law's text, and the O041 quote is reproduced as OCR'd, with the scan's line numbers removed.",
-  "history": null
- },
- "r-0104": {
-  "from_citation": "Santa Ana Ord. No. NS-3090",
-  "citation": "Santa Ana Mun. Code § 8-3702(b) (Ord. No. NS-3090); see also id. § 8-3703(a)",
-  "title": null,
-  "official_text": {
-   "doc_id": "O097",
-   "url": "https://library.municode.com/ca/santa_ana/codes/code_of_ordinances?nodeId=PTIITHCO_CH8BUST_ARTXXIVPRANMPAUREPRXI",
-   "retrieved_at": "2026-10-04 00:48 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "It is unlawful for a Landlord to use an Algorithmic Device to set rental rates or occupancy levels for Residential Real Property."
-  },
-  "note": "The bare ordinance number from the council agenda (O061) is kept in parentheses, but the citation now leads with the codified section holding the landlord-use ban, § 8-3702(b), with remedies in § 8-3703(a), per the official code (O097) and staff report (O062); the agenda exhibit's art. XXIII/§ 8-3600 numbering (O060) was not used because the adopted, codified text is art. XXIV, §§ 8-3700 to 8-3703.",
-  "history": null
- },
- "r-0109": {
-  "from_citation": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
-  "citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3140(a) (Rent Stabilization and Just Cause Eviction Ordinance, Ord. No. NS-3073, Measure CC); see also id. §§ 8-3140(b), 8-3144(a)(1)",
-  "title": null,
-  "official_text": {
-   "doc_id": "O063",
-   "url": "https://storage.googleapis.com/proudcity/santaanaca/2022/11/a56c42da-ord.-no.-ns-3073.pdf",
-   "retrieved_at": "2026-10-04 00:20 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "Increases in Rent on Residential Real Property or Mobilehome Spaces in \nthe City of Santa Ana in excess of three percent (3%), or eighty (80%) of \nthe change in the Consumer Price Index, whichever is less, and more than \none Rent Increase in any twelve (12) month period, are prohibited, unless \nexpressly exempt under the Costa-Hawkins Rental Housing Act codified in \nCalifornia Civil Code section 1954.50, et seq., or the Mobilehome \nResidency Law codified in California Civil Code sections 798, et seq.  If \nthe change in the Consumer Price Index is negative, no Rent Increase is \npermitted."
-  },
-  "note": "Kept the lawyer's ch. 8, art. XIX (confirmed by O063), but replaced Ord. NS-3010 with Ord. No. NS-3073 (Measure CC), added the § 8-3140(a) pinpoint holding the cap, the § 8-3140(b) annual-announcement and § 8-3144(a)(1) Tenant Petition provisions, and the Ordinance's own short title, all per O063, since no document mentions NS-3010.",
-  "history": null
- },
- "r-0093": {
-  "from_citation": "San Diego Mun. Code § 98.0704 (Ord. O-21647 N.S., amended by O-21769 N.S.)",
-  "citation": "San Diego Mun. Code § 98.0704 (Ord. O-21647 N.S., as amended through Ord. O-21769 N.S.); see also id. §§ 98.0704(a), (b), 98.0706(b)(1), (e)",
-  "title": null,
-  "official_text": {
-   "doc_id": "D073",
-   "url": "https://docs.sandiego.gov/municode/municodechapter09/ch09art08division07.pdf",
-   "retrieved_at": "2026-10-01T22:37Z",
-   "in_supplied_corpus": true,
-   "quoted_span": "A landlord shall not terminate a tenancy without just cause. For purposes of this \nDivision, just cause includes at-fault just cause and no-fault just cause."
-  },
-  "note": "Changed 'amended by' to 'as amended through Ord. O-21769 N.S.' per the § 98.0704 history note in D073 and added see-also cites to the at-fault and no-fault cause lists (§ 98.0704(a), (b)), the 30/60-day notice rule (§ 98.0706(b)(1)) and the void-notice rule (§ 98.0706(e)) that the card also states; the card's quote stays, taken from D073, the official code text in the supplied corpus.",
-  "history": null,
-  "condition": null
- },
- "r-0056": {
-  "from_citation": "Berkeley Rent Stabilization and Good Cause for Eviction Ordinance (relocation assistance, owner move-in)",
-  "citation": "Berkeley Mun. Code § 13.76.130(A)(8)(g) (Rent Stabilization and Eviction for Just Cause Ordinance, Ord. No. 7,950-N.S.); see also id. § 13.76.130(A)(8)(h)",
-  "title": null,
-  "official_text": {
-   "doc_id": "O096",
-   "url": "https://berkeley.municipal.codes/BMC/13.76",
-   "retrieved_at": "2026-10-04 00:47 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "Where a landlord recovers possession of a unit under Subsection 13.76.130(A)(8), the landlord is required to provide standard relocation assistance to tenant households where at least one occupant has resided in the unit for one year or more in the amount of $15,000. The landlord is required to provide an additional $5,000 relocation assistance to tenant households that qualify as low-income; or include disabled or elderly tenants; minor children; or tenancies which began prior to January 1, 1999."
-  },
-  "note": "The lawyer's § 13.76.130(A) was narrowed to (A)(8)(g), where the codified text in O096 places the owner move-in relocation rule, with the CPI indexing in (A)(8)(h) added as see also; the parenthetical uses the chapter's own short title and Ord. No. 7,950-N.S. from O050 and O096's history note, the 2026 dollar amounts come from the Rent Board's indexing (O051, D004) rather than the code text, and the card's quoted span stays from D004, an agency news page in the supplied corpus that is not the law's text.",
-  "history": null,
-  "condition": "You get the standard owner move-in relocation payment only if at least one person in your household has lived in the unit for one year or more, and the additional payment only if your household is low-income, includes a disabled or elderly (60+) tenant or a minor child, or your tenancy began before January 1, 1999."
- },
- "r-0098": {
-  "from_citation": "S.F. Admin. Code § 37.9A (Rent Ordinance Section 37.9A)",
-  "citation": "S.F. Admin. Code § 37.9A(e)",
-  "title": null,
-  "official_text": null,
-  "note": "Adopted the lawyer's pinpoint § 37.9A(e), which O040 (the Rent Board's 6/29/26 copy of the Rent Ordinance) shows holds the Ellis Act relocation payments in (e)(1)(C), (e)(1)(D) and (e)(2), and dropped the 'Rent Ordinance Section 37.9A' nickname. The card's own quote stays from D083, a Rent Board rate page in the supplied corpus that is not the law's text. No official text is cited because O040 says it is not the official record and names American Legal as the official publisher, so no condition is quoted either, though O040 shows the payments go to Eligible Tenants and that the current amounts apply where the notice of intent to withdraw is filed on or after September 1, 2022.",
-  "history": null,
-  "condition": null
- },
- "r-0053": {
-  "from_citation": "Berkeley Ellis Implementation Ordinance (relocation assistance)",
-  "citation": "Berkeley Mun. Code § 13.77.055(A) (Ord. 7507-NS); see also id. § 13.77.055(A)(2), (C)",
-  "title": null,
-  "official_text": {
-   "doc_id": "O092",
-   "url": "https://berkeley.municipal.codes/BMC/13.77",
-   "retrieved_at": "2026-10-04 00:44 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "The tenants of any residential rental unit who are required to move as a result of the owner’s withdrawal of the accommodation from rent or lease shall be entitled to a relocation payment in the sum of $15,000 from the owner. The landlord is required to provide an additional $5,000 relocation assistance to tenant households that qualify as low-income; or include disabled or elderly tenants; minor children; or tenancies which began prior to January 1, 1999. The relocation fees set forth above shall be increased in accordance with the rules set forth in subsection 13.77.055A.2 below."
-  },
-  "note": "The lawyer's chapter cite was narrowed to § 13.77.055(A), with (A)(2) (inflation indexing) and (C) (additional payment) as see-also subsections, and Ord. 7507-NS was added as the last amendment, all per the codified text in O092; her parenthetical \"Ellis Implementation Ordinance\" was dropped because that name appears only on the Rent Board news page (D004) and, as \"Ellis Act Implementation Ordinance,\" in the staff report (O051), not in the code text captured in O092. The card's own quote comes from D004, a Rent Board news page in the supplied corpus, which is not the law's text, and the 2026 amounts ($19,413 and $6,471) are stated only in D004 and the O051 staff report.",
-  "history": null,
-  "condition": "You count as a tenant for these payments only if you have a written or oral agreement with the owner to live in the unit or have paid rent to the owner."
- },
- "r-0019": {
-  "from_citation": "Cal. Civ. Code § 1950.5",
-  "citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. (e), (g), (h)",
-  "title": null,
-  "official_text": {
-   "doc_id": "D025",
-   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
-   "retrieved_at": "2026-10-01T22:35Z",
-   "in_supplied_corpus": true,
-   "quoted_span": "Except as provided in paragraph (2), (3), or (5), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy."
-  },
-  "note": "Kept the lawyer's pinpoint (c) and AB 12 parenthetical (O002 confirms Assembly Bill No. 12, Chapter 733, approved 2023), but dropped (m) and (n) because the supplied D025 copy is cut off inside (h)(4) and no document states them; D025 also shows a later amendment (adding (c)(4) and renumbering the small-landlord rule to (c)(5)) whose act no document names, so the card's quote stays from the supplied corpus (D025).",
-  "history": null,
-  "condition": null
- },
- "r-0081": {
-  "from_citation": "LAMC § 151.09.G (RSO); LAMC § 165.06 (JCO) (see also LAMC §§ 151.09.A, 165.03, 151.30, 47.06-47.07; RAC Regulations § 960.00)",
-  "citation": "L.A. Mun. Code § 151.09(G) (Rent Stabilization Ordinance) (as amended through Ord. No. 188795); L.A. Mun. Code § 165.06(A) (Just Cause for Eviction Ordinance) (Ord. No. 187737, as amended through Ord. No. 188795); see also id. § 165.06(G), § 165.06(A)(6), § 165.05(B)(2), § 165.05(B)(3), § 165.05(B)(4), § 165.07; L.A. Mun. Code § 151.09(A), § 151.30(E), §§ 47.06, 47.07",
-  "title": null,
-  "official_text": {
-   "doc_id": "O091",
-   "url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-361750",
-   "retrieved_at": "2026-10-04 00:42 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "The landlord shall perform the acts described in this section within 15 days of service of a written notice of termination described in California Civil Code Section 1946."
-  },
-  "note": "Replaced the 'LAMC' shorthand and nickname-only forms with house-style 'L.A. Mun. Code' cites naming Ord. No. 187737 (which added the JCO, per O090) and Ord. No. 188795 (which last amended §§ 151.09(G) and 165.06, per O032/O091), split the old range into separate pinpoints for the declaration (§ 165.05(B)) and remedies (§ 165.07) rules, and dropped RAC Regulations § 960.00 since the card states no escrow rule; the card's own quote stays from the LAHD bulletin D043, which is agency guidance rather than the law's text.",
-  "history": "Official code (O088) history for § 151.09: Ord. No. 187,763, effective 2023-03-27; Ord. No. 188,757, effective 2025-12-17; Ord. No. 188,795, effective 2026-02-02; Ord. No. 187,737, effective 2023-01-27.",
-  "condition": "You are not owed relocation assistance under the Just Cause Ordinance if the Housing Department finds your unit became unsafe because of a fire, flood, earthquake or other event the owner did not cause or contribute to, or if you are a resident manager being replaced by a new manager in the same unit."
- },
- "r-0099": {
   "from_citation": "S.F. Admin. Code § 37.9C (Rent Ordinance Section 37.9C)",
   "citation": "S.F. Admin. Code § 37.9C(e)(1) (Prop. H, eff. Dec. 22, 2006); see also id. § 37.9C(b), (e)(2), (e)(3)",
   "title": null,
@@ -914,7 +833,43 @@
   "history": null,
   "condition": "You qualify for these relocation payments only if you are an authorized occupant who has lived in the unit for 12 months or more."
  },
- "r-0107": {
+ "r-0103": {
+  "from_citation": "S.F. Admin. Code § 37.3",
+  "citation": "S.F. Admin. Code § 37.3(a)(1) (as amended through Ord. No. 3-26)",
+  "title": null,
+  "official_text": null,
+  "note": "Narrowed the lawyer's § 37.3(a) to § 37.3(a)(1) and added Ord. No. 3-26 because O040, the Rent Board's text of § 37.3, places the annual CPI-based increase rule in (a)(1) with that ordinance last in its history note; the card's own quote stays from D080, a Rent Board news page that is not law text, and no quote is given because O040 itself says it is not the official record (American Legal is the official publisher).",
+  "history": null
+ },
+ "r-0104": {
+  "from_citation": "San Francisco Fair Chance Ordinance",
+  "citation": "S.F. Police Code art. 49, § 4906 (Ord. No. 17-14) (Fair Chance Ordinance); see also id. § 4911",
+  "title": null,
+  "official_text": {
+   "doc_id": "O041",
+   "url": "https://sfbos.archive.sf.gov/ftp/uploadedfiles/bdsupvrs/ordinances14/o0017-14.pdf",
+   "retrieved_at": "2026-10-04 00:19 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "18 ffii> It shall be unlawful (or any Housing Provider to produce or disseminate any \n19 advertisement related to Affordable Housing that expresses, directly or indirectly, that any person \n20 with an arrest or conviction record will not be considered (or the rental or lease of real property or \n21 may not apply for the rental or lease of real property, except as required by local, state."
+  },
+  "note": "Replaced the nickname with the lawyer's form but moved the pinpoint from § 4901, a policy section per O041, to § 4906, the housing-decisions section (numbered 4906 in O041 and O042), added Ord. No. 17-14 from O041 and § 4911 for the HRC complaint process, and did not cite the 2018 amendment (File No. 171170) because O042 is a committee draft with a blank ordinance number; the card's own quote comes from D078, an HRC agency web page in the supplied corpus that is not the law's text, and the O041 quote is reproduced as OCR'd, with the scan's line numbers removed.",
+  "history": null
+ },
+ "r-0106": {
+  "from_citation": "Santa Ana Ord. No. NS-3090",
+  "citation": "Santa Ana Mun. Code § 8-3702(b) (Ord. No. NS-3090); see also id. § 8-3703(a)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O097",
+   "url": "https://library.municode.com/ca/santa_ana/codes/code_of_ordinances?nodeId=PTIITHCO_CH8BUST_ARTXXIVPRANMPAUREPRXI",
+   "retrieved_at": "2026-10-04 00:48 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "It is unlawful for a Landlord to use an Algorithmic Device to set rental rates or occupancy levels for Residential Real Property."
+  },
+  "note": "The bare ordinance number from the council agenda (O061) is kept in parentheses, but the citation now leads with the codified section holding the landlord-use ban, § 8-3702(b), with remedies in § 8-3703(a), per the official code (O097) and staff report (O062); the agenda exhibit's art. XXIII/§ 8-3600 numbering (O060) was not used because the adopted, codified text is art. XXIV, §§ 8-3700 to 8-3703.",
+  "history": null
+ },
+ "r-0109": {
   "from_citation": "Santa Ana Just Cause Eviction Ordinance",
   "citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3120(a) (Rent Stabilization and Just Cause Eviction Ordinance; Ord. No. NS-3027, as amended by Ord. No. NS-3052 and as amended through Ord. No. NS-3073); see also id. § 8-3120(b), (c), (d)",
   "title": null,
@@ -928,5 +883,85 @@
   "note": "Kept the lawyer's ch. 8 form but changed art. XX to art. XIX, added the § 8-3120(a) pinpoint, and replaced Ord. NS-3011 (not in any document) with Ord. Nos. NS-3027, NS-3052 and NS-3073 per the Municode text and history notes in O098 (consistent with O063), replacing 'just cause' with the title the code itself uses in § 8-3100; the card's own quote stays from D085, a city press release in the supplied corpus, not the law's text.",
   "history": null,
   "condition": "You are protected only after you have lived in the unit continuously and lawfully for 30 days."
+ },
+ "r-0111": {
+  "from_citation": "Santa Ana Rent Stabilization and Just Cause Eviction Ordinance",
+  "citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3140(a) (Rent Stabilization and Just Cause Eviction Ordinance, Ord. No. NS-3073, Measure CC); see also id. §§ 8-3140(b), 8-3144(a)(1)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O063",
+   "url": "https://storage.googleapis.com/proudcity/santaanaca/2022/11/a56c42da-ord.-no.-ns-3073.pdf",
+   "retrieved_at": "2026-10-04 00:20 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "Increases in Rent on Residential Real Property or Mobilehome Spaces in \nthe City of Santa Ana in excess of three percent (3%), or eighty (80%) of \nthe change in the Consumer Price Index, whichever is less, and more than \none Rent Increase in any twelve (12) month period, are prohibited, unless \nexpressly exempt under the Costa-Hawkins Rental Housing Act codified in \nCalifornia Civil Code section 1954.50, et seq., or the Mobilehome \nResidency Law codified in California Civil Code sections 798, et seq.  If \nthe change in the Consumer Price Index is negative, no Rent Increase is \npermitted."
+  },
+  "note": "Kept the lawyer's ch. 8, art. XIX (confirmed by O063), but replaced Ord. NS-3010 with Ord. No. NS-3073 (Measure CC), added the § 8-3140(a) pinpoint holding the cap, the § 8-3140(b) annual-announcement and § 8-3144(a)(1) Tenant Petition provisions, and the Ordinance's own short title, all per O063, since no document mentions NS-3010.",
+  "history": null
+ },
+ "r-0089": {
+  "from_citation": "Newark Mun. Code § 19:2-3.1 (Ord. 6 PSF-A(S), 9-5-17)",
+  "citation": "Newark Mun. Code § 19:2-3.1 (Ord. 6 PSF-A(S), 9-5-17)",
+  "title": null,
+  "official_text": null,
+  "note": null,
+  "history": null,
+  "condition": null
+ },
+ "r-0105": {
+  "from_citation": "S.F. Admin. Code ch. 49",
+  "citation": "S.F. Admin. Code ch. 49",
+  "title": null,
+  "official_text": null,
+  "note": null,
+  "history": null,
+  "condition": null
+ },
+ "r-0097": {
+  "from_citation": "Cal. Civ. Code § 1947.9",
+  "citation": "Cal. Civ. Code § 1947.9(a)(1)(A); S.F. Admin. Code § 37.9(m)",
+  "title": null,
+  "official_text": null,
+  "note": "Pinpointed to § 1947.9(a)(1)(A) and added S.F. Admin. Code § 37.9(m), the provision that sets the annually indexed San Francisco daily amount, both as shown in O040. No supplied document is the official text of either law: D083 is a Rent Board rate page, and O040 is the Rent Board's own copy of ch. 37, which says it is not the official record. The card's own quote stays from the supplied corpus (D083).",
+  "history": null,
+  "condition": null
+ },
+ "r-0099": {
+  "from_citation": "S.F. Admin. Code § 37.9A",
+  "citation": "S.F. Admin. Code § 37.9A(e)",
+  "title": null,
+  "official_text": null,
+  "note": "The citation follows the lawyer's form and adds her pinpoint (e), which O040 supports: the base amounts and the 62-or-older/disabled add-on are in § 37.9A(e)(1), the post-September 1, 2022 amounts are in (e)(2), and the annual adjustment is in (e)(1)(D); O040 cannot be quoted as the law because it carries the Rent Board's disclaimer that it is not the official record (American Legal is the official publisher), and the card's own quote stays from the supplied corpus page D083, a Rent Board rates page that is not the law's text.",
+  "history": null,
+  "condition": null
+ },
+ "r-0058": {
+  "from_citation": "Berkeley Rent Ordinance (as amended by Measure BB, Nov. 2024)",
+  "citation": "Berkeley Mun. Code § 13.76.110(A) (as amended by Ord. No. 7,950-N.S., Measure BB, Nov. 5, 2024)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O095",
+   "url": "https://berkeley.municipal.codes/BMC/13.76",
+   "retrieved_at": "2026-10-04 00:46 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "In no event, however, shall the allowable annual adjustment be less than zero (0%) or greater than five percent (5%)."
+  },
+  "note": "Kept the lawyer's section and Measure BB/Nov. 5, 2024 parenthetical, narrowed the pinpoint to subsection (A), where O095 and O050 place the 5% cap, and added Ord. No. 7,950-N.S., the ordinance number shown in O050 and O095's history note; the card's own quote stays from D006, a Rent Board web page rather than the law's text, and the banked-increase statement comes from D006, not the § 13.76.110 text in O095.",
+  "history": null,
+  "condition": "The yearly adjustment applies only if your landlord did not set your starting rent during the prior calendar year, so if your tenancy began last calendar year, this January 1 adjustment does not apply to your unit."
+ },
+ "r-0054": {
+  "from_citation": "Berkeley Rent Ordinance (as amended by Measure BB, Nov. 2024)",
+  "citation": "Berkeley Mun. Code § 13.76.130(A) (as amended by Measure BB, Nov. 5, 2024, Ord. 7950-NS); see also id. § 13.76.130(A)(1)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O096",
+   "url": "https://berkeley.municipal.codes/BMC/13.76",
+   "retrieved_at": "2026-10-04 00:47 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "Rent that is lawfully withheld pursuant to emergency legislation that authorizes rent withholding during the effective period of a state of emergency applicable in the City shall not constitute grounds for recovery of possession except as expressly provided in the applicable emergency legislation. Emergency legislation adopted during the emergency may prohibit recovery of possession for lawfully withheld rent even after the expiration of a state or local emergency. This subsection shall not constitute grounds where the amount of rent demanded is less than one month of fair market rent for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the U.S. Department of Housing and Urban Development for the fiscal year in which the rent is demanded."
+  },
+  "note": "The citation follows the lawyer's form: her section § 13.76.130 and her Measure BB, Nov. 5, 2024 parenthetical are confirmed by O096, O050 and O052; it is narrowed to subsection (A), which holds the just-cause rule, with the nonpayment threshold added as a see-also cite to (A)(1), and Ord. 7950-NS is added from the O096 history note; the card's quoted_span remains from D006, a Rent Board web page in the supplied corpus that is not the law's text, so the official quote is taken from the codified section in O096.",
+  "history": null,
+  "condition": null
  }
 }

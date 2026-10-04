@@ -1,111 +1,145 @@
 {
- "key": "1477e04f20bc6c651e9169d22c8c449fba2c9540",
+ "key": "1298e65e7063a030d6da940d17716c6737ac0835",
  "doc_id": "D083",
  "ids": [
-  "r-0095",
-  "r-0096",
-  "r-0099"
+  "r-0097",
+  "r-0099",
+  "r-0100",
+  "r-0105"
  ],
  "model": "claude-sonnet-5-5",
- "audited_at": "2026-10-03T23:41:34.986Z",
+ "audited_at": "2026-10-04T03:58:45.532Z",
  "cards": [
   {
-   "team_rule_id": "r-0095",
+   "team_rule_id": "r-0097",
    "requirement": {
     "verdict": "supported",
-    "evidence": "Relocation payments for tenants evicted under the Ellis Act",
-    "note": "Table for notices served 3/01/26 – 2/28/27 gives $11,110.05 per tenant, $33,330.13 max per unit, $7,443.90 extra per elderly (62+) or disabled tenant; card matches."
+    "evidence": "Relocation Amount Due Per Tenant Household\n3/01/26 – 2/28/27\n$446.00/day (plus actual moving expenses)",
+    "note": "Document gives the per-day rate for displacement under 20 days by notice date; the capital improvement context is stated in the asterisk note."
    },
    "key_value": {
     "verdict": "supported",
-    "evidence": "3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
-    "note": "Values match the Ellis Act table."
+    "evidence": "3/01/26 – 2/28/27\n$446.00/day (plus actual moving expenses)\n3/01/25 – 2/28/26\n$436.00/day (plus actual moving expenses)",
+    "note": null
    },
    "effective_date": {
-    "verdict": "partly_supported",
-    "evidence": "3/01/26 – 2/28/27",
-    "note": "Period start is March 1, 2026 for notices served; the document does not say 'effective date' explicitly, but the period start is consistent."
+    "verdict": "not_applicable",
+    "evidence": null,
+    "note": "Field empty."
    },
    "status": {
     "verdict": "supported",
-    "evidence": "3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
-    "note": "Presented as current rates; retrieval date 2026-10-01 is within the period."
+    "evidence": "3/01/26 – 2/28/27\n$446.00/day (plus actual moving expenses)",
+    "note": "Presented as the current rate as of the retrieval date."
    },
    "coverage": {
     "verdict": "not_applicable",
     "evidence": null,
-    "note": "Coverage is empty on the card."
+    "note": "Field empty."
    },
    "citation": {
-    "verdict": "partly_supported",
-    "evidence": "578 Multilingual Relocation Payments 37.9A",
-    "note": "Document references Section 37.9A only via a link label; 'S.F. Admin. Code' is not stated."
-   }
-  },
-  {
-   "team_rule_id": "r-0096",
-   "requirement": {
     "verdict": "supported",
-    "evidence": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation",
-    "note": "Amounts $8,245, $24,733, $5,497 for 3/01/26 – 2/28/27 match; the elderly (60+), disabled, or minor-child household add-on is in the table header."
-   },
-   "key_value": {
-    "verdict": "supported",
-    "evidence": "3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
-    "note": "Values match."
-   },
-   "effective_date": {
-    "verdict": "partly_supported",
-    "evidence": "3/01/26 – 2/28/27",
-    "note": "Period start is March 1, 2026 for notices served; not explicitly labeled as an effective date."
-   },
-   "status": {
-    "verdict": "supported",
-    "evidence": "3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
-    "note": "Presented as current rates for the current period."
-   },
-   "coverage": {
-    "verdict": "not_applicable",
-    "evidence": null,
-    "note": "Coverage is empty on the card."
-   },
-   "citation": {
-    "verdict": "partly_supported",
-    "evidence": "579 Multilingual Relocation Payments 37.9C",
-    "note": "Section 37.9C appears in the document, but 'S.F. Admin. Code' is not stated."
+    "evidence": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
+    "note": null
    }
   },
   {
    "team_rule_id": "r-0099",
    "requirement": {
     "verdict": "supported",
-    "evidence": "1.6% for March 1, 2026 – February 28, 2027",
-    "note": "The allowable rent increase matches. The 'rent-controlled unit' framing is a plain-language restatement."
+    "evidence": "3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+    "note": "Amounts match the Ellis Act table, including the 62+ or disabled add-on."
    },
    "key_value": {
     "verdict": "supported",
-    "evidence": "1.6% for March 1, 2026 – February 28, 2027",
-    "note": "Matches."
+    "evidence": "3/01/25 – 2/28/26\n$10,863.45\n$32,590.33\n$7,278.67",
+    "note": "Both periods match the table."
    },
    "effective_date": {
-    "verdict": "partly_supported",
-    "evidence": "March 1, 2026 – February 28, 2027\n1.6%",
-    "note": "Period starts March 1, 2026; not labeled as an effective date."
+    "verdict": "not_applicable",
+    "evidence": null,
+    "note": "Field empty."
    },
    "status": {
     "verdict": "supported",
-    "evidence": "1.6% for March 1, 2026 – February 28, 2027",
-    "note": "Current period as of 2026-10-01."
+    "evidence": "3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90",
+    "note": "Current rate as of retrieval."
    },
    "coverage": {
     "verdict": "not_applicable",
     "evidence": null,
-    "note": "Coverage is empty on the card."
+    "note": "Field empty."
    },
    "citation": {
     "verdict": "partly_supported",
-    "evidence": "571 Allowable Annual Increases",
-    "note": "The document references the allowable increases link (571), but not 'Form 571' or the Rent Ordinance section."
+    "evidence": "578 Multilingual Relocation Payments 37.9A",
+    "note": "The document references 37.9A for the Ellis Act table but does not say S.F. Admin. Code."
+   }
+  },
+  {
+   "team_rule_id": "r-0100",
+   "requirement": {
+    "verdict": "supported",
+    "evidence": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation",
+    "note": "Amounts match the table; the 20+ days qualifier comes from the footnote."
+   },
+   "key_value": {
+    "verdict": "supported",
+    "evidence": "3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+    "note": "Prior period values also match."
+   },
+   "effective_date": {
+    "verdict": "not_applicable",
+    "evidence": null,
+    "note": "Field empty."
+   },
+   "status": {
+    "verdict": "supported",
+    "evidence": "3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00",
+    "note": "Current rate as of retrieval."
+   },
+   "coverage": {
+    "verdict": "not_applicable",
+    "evidence": null,
+    "note": "Field empty."
+   },
+   "citation": {
+    "verdict": "supported",
+    "evidence": "579 Multilingual Relocation Payments 37.9C",
+    "note": "Document refers to Rent Ordinance Section 37.9C; Admin. Code naming is minor."
+   }
+  },
+  {
+   "team_rule_id": "r-0105",
+   "requirement": {
+    "verdict": "partly_supported",
+    "evidence": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027",
+    "note": "Rate is stated, but the document does not say the landlord must pay it or that tenants should ask for it."
+   },
+   "key_value": {
+    "verdict": "supported",
+    "evidence": "March 1, 2026 – February 28, 2027\n4.2%\nMarch 1, 2025 – February 28, 2026\n5.0%\nMarch 1, 2024 – February 28, 2025\n5.2%",
+    "note": null
+   },
+   "effective_date": {
+    "verdict": "not_applicable",
+    "evidence": null,
+    "note": "Field empty."
+   },
+   "status": {
+    "verdict": "supported",
+    "evidence": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027",
+    "note": "Current rate."
+   },
+   "coverage": {
+    "verdict": "not_applicable",
+    "evidence": null,
+    "note": "Field empty."
+   },
+   "citation": {
+    "verdict": "not_supported",
+    "evidence": null,
+    "note": "The document does not cite S.F. Admin. Code ch. 49."
    }
   }
  ]

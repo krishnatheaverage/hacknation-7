@@ -1,0 +1,26 @@
+{
+ "key": "8ac88b1f126d4fda8d65755b41687599a0f9a000",
+ "team_rule_id": "r-0058",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D006",
+  "D009",
+  "O050",
+  "O095",
+  "O052",
+  "O053",
+  "O096"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Berkeley Mun. Code § 13.76.110(A) (as amended by Ord. No. 7,950-N.S., Measure BB, Nov. 5, 2024)",
+  "citation_basis": "§ 13.76.110(A): O095, O050; Ord. No. 7,950-N.S.: O050 (also O095 history note 'Ord. 7950-NS § 2, 2024'); Measure BB and Nov. 5, 2024: O052, O050",
+  "source_is_law_text": false,
+  "official_doc_id": "O095",
+  "official_quote": "In no event, however, shall the allowable annual adjustment be less than zero (0%) or greater than five percent (5%).",
+  "is_city_policy": false,
+  "condition": "The yearly adjustment applies only if your landlord did not set your starting rent during the prior calendar year, so if your tenancy began last calendar year, this January 1 adjustment does not apply to your unit.",
+  "condition_quote": "the rent ceiling for all rental units covered by this Chapter for which the landlord did not establish an initial rent during the prior calendar year shall be adjusted",
+  "note": "Kept the lawyer's section and Measure BB/Nov. 5, 2024 parenthetical, narrowed the pinpoint to subsection (A), where O095 and O050 place the 5% cap, and added Ord. No. 7,950-N.S., the ordinance number shown in O050 and O095's history note; the card's own quote stays from D006, a Rent Board web page rather than the law's text, and the banked-increase statement comes from D006, not the § 13.76.110 text in O095."
+ }
+}

@@ -1,43 +1,43 @@
 {
- "key": "b56fbc4eae02fb1326e339fc598b5701a0e0b3a5",
+ "key": "542ceecf6829389cdd982e6756305866cd08c31e",
  "doc_id": "D080",
  "ids": [
-  "r-0098"
+  "r-0103"
  ],
  "model": "claude-sonnet-5-5",
- "audited_at": "2026-10-03T23:41:45.009Z",
+ "audited_at": "2026-10-04T03:58:54.932Z",
  "cards": [
   {
-   "team_rule_id": "r-0098",
+   "team_rule_id": "r-0103",
    "requirement": {
     "verdict": "supported",
-    "evidence": "To calculate the dollar amount of the 1.6% annual rent increase, multiply the tenant's base rent by .016. For example, if the tenant's base rent is $2,000.00, the annual increase would be calculated as follows: $2,000.00 x .016 = $32.00.",
-    "note": "Document states the 1.6% allowable increase for the period and the example."
+    "evidence": "To calculate the dollar amount of the 1.6% annual rent increase, multiply the tenant's base rent by .016.",
+    "note": "Document states the 1.6% allowable annual increase for rent-controlled units effective 3/1/26-2/28/27 and the calculation method. 'May not exceed' is a plain-language rendering of 'allowable increase'."
    },
    "key_value": {
     "verdict": "supported",
-    "evidence": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
-    "note": null
+    "evidence": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%.",
+    "note": "Both values appear in the document; 1.6% for 2026-27 is stated in the same document."
    },
    "effective_date": {
-    "verdict": "supported",
-    "evidence": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
-    "note": "Effective March 1, 2026 stated."
+    "verdict": "not_applicable",
+    "evidence": null,
+    "note": "Field is empty on the card."
    },
    "status": {
     "verdict": "supported",
     "evidence": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
-    "note": "Presented as current law; as of 2026-10-01 within the period."
+    "note": "Presented as current law; the period covers the 2026-10-01 date."
    },
    "coverage": {
     "verdict": "partly_supported",
-    "evidence": "This includes tenancies in newly constructed rental units that first obtained a Certificate of Occupancy after June 13, 1979",
-    "note": "The document says units first getting a Certificate of Occupancy after June 13, 1979 are exempt from rent increase limits, so the CO cutoff is supported. The card's 'built_on_or_before 1979-06-13' is a slight inversion: the exact boundary is 'after' June 13, 1979. Other exemptions (e.g., Costa-Hawkins) are not captured."
+    "evidence": "This includes tenancies in newly constructed rental units that first obtained a Certificate of Occupancy after June 13, 1979, tenancies that are eligible for a rent increase under the",
+    "note": "The document indicates a June 13, 1979 Certificate of Occupancy cutoff, with units first occupied after that exempt from rent increase limits. But the text is about eviction provisions and doesn't state the 'on or before' framing explicitly; the card's cutoff is a reasonable inference, though it omits other exemptions."
    },
    "citation": {
     "verdict": "not_supported",
     "evidence": null,
-    "note": "The documents do not mention S.F. Admin. Code § 37.3. Only Section 37.9(a) and 37.2(r) are named, and neither relates to the annual increase."
+    "note": "Neither document cites S.F. Admin. Code § 37.3. The documents mention only Ordinance Section 37.9(a) and 37.2(r)."
    }
   }
  ]

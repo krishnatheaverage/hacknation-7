@@ -1,12 +1,12 @@
 LAWYER REVIEW (Gulnur Bekmukhanbetova, 92 cards)
   matched to a current card   89/92
   status agrees               89/89
-  effective date agrees       37/48
+  effective date agrees       36/48
   duplicates merged           9/9
   coverage notes folded       4/4
   test rule map agrees        7/7
-  cite a code section or chapter 63/65 enacted rules
-  quote the law's own text       58/65 (18 from the supplied corpus)
+  cite a code section or chapter 66/68 enacted rules
+  quote the law's own text       59/68 (18 from the supplied corpus)
 
 DATE   r-0005 Cal. Civ. Code § 1950.6(c): lawyer 2025-01-01, ours blank (r-0004)
 DATE   r-0006 Cal. Civ. Code § 1950.6(d), (f): lawyer 2025-01-01, ours blank (r-0004)
@@ -18,6 +18,7 @@ DATE   r-0014 California Fair Employment and Housing Act (FEHA): lawyer 2020-01-
 DATE   r-0029 M.G.L. c. 40P § 4: lawyer 1995-01-01, ours blank (r-0030)
 DATE   r-0040 N.J.S.A. 2A:42-84.5 (Newly Constructed Multiple Dw: lawyer 1987-06-25, ours blank (r-0041)
 DATE   r-0047 Berkeley Mun. Code ch. 13.63, § 13.63.030 (Ord. No: lawyer 2026-01-01, ours 2026-03-01 (r-0049)
+DATE   r-0080 Newark Mun. Code § 19:2-3 (Ord. 6 PSF-A(S), 9-5-17: lawyer 2017-09-05, ours blank (r-0089)
 DATE   r-0074 Los Angeles Just Cause Ordinance (JCO): lawyer 2023-01-27, ours blank (r-0082)
 CITE   r-0066 Boston DND Fair Chance Tenant Selection Policy (February 2017): no code section in the citation
 CITE   r-0084 L.A. Ord. No. 188481 and Ord. No. 188482: no code section in the citation
@@ -25,6 +26,8 @@ WORDS  r-0062 Boston City Code §§ 10-11.4, 10-11.7 (Housing Stability Notifica
 WORDS  r-0066 Boston DND Fair Chance Tenant Selection Policy (February 2017): no quote from the law's own text
 WORDS  r-0084 L.A. Ord. No. 188481 and Ord. No. 188482: no quote from the law's own text
 WORDS  r-0089 Newark Mun. Code § 19:2-3.1 (Ord. 6 PSF-A(S), 9-5-17): no quote from the law's own text
-WORDS  r-0097 S.F. Admin. Code § 37.9(a) (as amended by Ord. No. 03-26); see also id: no quote from the law's own text
-WORDS  r-0098 S.F. Admin. Code § 37.9A(e): no quote from the law's own text
-WORDS  r-0101 S.F. Admin. Code § 37.3(a)(1) (as amended through Ord. No. 3-26): no quote from the law's own text
+WORDS  r-0097 Cal. Civ. Code § 1947.9(a)(1)(A); S.F. Admin. Code § 37.9(m): no quote from the law's own text
+WORDS  r-0098 S.F. Admin. Code § 37.9(a) (as amended by Ord. No. 03-26); see also id: no quote from the law's own text
+WORDS  r-0099 S.F. Admin. Code § 37.9A(e): no quote from the law's own text
+WORDS  r-0103 S.F. Admin. Code § 37.3(a)(1) (as amended through Ord. No. 3-26): no quote from the law's own text
+WORDS  r-0105 S.F. Admin. Code ch. 49: no quote from the law's own text

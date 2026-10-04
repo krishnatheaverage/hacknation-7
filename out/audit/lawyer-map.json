@@ -606,7 +606,7 @@
   "lawyer_date": "",
   "lawyer_note": "Add effective_date = date the Council declared the election results (Dec 2024) if you can find it on the City Clerk page; otherwise leave blank. Pre-2025, so no test impact.",
   "current_id": "r-0054",
-  "current_citation": "Berkeley Mun. Code § 13.76.130(A)(1) (Ord. No. 7,950-N.S., Berkeley Tenant Protection and Right to Organize Act, approved by voters Nov. 5, 2024)",
+  "current_citation": "Berkeley Mun. Code § 13.76.130(A) (as amended by Measure BB, Nov. 5, 2024, Ord. 7950-NS); see also id. § 13.76.130(A)(1)",
   "current_status": "in_force",
   "current_date": null
  },
@@ -619,7 +619,7 @@
   "lawyer_date": "",
   "lawyer_note": "This is a coverage table, not a rule — fold it into the coverage_conditions of r-0051/r-0054/r-0056 rather than reporting it as its own rule. The quoted span ('Most condominiums** Partially Covered Yes No Yes Yes') will read badly in a demo.",
   "current_id": "r-0054",
-  "current_citation": "Berkeley Mun. Code § 13.76.130(A)(1) (Ord. No. 7,950-N.S., Berkeley Tenant Protection and Right to Organize Act, approved by voters Nov. 5, 2024)",
+  "current_citation": "Berkeley Mun. Code § 13.76.130(A) (as amended by Measure BB, Nov. 5, 2024, Ord. 7950-NS); see also id. § 13.76.130(A)(1)",
   "current_status": "in_force",
   "current_date": null
  },
@@ -631,8 +631,8 @@
   "lawyer_status": "in_force",
   "lawyer_date": "2026-01-01",
   "lawyer_note": "OK.",
-  "current_id": "r-0053",
-  "current_citation": "Berkeley Mun. Code § 13.77.055(A) (Ord. 7507-NS); see also id. § 13.77.055(A)(2), (C)",
+  "current_id": "r-0056",
+  "current_citation": "Berkeley Mun. Code § 13.76.130(A)(8)(g) (Rent Stabilization and Eviction for Just Cause Ordinance, Ord. No. 7,950-N.S.); see also id. § 13.76.130(A)(8)(h)",
   "current_status": "in_force",
   "current_date": "2026-01-01"
  },
@@ -645,9 +645,9 @@
   "lawyer_date": "",
   "lawyer_note": "FLAGGED — resolved: status in_force; effective date = Measure BB certification (Dec 2024), fill if found, otherwise blank (pre-2025, no test impact). 1980 cutoff: Rent Board's own definition is 'certificate of occupancy after June 30, 1980' → year_built > 1980 exempt from the ceiling; year_built == 1980 → unknown; < 1980 → covered. Record that as an inference in the explanation. Also note separately-alienable units (single-family, condos) are exempt from the rent ceiling by Costa-Hawkins (Civ. Code § 1954.52) — that is why the chart says 'partially covered'.",
   "current_id": "r-0058",
-  "current_citation": "Berkeley Mun. Code § 13.76.110 (Ord. No. 7,950-N.S., approved by voters Nov. 5, 2024); Berkeley Rent Stabilization Board Reg. 1148 (Annual General Adjustment Order for 2026)",
+  "current_citation": "Berkeley Mun. Code § 13.76.110(A) (as amended by Ord. No. 7,950-N.S., Measure BB, Nov. 5, 2024)",
   "current_status": "in_force",
-  "current_date": "2026-01-01"
+  "current_date": null
  },
  {
   "reviewed_id": "r-0055",
@@ -657,7 +657,7 @@
   "lawyer_status": "in_force",
   "lawyer_date": "2026-01-01",
   "lawyer_note": "OK. Berkeley-level cap: with r-0054 this is what supersedes the state cap (r-0010) at Berkeley addresses.",
-  "current_id": "r-0058",
+  "current_id": "r-0057",
   "current_citation": "Berkeley Mun. Code § 13.76.110 (Ord. No. 7,950-N.S., approved by voters Nov. 5, 2024); Berkeley Rent Stabilization Board Reg. 1148 (Annual General Adjustment Order for 2026)",
   "current_status": "in_force",
   "current_date": "2026-01-01"
@@ -671,9 +671,9 @@
   "lawyer_date": "",
   "lawyer_note": "FLAGGED — resolved: same 1980-06-30 cutoff as r-0054; treat year_built 1980 as unknown. This record is coverage, not a rule — merge into r-0054/r-0055 coverage_conditions.",
   "current_id": "r-0058",
-  "current_citation": "Berkeley Mun. Code § 13.76.110 (Ord. No. 7,950-N.S., approved by voters Nov. 5, 2024); Berkeley Rent Stabilization Board Reg. 1148 (Annual General Adjustment Order for 2026)",
+  "current_citation": "Berkeley Mun. Code § 13.76.110(A) (as amended by Ord. No. 7,950-N.S., Measure BB, Nov. 5, 2024)",
   "current_status": "in_force",
-  "current_date": "2026-01-01"
+  "current_date": null
  },
  {
   "reviewed_id": "r-0057",
@@ -868,7 +868,7 @@
   "current_id": "r-0089",
   "current_citation": "Newark Mun. Code § 19:2-3.1 (Ord. 6 PSF-A(S), 9-5-17)",
   "current_status": "in_force",
-  "current_date": "2017-09-05"
+  "current_date": null
  },
  {
   "reviewed_id": "r-0072",
@@ -1047,7 +1047,7 @@
   "lawyer_status": "in_force",
   "lawyer_date": "",
   "lawyer_note": "OK. Local supersedes r-0007 at SF addresses.",
-  "current_id": "r-0097",
+  "current_id": "r-0098",
   "current_citation": "S.F. Admin. Code § 37.9(a) (as amended by Ord. No. 03-26); see also id. §§ 37.9(c), 37.2(r)",
   "current_status": "in_force",
   "current_date": null
@@ -1060,10 +1060,10 @@
   "lawyer_status": "in_force",
   "lawyer_date": "2026-03-01",
   "lawyer_note": "OK. Duplicate of r-0090 — merge.",
-  "current_id": "r-0098",
+  "current_id": "r-0099",
   "current_citation": "S.F. Admin. Code § 37.9A(e)",
   "current_status": "in_force",
-  "current_date": "2026-03-01"
+  "current_date": null
  },
  {
   "reviewed_id": "r-0089",
@@ -1073,7 +1073,7 @@
   "lawyer_status": "in_force",
   "lawyer_date": "2026-03-01",
   "lawyer_note": "OK.",
-  "current_id": "r-0099",
+  "current_id": "r-0101",
   "current_citation": "S.F. Admin. Code § 37.9C(e)(1) (Prop. H, eff. Dec. 22, 2006); see also id. § 37.9C(b), (e)(2), (e)(3)",
   "current_status": "in_force",
   "current_date": "2026-03-01"
@@ -1086,10 +1086,10 @@
   "lawyer_status": "in_force",
   "lawyer_date": "2026-03-01",
   "lawyer_note": "Duplicate of r-0088. Merge.",
-  "current_id": "r-0098",
+  "current_id": "r-0099",
   "current_citation": "S.F. Admin. Code § 37.9A(e)",
   "current_status": "in_force",
-  "current_date": "2026-03-01"
+  "current_date": null
  },
  {
   "reviewed_id": "r-0091",
@@ -1099,10 +1099,10 @@
   "lawyer_status": "in_force",
   "lawyer_date": "2026-03-01",
   "lawyer_note": "OK. Coverage: rent control = units with a certificate of occupancy before June 13, 1979 → year_built < 1979 covered; 1979 unknown; > 1979 not covered; single-family/condos exempt (Costa-Hawkins). Local supersedes r-0010 at covered SF addresses.",
-  "current_id": "r-0101",
+  "current_id": "r-0103",
   "current_citation": "S.F. Admin. Code § 37.3(a)(1) (as amended through Ord. No. 3-26)",
   "current_status": "in_force",
-  "current_date": "2026-03-01"
+  "current_date": null
  },
  {
   "reviewed_id": "r-0092",
@@ -1112,10 +1112,10 @@
   "lawyer_status": "in_force",
   "lawyer_date": "2026-03-01",
   "lawyer_note": "Duplicate of r-0091. Merge.",
-  "current_id": "r-0101",
+  "current_id": "r-0103",
   "current_citation": "S.F. Admin. Code § 37.3(a)(1) (as amended through Ord. No. 3-26)",
   "current_status": "in_force",
-  "current_date": "2026-03-01"
+  "current_date": null
  },
  {
   "reviewed_id": "r-0093",
@@ -1125,7 +1125,7 @@
   "lawyer_status": "in_force",
   "lawyer_date": "",
   "lawyer_note": "OK but affordable housing only → 'unknown' for most addresses.",
-  "current_id": "r-0103",
+  "current_id": "r-0104",
   "current_citation": "S.F. Police Code art. 49, § 4906 (Ord. No. 17-14) (Fair Chance Ordinance); see also id. § 4911",
   "current_status": "in_force",
   "current_date": null
@@ -1138,7 +1138,7 @@
   "lawyer_status": "in_force",
   "lawyer_date": "",
   "lawyer_note": "Effective date missing: a CA city ordinance takes effect 30 days after its final (second-reading) adoption (Gov. Code § 36937). If March 3 was the second reading → ~2026-04-02; if first reading, ~mid/late April. Either way in force on 2026-10-01. Find the ordinance number on the city's legislative page.",
-  "current_id": "r-0104",
+  "current_id": "r-0106",
   "current_citation": "Santa Ana Mun. Code § 8-3702(b) (Ord. No. NS-3090); see also id. § 8-3703(a)",
   "current_status": "in_force",
   "current_date": "2026-04-02"
@@ -1151,7 +1151,7 @@
   "lawyer_status": "in_force",
   "lawyer_date": "2021-11-19",
   "lawyer_note": "OK. Rolling 15-year new-construction exemption as in r-0007; local supersedes state at Santa Ana addresses.",
-  "current_id": "r-0107",
+  "current_id": "r-0109",
   "current_citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3120(a) (Rent Stabilization and Just Cause Eviction Ordinance; Ord. No. NS-3027, as amended by Ord. No. NS-3052 and as amended through Ord. No. NS-3073); see also id. § 8-3120(b), (c), (d)",
   "current_status": "in_force",
   "current_date": "2021-11-19"
@@ -1164,7 +1164,7 @@
   "lawyer_status": "in_force",
   "lawyer_date": "",
   "lawyer_note": "Duplicate of r-0096 (secondary page). Merge.",
-  "current_id": "r-0107",
+  "current_id": "r-0109",
   "current_citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3120(a) (Rent Stabilization and Just Cause Eviction Ordinance; Ord. No. NS-3027, as amended by Ord. No. NS-3052 and as amended through Ord. No. NS-3073); see also id. § 8-3120(b), (c), (d)",
   "current_status": "in_force",
   "current_date": "2021-11-19"
@@ -1177,7 +1177,7 @@
   "lawyer_status": "in_force",
   "lawyer_date": "",
   "lawyer_note": "Duplicate of r-0099 with the 2026-27 figure (2.87%). Merge: keep r-0099 as the rule and put 2.87% in key_value.",
-  "current_id": "r-0109",
+  "current_id": "r-0111",
   "current_citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3140(a) (Rent Stabilization and Just Cause Eviction Ordinance, Ord. No. NS-3073, Measure CC); see also id. §§ 8-3140(b), 8-3144(a)(1)",
   "current_status": "in_force",
   "current_date": "2021-11-19"
@@ -1190,7 +1190,7 @@
   "lawyer_status": "in_force",
   "lawyer_date": "2021-11-19",
   "lawyer_note": "OK. Coverage: built on or before Feb 1, 1995 → year_built < 1995 covered; 1995 unknown; > 1995 exempt. Local supersedes r-0010.",
-  "current_id": "r-0109",
+  "current_id": "r-0111",
   "current_citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3140(a) (Rent Stabilization and Just Cause Eviction Ordinance, Ord. No. NS-3073, Measure CC); see also id. §§ 8-3140(b), 8-3144(a)(1)",
   "current_status": "in_force",
   "current_date": "2021-11-19"

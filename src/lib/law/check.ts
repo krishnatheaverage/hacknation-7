@@ -1,4 +1,5 @@
 import { lookup, type Building, type Evaluation } from "./engine";
+import { figurePeriod } from "./rules";
 import type { Category, RuleRecord } from "./schema";
 
 // Answers questions like "can my landlord raise the rent 20% next month?" using
@@ -38,7 +39,7 @@ export const UNIT: Record<ProposalKind, (n: number) => string> = {
 };
 
 // Pull the max (and whether it moves with CPI) out of a rule's key_value text.
-export type Bound = { max: number | null; floor: number | null; cpi: boolean; why?: string; ceiling?: number };
+export type Bound = { max: number | null; floor: number | null; cpi: boolean; why?: string; ceiling?: number; stale?: boolean };
 
 const WORD_NUM: Record<string, number> = { one: 1, two: 2, three: 3, "one and one-half": 1.5, "one and a half": 1.5, "one-half": 0.5 };
 
@@ -57,9 +58,17 @@ export function readBound(kind: ProposalKind, kv: string | null, requirement = "
   if (kind === "rent_increase_pct") {
     // A published figure for a period that covers the query date ("2.87% for
     // 2026-09-01 to 2027-08-31") is the cap on that date, CPI formula or not.
-    for (const m of text.matchAll(/(\d+(?:\.\d+)?)\s*%\s*(?:for|from)\s*(\d{4}-\d{2}-\d{2})\s*(?:to|through|-)\s*(\d{4}-\d{2}-\d{2})/gi)) {
-      if (asOf && m[2] <= asOf && asOf <= m[3]) return { max: Number(m[1]), floor: Number(m[1]), cpi: false };
+    let dated = false;
+    for (const m of text.matchAll(/(\d+(?:\.\d+)?)\s*%\s*(?:simple interest\s*)?(?:for|from)\s+/gi)) {
+      const rest = text.slice((m.index ?? 0) + m[0].length, (m.index ?? 0) + m[0].length + 70);
+      const iso = rest.match(/^(\d{4}-\d{2}-\d{2})\s*(?:to|through|-|–)\s*(\d{4}-\d{2}-\d{2})/);
+      const p = iso ? { start: iso[1], end: iso[2] } : figurePeriod(rest.split(/[;)]/)[0]);
+      if (!p) continue;
+      dated = true;
+      if (asOf && p.start <= asOf && asOf <= p.end) return { max: Number(m[1]), floor: Number(m[1]), cpi: false };
     }
+    // Figures given only for other periods say nothing about this date.
+    if (dated && asOf) return { max: null, floor: null, cpi: false, stale: true };
     const nums: number[] = [];
     let floor: number | null = null;
     for (const m of text.matchAll(/(\d+(?:\.\d+)?)\s*%/g)) {
@@ -130,11 +139,18 @@ export function checkProposal(rules: RuleRecord[], b: Building, asOf: string, p:
       if (state?.max != null && p.amount > state.max) blocking.push(line(e, `A stricter local rule governs here, and ${amount} is above even this state cap of ${show(state.max)}.`));
       continue;
     }
-    if (e.figure_ended) {
+    // Interest owed on a deposit is not a limit on the deposit's size.
+    if (p.kind === "deposit_months" && /interest/i.test(`${e.rule.title} ${e.rule.key_value ?? ""}`)) continue;
+    const dated = readBound(p.kind, e.rule.key_value, e.rule.requirement, asOf);
+    if (e.figure_ended && !(dated && dated.max != null && dated.floor === dated.max)) {
       unsettled.push(line(e, `Limits increases here, but its figure (${e.rule.key_value ?? "on this card"}) ran through ${e.figure_ended}; the figure in force on ${asOf} is not in our sources.`));
       continue;
     }
-    if (e.figure_from) {
+    if (dated?.stale) {
+      unsettled.push(line(e, `Limits increases here, but our sources give its figure only for other periods (${e.rule.key_value}).`));
+      continue;
+    }
+    if (e.figure_from && !(dated && dated.max != null && !dated.cpi && dated.floor === dated.max)) {
       unsettled.push(line(e, `Limits increases here, but the figure in force on ${asOf} is not in our sources (${e.rule.key_value ?? "the figure on this card"} starts ${e.figure_from}).`));
       continue;
     }

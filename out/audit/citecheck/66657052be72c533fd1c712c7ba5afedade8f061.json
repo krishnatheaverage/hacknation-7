@@ -1,0 +1,26 @@
+{
+ "key": "66657052be72c533fd1c712c7ba5afedade8f061",
+ "team_rule_id": "r-0054",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D006",
+  "D009",
+  "O050",
+  "O052",
+  "O095",
+  "O053",
+  "O096"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Berkeley Mun. Code § 13.76.130(A) (as amended by Measure BB, Nov. 5, 2024, Ord. 7950-NS); see also id. § 13.76.130(A)(1)",
+  "citation_basis": "§ 13.76.130(A) and (A)(1): O096 (codified text), also O050; Ord. 7950-NS: O096 history note (Ord. 7950-NS § 2, 2024), also O050 (Ordinance No. 7,950-N.S.); Measure BB and Nov. 5, 2024: O052 (election results declaring Measure BB passed at the Nov. 5, 2024 election), also O050",
+  "source_is_law_text": false,
+  "official_doc_id": "O096",
+  "official_quote": "No landlord shall be entitled to recover possession of a rental unit covered by the terms of this Chapter unless said landlord shows the existence of one of the following grounds: This subsection shall not constitute grounds where the amount of rent demanded is less than one month of fair market rent for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the U.S. Department of Housing and Urban Development for the fiscal year in which the rent is demanded.",
+  "is_city_policy": false,
+  "condition": null,
+  "condition_quote": null,
+  "note": "The citation follows the lawyer's form: her section § 13.76.130 and her Measure BB, Nov. 5, 2024 parenthetical are confirmed by O096, O050 and O052; it is narrowed to subsection (A), which holds the just-cause rule, with the nonpayment threshold added as a see-also cite to (A)(1), and Ord. 7950-NS is added from the O096 history note; the card's quoted_span remains from D006, a Rent Board web page in the supplied corpus that is not the law's text, so the official quote is taken from the codified section in O096."
+ }
+}

@@ -1,28 +1,28 @@
 {
- "hash": "d974b6333ba78ab781554d99d06e6ff639a7db86",
+ "hash": "da868dc42534be3b8eeabc0da752796739f61935",
  "key": "Los Angeles, CA / rent_increase_limits",
  "ids": [
-  "r-0082",
-  "r-0083",
-  "r-0084"
+  "r-0085",
+  "r-0086",
+  "r-0087"
  ],
  "model": "claude-opus-5-5",
  "result": {
   "same_law": [
    {
     "cards": [
-     "r-0083",
-     "r-0084"
+     "r-0086",
+     "r-0087"
     ],
-    "key_value": null,
-    "reason": "Both state the RSO annual allowable rent increase rule. r-0083 already includes the February 2, 2026 removal of the extra utility percentage that r-0084 states alone, so r-0084 is one part of the same provision."
+    "key_value": "3% for July 1, 2025 – June 30, 2026 (LAHD allowable rent increase percentage), once every 12 months; no added utility percentage after 2026-02-02",
+    "reason": "Both cards state the Los Angeles RSO annual allowable rent increase (LAMC Chapter XV): an increase once every 12 months up to the LAHD percentage, and no utility add-on after February 2, 2026. r-0087 gives the current figure of 3%."
    }
   ],
   "coverage_only": [
    {
-    "card": "r-0082",
-    "describes": "r-0083",
-    "reason": "This card only says which Los Angeles units the RSO covers (certificate of occupancy before October 1, 1978). It sets no rent-increase rule of its own."
+    "card": "r-0085",
+    "describes": "r-0086",
+    "reason": "This card states no rent limit. It only describes which units the RSO covers (certificate of occupancy before October 1, 1978), which is the coverage of the RSO allowable-increase rule."
    }
   ]
  }

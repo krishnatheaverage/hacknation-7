@@ -210,7 +210,8 @@
     "r-0097",
     "r-0098",
     "r-0099",
-    "r-0107"
+    "r-0101",
+    "r-0109"
    ],
    "interaction": "Does not apply to property covered by a local just-cause ordinance adopted on or before September 1, 2019, or a later ordinance that is more protective and contains a binding finding to that effect; a property cannot be subject to both. A local ordinance adopted after September 1, 2019 that is less protective shall not be enforced unless this section is repealed. Current text operative April 1, 2024 and last amended by Stats. 2025, Ch. 203 (AB 1529), effective January 1, 2026; repealed as of January 1, 2030. The document does not state when the just-cause requirement first took effect, so effective_date is left null.",
    "effective_date": null,
@@ -388,10 +389,11 @@
    },
    "exemptions": "Initial rent for a new tenancy is not capped. Exempt: affordable housing restricted by deed or agreement; school/college dormitories; housing under local rent control that restricts increases below this cap; housing issued a certificate of occupancy within the previous 15 years (unless a mobilehome); separately alienable units (e.g., single-family homes, condos) not owned by a REIT, corporation, LLC with a corporate member, or mobilehome park management, with the required written notice to tenants; owner-occupied duplexes (no ADU/JADU) while the owner continues in occupancy; homeowners of a mobilehome.",
    "overrides": [
+    "r-0057",
     "r-0058",
     "r-0086",
-    "r-0101",
-    "r-0109"
+    "r-0103",
+    "r-0111"
    ],
    "interaction": "Does not apply to housing under a valid local rent control ordinance (consistent with Costa-Hawkins, Civ. Code § 1954.50 et seq.) that restricts annual increases below this cap. The section is not intended to expand or limit local authority to regulate rents. It applies to rent increases on or after March 15, 2019, with the applicable rent reset on January 1, 2020, and to mobilehome tenancies for increases on or after February 18, 2021. The current text was repealed and re-added by Stats. 2023, Ch. 290 (SB 567), effective January 1, 2024 and operative April 1, 2024. It is repealed as of January 1, 2030.",
    "effective_date": "2020-01-01",
@@ -2546,14 +2548,14 @@
    "level": "city",
    "category": "just_cause_eviction",
    "status": "in_force",
-   "title": "Nonpayment eviction requires debt of at least one month's Fair Market Rent",
-   "requirement": "Tenants in fully or partially covered Berkeley units can only be evicted with just cause; for nonpayment, the landlord cannot evict unless you owe at least one month of HUD Fair Market Rent for a comparable unit in the Oakland-Fremont area.",
-   "citation": "Berkeley Mun. Code § 13.76.130(A)(1) (Ord. No. 7,950-N.S., Berkeley Tenant Protection and Right to Organize Act, approved by voters Nov. 5, 2024)",
+   "title": "Just cause required to evict tenants in fully or partially covered units",
+   "requirement": "If your Berkeley unit is fully or partially covered by the Rent Ordinance, your landlord cannot evict you without one of the ordinance's listed just causes. Contact the Rent Board if you get an eviction notice.",
+   "citation": "Berkeley Mun. Code § 13.76.130(A) (as amended by Measure BB, Nov. 5, 2024, Ord. 7950-NS); see also id. § 13.76.130(A)(1)",
    "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
-   "quoted_span": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded.",
-   "key_value": "rental debt ≥ 1 month HUD Fair Market Rent",
+   "quoted_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+   "key_value": "Rental debt ≥ 1 month HUD Fair Market Rent (Oakland-Fremont metro) for equivalent unit size",
    "coverage_conditions": {
-    "summary": "Units fully or partially covered by the Berkeley Rent Ordinance, including post-1980 new construction, single-family homes, condos, and government-owned or subsidized units.",
+    "summary": "All rental units fully or partially covered by the Berkeley Rent Ordinance, including most multifamily units, new construction, single-family homes and condos, and (after Measure BB) government-owned or subsidized units. Units where the tenant shares kitchen or bath with a landlord who lived on the property at the start of the tenancy are exempt.",
     "min_units": null,
     "max_units": null,
     "built_on_or_before": null,
@@ -2563,14 +2565,14 @@
     "owner_based_exemption_max_units": 2,
     "required_facts_not_in_data": [],
     "minor_exemptions_not_in_data": [
-     "Units where the tenant shares kitchen or bath with a landlord who lived on the property at the start of the tenancy"
+     "Units where the tenant shares kitchen or bath facilities with a landlord who lived on the property at the start of the tenancy"
     ]
    },
-   "exemptions": "Units where the tenant shares kitchen or bath facilities with a landlord who resided there before the tenant are exempt.",
+   "exemptions": "Units where the tenant shares kitchen or bath facilities with the landlord are exempt only if the landlord lived in a unit on the same property at the start of the tenancy.",
    "overrides": [
     "r-0009"
    ],
-   "interaction": null,
+   "interaction": "Measure BB (passed November 2024) changed some just causes and renamed 'good cause' to 'just cause'; the underlying requirement predates Measure BB.",
    "effective_date": null,
    "source_doc_id": "D006",
    "retrieved_at": "2026-10-01T22:35Z",
@@ -2585,7 +2587,7 @@
    "source_in_starter_corpus": true,
    "source_jurisdiction": "Berkeley, CA",
    "coverage_note": null,
-   "consolidation_note": "Coverage from D009 (r-0055), which describes the units this rule covers.",
+   "consolidation_note": "Fields filled from D006, which state the same law. Coverage from D009 (r-0055), which describes the units this rule covers.",
    "verification": {
     "model": "claude-sonnet-5-5",
     "verdicts": {
@@ -2599,19 +2601,19 @@
     "evidence": [
      {
       "field": "requirement",
-      "quote": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR"
+      "quote": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”)."
      },
      {
       "field": "key_value",
-      "quote": "the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size"
+      "quote": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded."
      },
      {
       "field": "status",
-      "quote": "Eviction for nonpayment of rent is no longer allowed for rental debt less than one month of the Fair Market Rent for the unit"
+      "quote": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”)."
      },
      {
       "field": "citation",
-      "quote": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance"
+      "quote": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities."
      }
     ],
     "changes": []
@@ -2621,9 +2623,9 @@
     "url": "https://berkeley.municipal.codes/BMC/13.76",
     "retrieved_at": "2026-10-04 00:47 UTC",
     "in_supplied_corpus": false,
-    "quoted_span": "This subsection shall not constitute grounds where the amount of rent demanded is less than one month of fair market rent for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the U.S. Department of Housing and Urban Development for the fiscal year in which the rent is demanded."
+    "quoted_span": "Rent that is lawfully withheld pursuant to emergency legislation that authorizes rent withholding during the effective period of a state of emergency applicable in the City shall not constitute grounds for recovery of possession except as expressly provided in the applicable emergency legislation. Emergency legislation adopted during the emergency may prohibit recovery of possession for lawfully withheld rent even after the expiration of a state or local emergency. This subsection shall not constitute grounds where the amount of rent demanded is less than one month of fair market rent for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the U.S. Department of Housing and Urban Development for the fiscal year in which the rent is demanded."
    },
-   "citation_note": "Replaced the Measure BB nickname citation with the codified section the lawyer requested, narrowed to subsection (A)(1) where the nonpayment threshold sits, added the amending ordinance number 7,950-N.S. that O050 shows, and used the ordinance's own short title instead of 'Measure BB', which its text does not use.",
+   "citation_note": "The citation follows the lawyer's form: her section § 13.76.130 and her Measure BB, Nov. 5, 2024 parenthetical are confirmed by O096, O050 and O052; it is narrowed to subsection (A), which holds the just-cause rule, with the nonpayment threshold added as a see-also cite to (A)(1), and Ord. 7950-NS is added from the O096 history note; the card's quoted_span remains from D006, a Rent Board web page in the supplied corpus that is not the law's text, so the official quote is taken from the codified section in O096.",
    "official_condition": null
   },
   {
@@ -2715,7 +2717,7 @@
    "official_condition": "You get the standard owner move-in relocation payment only if at least one person in your household has lived in the unit for one year or more, and the additional payment only if your household is low-income, includes a disabled or elderly (60+) tenant or a minor child, or your tenancy began before January 1, 1999."
   },
   {
-   "team_rule_id": "r-0058",
+   "team_rule_id": "r-0057",
    "jurisdiction": "Berkeley, CA",
    "level": "city",
    "category": "rent_increase_limits",
@@ -2725,7 +2727,7 @@
    "citation": "Berkeley Mun. Code § 13.76.110 (Ord. No. 7,950-N.S., approved by voters Nov. 5, 2024); Berkeley Rent Stabilization Board Reg. 1148 (Annual General Adjustment Order for 2026)",
    "source_url": "https://rentboard.berkeleyca.gov/sites/default/files/documents/AGA%20Public%20Notice.pdf",
    "quoted_span": "At its regular meeting on October 16, 2025, the Berkeley Rent Stabilization Board \nadopted the Annual General Adjustment (AGA) Order for Year 2026 which will allow \neligible landlords to increase the 2025 permanent rent ceilings by 1.0% no earlier than \nJanuary 1, 2026.",
-   "key_value": "2026 AGA 1.0% (65% of Bay Area CPI increase); AGA can never exceed 5%",
+   "key_value": "1.0% (65% of Bay Area CPI increase)",
    "coverage_conditions": {
     "summary": "Units under Berkeley's rent stabilization program with permanent rent ceilings. This notice does not state which buildings are covered or exempt. The 2026 AGA does not apply to tenancies that began on or after January 1, 2025 with rents set under Costa-Hawkins.",
     "min_units": null,
@@ -2734,7 +2736,7 @@
     "built_after": null,
     "cutoff_uses_certificate_of_occupancy": true,
     "exempt_if_newer_than_years": null,
-    "owner_based_exemption_max_units": 2,
+    "owner_based_exemption_max_units": null,
     "required_facts_not_in_data": [],
     "minor_exemptions_not_in_data": []
    },
@@ -2748,16 +2750,16 @@
    "retrieved_at": "2026-10-01T22:35Z",
    "span_verified": true,
    "confidence": 0.85,
-   "conflict_flag": true,
-   "conflict_note": "D006: Document says fully covered units are those in multifamily properties 'built before 1980' while new construction is units with a certificate of occupancy 'issued after 1980'; treatment of 1980 itself is ambiguous. Code section not stated.",
+   "conflict_flag": false,
+   "conflict_note": null,
    "penalty": null,
    "yields_to_local_rule": false,
    "may_preempt_local_rules": false,
    "source_type": "official",
    "source_in_starter_corpus": true,
    "source_jurisdiction": "Berkeley, CA",
-   "coverage_note": null,
-   "consolidation_note": "[from r-0057: Coverage from D009 (r-0059), which describes the units this rule covers.] Also stated in D006 (merged r-0057, Berkeley Measure BB (Nov. 2024) amending Berkeley Rent Stabilization and Eviction for Good Cause Ordinance).",
+   "coverage_note": "Coverage cutoff taken from r-0058 (Berkeley Rent Ordinance (as amended by Measure BB, Nov. 2024)), the same city's rent rule, because this record states none.",
+   "consolidation_note": null,
    "verification": {
     "model": "claude-sonnet-5-5",
     "verdicts": {
@@ -2801,6 +2803,98 @@
    },
    "citation_note": "Followed the lawyer's request to cite § 13.76.110 rather than subsection A, because the card merges the formula and cap (A), notice (B) and eligibility conditions (D). The amending law is identified by its ordinance number, Ord. No. 7,950-N.S., and Reg. 1148 is kept as the order setting the 2026 rate. The name 'Measure BB' is left out because the law text in the documents does not use it.",
    "official_condition": null
+  },
+  {
+   "team_rule_id": "r-0058",
+   "jurisdiction": "Berkeley, CA",
+   "level": "city",
+   "category": "rent_increase_limits",
+   "status": "in_force",
+   "title": "Annual General Adjustment capped at 5% for fully covered units",
+   "requirement": "If your unit is fully covered (most multifamily units built before 1980, and now many subsidized units), your yearly rent increase is limited to the Rent Board's Annual General Adjustment, which can never exceed 5%. A landlord with banked unused increases may still raise rent above 5% up to the rent ceiling.",
+   "citation": "Berkeley Mun. Code § 13.76.110(A) (as amended by Ord. No. 7,950-N.S., Measure BB, Nov. 5, 2024)",
+   "source_url": "https://rentboard.berkeleyca.gov/laws-regulations/measure-bb-changes-berkeleys-rent-ordinance",
+   "quoted_span": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%.",
+   "key_value": "AGA tied to CPI, never more than 5%",
+   "coverage_conditions": {
+    "summary": "Fully covered units: most units in multifamily properties built before 1980, single-family homes with tenancies begun before 1996, and certain room rentals; government-subsidized units of those types. New construction (certificate of occupancy after 1980), most single-family homes and condos are only partially covered (no rent ceiling).",
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": "1980-12-31",
+    "built_after": null,
+    "cutoff_uses_certificate_of_occupancy": true,
+    "exempt_if_newer_than_years": null,
+    "owner_based_exemption_max_units": 2,
+    "required_facts_not_in_data": [],
+    "minor_exemptions_not_in_data": [
+     "Most single-family homes and condominiums (partially covered)",
+     "Section 202 and Section 811 units and HUD-insured project-based subsidy units (partially covered)",
+     "Units sharing kitchen or bath with a landlord who lived on the property first"
+    ]
+   },
+   "exemptions": "New construction units with a certificate of occupancy issued after 1980, most single-family homes and most condominiums are partially covered (no rent ceiling). Certain federally subsidized units are partially covered regardless of type.",
+   "overrides": [
+    "r-0012"
+   ],
+   "interaction": "The 5% cap was added by Measure BB (November 2024); the AGA formula tied to CPI predates it. Banked AGAs may still exceed 5%.",
+   "effective_date": null,
+   "source_doc_id": "D006",
+   "retrieved_at": "2026-10-01T22:35Z",
+   "span_verified": true,
+   "confidence": 0.75,
+   "conflict_flag": true,
+   "conflict_note": "Document says fully covered units are those 'built before 1980' but partially covered new construction has a certificate of occupancy 'issued after 1980'; treatment of 1980 itself is ambiguous.",
+   "penalty": null,
+   "yields_to_local_rule": false,
+   "may_preempt_local_rules": false,
+   "source_type": "official",
+   "source_in_starter_corpus": true,
+   "source_jurisdiction": "Berkeley, CA",
+   "coverage_note": null,
+   "consolidation_note": "Coverage from D009 (r-0059), which describes the units this rule covers.",
+   "verification": {
+    "model": "claude-sonnet-5-5",
+    "verdicts": {
+     "requirement": "supported",
+     "key_value": "supported",
+     "effective_date": "not_applicable",
+     "status": "supported",
+     "coverage": "partly_supported",
+     "citation": "partly_supported"
+    },
+    "evidence": [
+     {
+      "field": "requirement",
+      "quote": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%. This cap does not prevent a landlord who has “banked” (unused) AGAs from previous years from implementing a rent increase that is greater than 5% in order to raise the rent to the rent ceiling."
+     },
+     {
+      "field": "key_value",
+      "quote": "The elected Rent Board sets the AGA by following a formula in the Rent Ordinance that ties the AGA to the Consumer Price Index."
+     },
+     {
+      "field": "status",
+      "quote": "The maximum AGA is 5%."
+     },
+     {
+      "field": "coverage",
+      "quote": "Most units in multifamily properties built before 1980"
+     },
+     {
+      "field": "citation",
+      "quote": "Measure BB, a ballot measure passed by Berkeley voters in the November 2024 election, makes several changes to Berkeley’s Rent Ordinance that affect tenant and landlord rights and responsibilities."
+     }
+    ],
+    "changes": []
+   },
+   "official_text": {
+    "doc_id": "O095",
+    "url": "https://berkeley.municipal.codes/BMC/13.76",
+    "retrieved_at": "2026-10-04 00:46 UTC",
+    "in_supplied_corpus": false,
+    "quoted_span": "In no event, however, shall the allowable annual adjustment be less than zero (0%) or greater than five percent (5%)."
+   },
+   "citation_note": "Kept the lawyer's section and Measure BB/Nov. 5, 2024 parenthetical, narrowed the pinpoint to subsection (A), where O095 and O050 place the 5% cap, and added Ord. No. 7,950-N.S., the ordinance number shown in O050 and O095's history note; the card's own quote stays from D006, a Rent Board web page rather than the law's text, and the banked-increase statement comes from D006, not the § 13.76.110 text in O095.",
+   "official_condition": "The yearly adjustment applies only if your landlord did not set your starting rent during the prior calendar year, so if your tenancy began last calendar year, this January 1 adjustment does not apply to your unit."
   },
   {
    "team_rule_id": "r-0060",
@@ -4641,7 +4735,7 @@
    "citation": "L.A. Mun. Code § 151.06(D) (Ord. No. 188795); see also id. § 151.02 (Ord. No. 184822)",
    "source_url": "https://housing.lacity.gov/residents/rso-overview",
    "quoted_span": "Rent may be increased once every 12 months by the allowable rent increase percentage (click here to\nview the allowable rent increase PDF\n). Effective February 2, 2026, the landlord can no longer include an additional percentage increase for utilities.",
-   "key_value": "Once every 12 months by the LAHD allowable rent increase percentage; no added utility percentage after 2026-02-02",
+   "key_value": "3% for July 1, 2025 – June 30, 2026 (LAHD allowable rent increase percentage), once every 12 months; no added utility percentage after 2026-02-02",
    "coverage_conditions": {
     "summary": "Rental properties in the City of Los Angeles first built on or before October 1, 1978, plus replacement units under LAMC 151.28. Covers apartments, duplexes, two or more single-family dwellings on one parcel, units attached to commercial buildings, ADUs/JADUs, long-term hotel/rooming house rooms, and mobile homes in parks. Condo and townhome rents are not regulated for tenancies that began after December 31, 1995.",
     "min_units": null,
@@ -4669,7 +4763,7 @@
    "span_verified": true,
    "confidence": 0.75,
    "conflict_flag": true,
-   "conflict_note": "D042: Sources disagree: status in_force; effective date 2025-07-01 / 2026-02-02. Official code (O087) history for § 151.06: Ord. No. 188,795, effective 2026-02-02; Ord. No. 188,911, effective 2026-04-20.",
+   "conflict_note": "D042: The page was retrieved 2026-10-01 but still lists only the July 1, 2025 – June 30, 2026 figure. The allowable increase for July 1, 2026 onward is not stated. The page also gives no municipal code citation and no coverage cutoffs.",
    "penalty": null,
    "yields_to_local_rule": false,
    "may_preempt_local_rules": false,
@@ -4677,7 +4771,7 @@
    "source_in_starter_corpus": true,
    "source_jurisdiction": "Los Angeles, CA",
    "coverage_note": null,
-   "consolidation_note": "Coverage from D044 (r-0085), which describes the units this rule covers. Los Angeles Rent Stabilization Ordinance (RSO) applies from 2026-02-02. Also stated in D042 (merged r-0087, Los Angeles Rent Stabilization Ordinance (RSO)).",
+   "consolidation_note": "Coverage from D044 (r-0085), which describes the units this rule covers. Also stated in D042 (merged r-0087, Los Angeles Rent Stabilization Ordinance (RSO)).",
    "verification": {
     "model": "claude-sonnet-5-5",
     "verdicts": {
@@ -4821,14 +4915,14 @@
    "level": "city",
    "category": "rent_increase_limits",
    "status": "in_force",
-   "title": "Newark rent control annual increase cap (max 4%)",
-   "requirement": "In Newark rent-controlled units, rent may not rise more than the allowed percentage in any 12-month period, and never more than 4%, even if tenants or owners change. No increase is allowed if the building is not in substantial compliance or the landlord has not registered the unit, so check the registration with the Office of Rent Control.",
+   "title": "Newark rent control: annual rent increase cap",
+   "requirement": "If your Newark apartment is rent-controlled, your rent cannot go up more than the allowed percentage in any 12-month period, and never more than 4%, even if the unit changes tenants or owners. No increase is allowed if the building is not in substantial code compliance or the landlord has not registered the unit.",
    "citation": "Newark Mun. Code § 19:2-3.1 (Ord. 6 PSF-A(S), 9-5-17)",
    "source_url": "https://www.newarknj.gov/255/Division-of-Rent-Control",
    "quoted_span": "In no case shall the allowable rent increase exceed 4%. The allowable annual increase will not be permitted, if the dwelling is not in substantial compliance and/or if the landlord has not met the registration requirements as specified in this subsection 19:2-9.8.",
-   "key_value": "max 4% per 12 months",
+   "key_value": "never more than 4% in any consecutive 12-month period",
    "coverage_conditions": {
-    "summary": "Certain residential rental units in Newark subject to the Municipal Rent Control Ordinance; this page does not state the coverage thresholds or exemptions.",
+    "summary": "Residential rental units subject to Newark's Rent Control Ordinance (Title 19, Chapter 2). The page says only 'certain residential rental units' and does not state the unit-count, construction-date or other exemptions. Commercial space is not covered.",
     "min_units": null,
     "max_units": null,
     "built_on_or_before": null,
@@ -4839,17 +4933,17 @@
     "required_facts_not_in_data": [],
     "minor_exemptions_not_in_data": []
    },
-   "exemptions": "Not stated on this page.",
+   "exemptions": "Not stated on this page beyond 'certain residential rental units'; increases are barred where the dwelling is not in substantial compliance or the landlord has not met registration requirements (§ 19:2-9.8).",
    "overrides": [],
-   "interaction": null,
-   "effective_date": "2017-09-05",
+   "interaction": "The section's text is cited to the amendment Ord. 6 PSF-A(S), adopted 2017-09-05. Under N.J.S.A. 40:69A-181(b) that amendment would take effect 20 days after final passage (about 2017-09-25), but the page does not say whether the 4% ceiling began with that amendment, so the effective date is left null. A 2020 executive order (MEO-20-0004) froze increases on rent-controlled units; it was rescinded on 2023-09-18, with 0% applying for the moratorium period.",
+   "effective_date": null,
    "source_doc_id": "D070",
    "retrieved_at": "2026-10-03 21:00 UTC",
    "span_verified": true,
    "confidence": 0.75,
    "conflict_flag": false,
    "conflict_note": null,
-   "penalty": "Allowable annual increase not permitted if the dwelling is not in substantial compliance or the landlord has not met the registration requirements (§ 19:2-9.8).",
+   "penalty": "The annual increase is not permitted if the dwelling is not in substantial compliance or the landlord has not registered.",
    "yields_to_local_rule": false,
    "may_preempt_local_rules": false,
    "source_type": "official text captured by the team (not in the starter pack)",
@@ -4862,7 +4956,7 @@
     "verdicts": {
      "requirement": "supported",
      "key_value": "supported",
-     "effective_date": "partly_supported",
+     "effective_date": "not_applicable",
      "status": "supported",
      "coverage": "not_applicable",
      "citation": "supported"
@@ -4870,29 +4964,25 @@
     "evidence": [
      {
       "field": "requirement",
-      "quote": "In no case shall the allowable rent increase exceed 4%. The allowable annual increase will not be permitted, if the dwelling is not in substantial compliance and/or if the landlord has not met the registration requirements as specified in this subsection 19:2-9.8."
+      "quote": "The rents for any housing space shall not be increased more than the percentages stated below in any consecutive 12-month period, irrespective of the number of different tenants occupying the housing space during the 12-month period, any change of ownership of the Landlord or vacancy of the housing space."
      },
      {
       "field": "key_value",
       "quote": "In no case shall the allowable rent increase exceed 4%."
      },
      {
-      "field": "effective_date",
-      "quote": "The Rent Control Ordinance was amended on September 05, 2017."
-     },
-     {
       "field": "status",
-      "quote": "In no case shall the allowable rent increase exceed 4%."
+      "quote": "In no case shall the allowable rent increase exceed 4%. The allowable annual increase will not be permitted, if the dwelling is not in substantial compliance and/or if the landlord has not met the registration requirements"
      },
      {
       "field": "citation",
-      "quote": "Pursuant to 19:2-3. Rent Increases. 19:2-3.1. Determination of Rents. In no case shall the allowable rent increase exceed 4%."
+      "quote": "Pursuant to 19:2-3. Rent Increases. 19:2-3.1. Determination of Rents. In no case shall the allowable rent increase exceed 4%. The allowable annual increase will not be permitted, if the dwelling is not in substantial compliance and/or if the landlord has not met the registration requirements as specified in this subsection 19:2-9.8. (Ord. 6 PSF-A(S), 9-5-17)"
      }
     ],
     "changes": []
    },
    "official_text": null,
-   "citation_note": "Narrowed the pinpoint from § 19:2-3 to § 19:2-3.1 (Determination of Rents), the subsection D070 shows holding the 4% cap and the compliance and registration bar; D070 is a City of Newark Division of Rent Control web page quoting the code, not the code's text, so the card's quote comes only from that agency page and no supplied document is the official law text.",
+   "citation_note": null,
    "official_condition": null
   },
   {
@@ -5358,6 +5448,84 @@
    "level": "city",
    "category": "just_cause_eviction",
    "status": "in_force",
+   "title": "Relocation payments for temporary displacement under 20 days",
+   "requirement": "If you are temporarily displaced for capital improvement work for less than 20 days with a notice served March 1, 2026 – February 28, 2027, your household is owed $446 per day plus actual moving expenses.",
+   "citation": "Cal. Civ. Code § 1947.9(a)(1)(A); S.F. Admin. Code § 37.9(m)",
+   "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+   "quoted_span": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
+   "key_value": "$446.00/day plus actual moving expenses (3/01/26 – 2/28/27); $436.00/day (3/01/25 – 2/28/26)",
+   "coverage_conditions": {
+    "summary": "San Francisco tenant households temporarily displaced for capital improvement work for less than 20 days.",
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "cutoff_uses_certificate_of_occupancy": false,
+    "exempt_if_newer_than_years": null,
+    "owner_based_exemption_max_units": null,
+    "required_facts_not_in_data": [],
+    "minor_exemptions_not_in_data": []
+   },
+   "exemptions": null,
+   "overrides": [
+    "r-0009"
+   ],
+   "interaction": "Applies instead of S.F. Admin. Code § 37.9C for displacements under 20 days.",
+   "effective_date": null,
+   "source_doc_id": "D083",
+   "retrieved_at": "2026-10-01T22:37Z",
+   "span_verified": true,
+   "confidence": 0.7,
+   "conflict_flag": false,
+   "conflict_note": null,
+   "penalty": null,
+   "yields_to_local_rule": false,
+   "may_preempt_local_rules": false,
+   "source_type": "official",
+   "source_in_starter_corpus": true,
+   "source_jurisdiction": "San Francisco, CA",
+   "coverage_note": null,
+   "consolidation_note": null,
+   "verification": {
+    "model": "claude-sonnet-5-5",
+    "verdicts": {
+     "requirement": "supported",
+     "key_value": "supported",
+     "effective_date": "not_applicable",
+     "status": "supported",
+     "coverage": "not_applicable",
+     "citation": "supported"
+    },
+    "evidence": [
+     {
+      "field": "requirement",
+      "quote": "Relocation Amount Due Per Tenant Household\n3/01/26 – 2/28/27\n$446.00/day (plus actual moving expenses)"
+     },
+     {
+      "field": "key_value",
+      "quote": "3/01/26 – 2/28/27\n$446.00/day (plus actual moving expenses)\n3/01/25 – 2/28/26\n$436.00/day (plus actual moving expenses)"
+     },
+     {
+      "field": "status",
+      "quote": "3/01/26 – 2/28/27\n$446.00/day (plus actual moving expenses)"
+     },
+     {
+      "field": "citation",
+      "quote": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C."
+     }
+    ],
+    "changes": []
+   },
+   "official_text": null,
+   "citation_note": "Pinpointed to § 1947.9(a)(1)(A) and added S.F. Admin. Code § 37.9(m), the provision that sets the annually indexed San Francisco daily amount, both as shown in O040. No supplied document is the official text of either law: D083 is a Rent Board rate page, and O040 is the Rent Board's own copy of ch. 37, which says it is not the official record. The card's own quote stays from the supplied corpus (D083).",
+   "official_condition": null
+  },
+  {
+   "team_rule_id": "r-0098",
+   "jurisdiction": "San Francisco, CA",
+   "level": "city",
+   "category": "just_cause_eviction",
+   "status": "in_force",
    "title": "Just cause required to evict tenants in units covered by the Rent Ordinance",
    "requirement": "A landlord can only evict you from a unit covered by the SF Rent Ordinance for one of 17 listed just causes, and that cause must be the landlord's dominant motive. A lease simply expiring or the building being sold is not a just cause, and a landlord also needs just cause to remove housing services such as parking, storage, or laundry.",
    "citation": "S.F. Admin. Code § 37.9(a) (as amended by Ord. No. 03-26); see also id. §§ 37.9(c), 37.2(r)",
@@ -5431,19 +5599,19 @@
    "official_condition": null
   },
   {
-   "team_rule_id": "r-0098",
+   "team_rule_id": "r-0099",
    "jurisdiction": "San Francisco, CA",
    "level": "city",
    "category": "just_cause_eviction",
    "status": "in_force",
    "title": "Relocation payments for Ellis Act evictions",
-   "requirement": "If you are served an Ellis Act eviction notice between 3/1/26 and 2/28/27, you are owed $11,110.05 per tenant, up to $33,330.13 per unit. Each elderly (62+) or disabled tenant gets an additional $7,443.90.",
+   "requirement": "If you are evicted under the Ellis Act with a notice served March 1, 2026 – February 28, 2027, you are owed $11,110.05 per tenant (up to $33,330.13 per unit), plus $7,443.90 for each elderly (62+) or disabled tenant.",
    "citation": "S.F. Admin. Code § 37.9A(e)",
    "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
    "quoted_span": "Relocation payments for tenants evicted under the Ellis Act",
-   "key_value": "$11,110.05 per tenant; max $33,330.13 per unit; plus $7,443.90 per elderly (62+) or disabled tenant",
+   "key_value": "$11,110.05 per tenant, max $33,330.13 per unit, plus $7,443.90 per elderly (62+) or disabled tenant (notices served 3/1/26–2/28/27)",
    "coverage_conditions": {
-    "summary": "Tenants in San Francisco evicted under the Ellis Act (withdrawal of units from the rental market).",
+    "summary": "Tenants of San Francisco units evicted under the Ellis Act (withdrawal of units from the rental market).",
     "min_units": null,
     "max_units": null,
     "built_on_or_before": null,
@@ -5459,85 +5627,7 @@
     "r-0009"
    ],
    "interaction": null,
-   "effective_date": "2026-03-01",
-   "source_doc_id": "D083",
-   "retrieved_at": "2026-10-01T22:37Z",
-   "span_verified": true,
-   "confidence": 0.75,
-   "conflict_flag": false,
-   "conflict_note": null,
-   "penalty": null,
-   "yields_to_local_rule": false,
-   "may_preempt_local_rules": false,
-   "source_type": "official",
-   "source_in_starter_corpus": true,
-   "source_jurisdiction": "San Francisco, CA",
-   "coverage_note": null,
-   "consolidation_note": "Also stated in D082 (merged r-0100, S.F. Rent Ordinance (Ellis Act relocation payments)).",
-   "verification": {
-    "model": "claude-sonnet-5-5",
-    "verdicts": {
-     "requirement": "supported",
-     "key_value": "supported",
-     "effective_date": "partly_supported",
-     "status": "supported",
-     "coverage": "not_applicable",
-     "citation": "partly_supported"
-    },
-    "evidence": [
-     {
-      "field": "requirement",
-      "quote": "Relocation payments for tenants evicted under the Ellis Act"
-     },
-     {
-      "field": "key_value",
-      "quote": "3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90"
-     },
-     {
-      "field": "status",
-      "quote": "3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90"
-     },
-     {
-      "field": "citation",
-      "quote": "578 Multilingual Relocation Payments 37.9A"
-     }
-    ],
-    "changes": []
-   },
-   "official_text": null,
-   "citation_note": "Adopted the lawyer's pinpoint § 37.9A(e), which O040 (the Rent Board's 6/29/26 copy of the Rent Ordinance) shows holds the Ellis Act relocation payments in (e)(1)(C), (e)(1)(D) and (e)(2), and dropped the 'Rent Ordinance Section 37.9A' nickname. The card's own quote stays from D083, a Rent Board rate page in the supplied corpus that is not the law's text. No official text is cited because O040 says it is not the official record and names American Legal as the official publisher, so no condition is quoted either, though O040 shows the payments go to Eligible Tenants and that the current amounts apply where the notice of intent to withdraw is filed on or after September 1, 2022.",
-   "official_condition": null
-  },
-  {
-   "team_rule_id": "r-0099",
-   "jurisdiction": "San Francisco, CA",
-   "level": "city",
-   "category": "just_cause_eviction",
-   "status": "in_force",
-   "title": "Relocation payments for owner/relative move-in, demolition/removal, temporary capital improvement, or substantial rehabilitation evictions",
-   "requirement": "If you are served an eviction notice between 3/1/26 and 2/28/27 for owner or relative move-in, demolition or permanent removal, temporary capital improvement work, or substantial rehabilitation, you are owed $8,245 per tenant, up to $24,733 per unit. Each elderly (60+) or disabled tenant, or household with minor children, gets an additional $5,497.",
-   "citation": "S.F. Admin. Code § 37.9C(e)(1) (Prop. H, eff. Dec. 22, 2006); see also id. § 37.9C(b), (e)(2), (e)(3)",
-   "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
-   "quoted_span": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation",
-   "key_value": "$8,245 per tenant; max $24,733 per unit; plus $5,497 per elderly (60+), disabled, or minor-child household",
-   "coverage_conditions": {
-    "summary": "Tenants in San Francisco units covered by Rent Ordinance § 37.9C who are evicted for the listed no-fault reasons. Temporary capital improvement evictions of less than 20 days are instead governed by Cal. Civ. Code § 1947.9.",
-    "min_units": null,
-    "max_units": null,
-    "built_on_or_before": null,
-    "built_after": null,
-    "cutoff_uses_certificate_of_occupancy": false,
-    "exempt_if_newer_than_years": null,
-    "owner_based_exemption_max_units": null,
-    "required_facts_not_in_data": [],
-    "minor_exemptions_not_in_data": []
-   },
-   "exemptions": "Temporary capital improvement evictions for less than 20 days are governed by Cal. Civ. Code § 1947.9 instead.",
-   "overrides": [
-    "r-0009"
-   ],
-   "interaction": "The amount of relocation payments for temporary capital improvement evictions of less than 20 days is governed by California Civil Code Section 1947.9, not by Rent Ordinance Section 37.9C.",
-   "effective_date": "2026-03-01",
+   "effective_date": null,
    "source_doc_id": "D083",
    "retrieved_at": "2026-10-01T22:37Z",
    "span_verified": true,
@@ -5551,13 +5641,13 @@
    "source_in_starter_corpus": true,
    "source_jurisdiction": "San Francisco, CA",
    "coverage_note": null,
-   "consolidation_note": null,
+   "consolidation_note": "Current figure from D082; D083 gave \"$11,110.05 per tenant, max $33,330.13 per unit, plus $7,443.90 per elderly/disabled tenant (3/01/26 – 2/28/27); $10,863.45 / $32,590.33 / $7,278.67 (3/01/25 – 2/28/26)\", which has expired. S.F. Rent Ordinance (Ellis Act relocation payments) applies from 2026-03-01. Also stated in D082 (merged r-0102, S.F. Rent Ordinance (Ellis Act relocation payments)).",
    "verification": {
     "model": "claude-sonnet-5-5",
     "verdicts": {
      "requirement": "supported",
      "key_value": "supported",
-     "effective_date": "partly_supported",
+     "effective_date": "not_applicable",
      "status": "supported",
      "coverage": "not_applicable",
      "citation": "partly_supported"
@@ -5565,19 +5655,93 @@
     "evidence": [
      {
       "field": "requirement",
-      "quote": "Relocation Payments for Evictions based on Owner/Relative Move-in OR Demolition/Permanent Removal of Unit from Housing Use OR Temporary Capital Improvement Work* OR Substantial Rehabilitation"
+      "quote": "3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90"
+     },
+     {
+      "field": "key_value",
+      "quote": "3/01/25 – 2/28/26\n$10,863.45\n$32,590.33\n$7,278.67"
+     },
+     {
+      "field": "status",
+      "quote": "3/01/26 – 2/28/27\n$11,110.05\n$33,330.13\n$7,443.90"
+     },
+     {
+      "field": "citation",
+      "quote": "578 Multilingual Relocation Payments 37.9A"
+     }
+    ],
+    "changes": []
+   },
+   "official_text": null,
+   "citation_note": "The citation follows the lawyer's form and adds her pinpoint (e), which O040 supports: the base amounts and the 62-or-older/disabled add-on are in § 37.9A(e)(1), the post-September 1, 2022 amounts are in (e)(2), and the annual adjustment is in (e)(1)(D); O040 cannot be quoted as the law because it carries the Rent Board's disclaimer that it is not the official record (American Legal is the official publisher), and the card's own quote stays from the supplied corpus page D083, a Rent Board rates page that is not the law's text.",
+   "official_condition": null
+  },
+  {
+   "team_rule_id": "r-0101",
+   "jurisdiction": "San Francisco, CA",
+   "level": "city",
+   "category": "just_cause_eviction",
+   "status": "in_force",
+   "title": "Relocation payments for owner/relative move-in, demolition/removal, temporary capital improvement, or substantial rehabilitation evictions",
+   "requirement": "If your San Francisco landlord serves an eviction notice for owner/relative move-in, demolition or permanent removal of the unit, temporary capital improvement work, or substantial rehabilitation between 3/1/2026 and 2/28/2027, you are owed $8,245 per tenant, up to $24,733 per unit. Each elderly (60+) or disabled tenant, or a household with minor children, gets an additional $5,497.",
+   "citation": "S.F. Admin. Code § 37.9C(e)(1) (Prop. H, eff. Dec. 22, 2006); see also id. § 37.9C(b), (e)(2), (e)(3)",
+   "source_url": "https://www.sf.gov/reports--archive-relocation-rates",
+   "quoted_span": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C.",
+   "key_value": "$8,245.00 per tenant, max $24,733.00 per unit, plus $5,497.00 per elderly (60+)/disabled tenant or household with minor children (3/01/26 – 2/28/27); $8,062.00 / $24,184.00 / $5,375.00 (3/01/25 – 2/28/26)",
+   "coverage_conditions": {
+    "summary": "Tenants in San Francisco evicted for owner/relative move-in, demolition or permanent removal from housing use, temporary capital improvement work, or substantial rehabilitation; amount depends on date the eviction notice is served.",
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "cutoff_uses_certificate_of_occupancy": false,
+    "exempt_if_newer_than_years": null,
+    "owner_based_exemption_max_units": null,
+    "required_facts_not_in_data": [],
+    "minor_exemptions_not_in_data": []
+   },
+   "exemptions": "Relocation for temporary capital improvement evictions of less than 20 days is governed by California Civil Code Section 1947.9, not Rent Ordinance Section 37.9C.",
+   "overrides": [
+    "r-0009"
+   ],
+   "interaction": "For temporary capital improvement evictions under 20 days, state law (Cal. Civ. Code § 1947.9) governs the relocation amount instead of the local ordinance.",
+   "effective_date": "2026-03-01",
+   "source_doc_id": "D082",
+   "retrieved_at": "2026-10-01T22:37Z",
+   "span_verified": true,
+   "confidence": 0.75,
+   "conflict_flag": false,
+   "conflict_note": null,
+   "penalty": null,
+   "yields_to_local_rule": false,
+   "may_preempt_local_rules": false,
+   "source_type": "official",
+   "source_in_starter_corpus": true,
+   "source_jurisdiction": "San Francisco, CA",
+   "coverage_note": null,
+   "consolidation_note": "Also stated in D083 (merged r-0100, S.F. Admin. Code § 37.9C).",
+   "verification": {
+    "model": "claude-sonnet-5-5",
+    "verdicts": {
+     "requirement": "supported",
+     "key_value": "supported",
+     "effective_date": "supported",
+     "status": "supported",
+     "coverage": "not_applicable",
+     "citation": "partly_supported"
+    },
+    "evidence": [
+     {
+      "field": "requirement",
+      "quote": "3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00"
      },
      {
       "field": "key_value",
       "quote": "3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00"
      },
      {
-      "field": "status",
-      "quote": "3/01/26 – 2/28/27\n$8,245.00\n$24,733.00\n$5,497.00"
-     },
-     {
       "field": "citation",
-      "quote": "579 Multilingual Relocation Payments 37.9C"
+      "quote": "*The amount of relocation payments for temporary capital improvement evictions for less than 20 days is governed by California Civil Code Section 1947.9 and not by Rent Ordinance Section 37.9C."
      }
     ],
     "changes": []
@@ -5593,19 +5757,19 @@
    "official_condition": "You qualify for these relocation payments only if you are an authorized occupant who has lived in the unit for 12 months or more."
   },
   {
-   "team_rule_id": "r-0101",
+   "team_rule_id": "r-0103",
    "jurisdiction": "San Francisco, CA",
    "level": "city",
    "category": "rent_increase_limits",
    "status": "in_force",
-   "title": "Annual allowable rent increase for rent-controlled units, March 1, 2026 – February 28, 2027",
-   "requirement": "If you live in a rent-controlled unit in San Francisco, your landlord's annual increase for March 1, 2026 through February 28, 2027 is limited to 1.6% of your base rent. For example, on a $2,000 base rent the increase is $32, for a new base rent of $2,032.",
+   "title": "San Francisco annual allowable rent increase for rent-controlled units (3/1/2026 - 2/28/2027)",
+   "requirement": "If you live in a rent-controlled unit in San Francisco, your landlord's annual rent increase effective March 1, 2026 through February 28, 2027 may not exceed 1.6% of your base rent. Multiply your base rent by .016 to find the maximum dollar increase.",
    "citation": "S.F. Admin. Code § 37.3(a)(1) (as amended through Ord. No. 3-26)",
    "source_url": "https://www.sf.gov/news--annual-rent-increase-3126-22827-announced",
    "quoted_span": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%.",
-   "key_value": "1.6%",
+   "key_value": "1.6% for March 1, 2026 – February 28, 2027; 1.4% for March 1, 2025 – February 28, 2026",
    "coverage_conditions": {
-    "summary": "Applies to rent-controlled units in San Francisco. This announcement does not define which units are rent-controlled.",
+    "summary": "Rent-controlled units in San Francisco; the document does not specify which buildings are rent-controlled.",
     "min_units": null,
     "max_units": null,
     "built_on_or_before": "1979-06-13",
@@ -5621,7 +5785,7 @@
     "r-0012"
    ],
    "interaction": null,
-   "effective_date": "2026-03-01",
+   "effective_date": null,
    "source_doc_id": "D080",
    "retrieved_at": "2026-10-01T22:37Z",
    "span_verified": true,
@@ -5635,13 +5799,13 @@
    "source_in_starter_corpus": true,
    "source_jurisdiction": "San Francisco, CA",
    "coverage_note": null,
-   "consolidation_note": "Fields filled from D079, which state the same law. Also stated in D083 (merged r-0102, San Francisco Rent Ordinance (S.F. Rent Board allowable annual increase, Form 571)).",
+   "consolidation_note": "Fields filled from D079, which state the same law.",
    "verification": {
     "model": "claude-sonnet-5-5",
     "verdicts": {
      "requirement": "supported",
      "key_value": "supported",
-     "effective_date": "supported",
+     "effective_date": "not_applicable",
      "status": "supported",
      "coverage": "partly_supported",
      "citation": "not_supported"
@@ -5649,15 +5813,11 @@
     "evidence": [
      {
       "field": "requirement",
-      "quote": "To calculate the dollar amount of the 1.6% annual rent increase, multiply the tenant's base rent by .016. For example, if the tenant's base rent is $2,000.00, the annual increase would be calculated as follows: $2,000.00 x .016 = $32.00."
+      "quote": "To calculate the dollar amount of the 1.6% annual rent increase, multiply the tenant's base rent by .016."
      },
      {
       "field": "key_value",
-      "quote": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%."
-     },
-     {
-      "field": "effective_date",
-      "quote": "For rent-controlled units, the annual allowable increase amount effective March 1, 2026 through February 28, 2027 is 1.6%."
+      "quote": "The annual allowable increase amount effective March 1, 2025 through February 28, 2026 is 1.4%."
      },
      {
       "field": "status",
@@ -5665,11 +5825,11 @@
      },
      {
       "field": "coverage",
-      "quote": "This includes tenancies in newly constructed rental units that first obtained a Certificate of Occupancy after June 13, 1979"
+      "quote": "This includes tenancies in newly constructed rental units that first obtained a Certificate of Occupancy after June 13, 1979, tenancies that are eligible for a rent increase under the"
      }
     ],
     "changes": [
-     "second check disputes the citation: The documents do not mention S.F. Admin. Code § 37.3. Only Section 37.9(a) and 37.2(r) are named, and neither relates to the annual increase."
+     "second check disputes the citation: Neither document cites S.F. Admin. Code § 37.3. The documents mention only Ordinance Section 37.9(a) and 37.2(r)."
     ]
    },
    "official_text": null,
@@ -5677,7 +5837,7 @@
    "official_condition": null
   },
   {
-   "team_rule_id": "r-0103",
+   "team_rule_id": "r-0104",
    "jurisdiction": "San Francisco, CA",
    "level": "city",
    "category": "screening_restrictions",
@@ -5757,7 +5917,81 @@
    "official_condition": null
   },
   {
-   "team_rule_id": "r-0104",
+   "team_rule_id": "r-0105",
+   "jurisdiction": "San Francisco, CA",
+   "level": "city",
+   "category": "security_deposits",
+   "status": "in_force",
+   "title": "Security deposit interest rate",
+   "requirement": "Your landlord must pay interest on your security deposit at 4.2% for the period March 1, 2026 to February 28, 2027. Ask for this interest if it has not been paid.",
+   "citation": "S.F. Admin. Code ch. 49",
+   "source_url": "https://www.sf.gov/reports--current-rates-including-rent-increase-relocation-sec-deposit",
+   "quoted_span": "4.2% for March 1, 2026 – February 28, 2027",
+   "key_value": "4.2% for March 1, 2026 – February 28, 2027 (5.0% for March 1, 2025 – February 28, 2026; 5.2% for March 1, 2024 – February 28, 2025)",
+   "coverage_conditions": {
+    "summary": "Security deposits on San Francisco rental units; this rate page does not describe coverage.",
+    "min_units": null,
+    "max_units": null,
+    "built_on_or_before": null,
+    "built_after": null,
+    "cutoff_uses_certificate_of_occupancy": false,
+    "exempt_if_newer_than_years": null,
+    "owner_based_exemption_max_units": null,
+    "required_facts_not_in_data": [],
+    "minor_exemptions_not_in_data": []
+   },
+   "exemptions": null,
+   "overrides": [],
+   "interaction": null,
+   "effective_date": null,
+   "source_doc_id": "D083",
+   "retrieved_at": "2026-10-01T22:37Z",
+   "span_verified": true,
+   "confidence": 0.6,
+   "conflict_flag": false,
+   "conflict_note": null,
+   "penalty": null,
+   "yields_to_local_rule": false,
+   "may_preempt_local_rules": false,
+   "source_type": "official",
+   "source_in_starter_corpus": true,
+   "source_jurisdiction": "San Francisco, CA",
+   "coverage_note": null,
+   "consolidation_note": null,
+   "verification": {
+    "model": "claude-sonnet-5-5",
+    "verdicts": {
+     "requirement": "partly_supported",
+     "key_value": "supported",
+     "effective_date": "not_applicable",
+     "status": "supported",
+     "coverage": "not_applicable",
+     "citation": "not_supported"
+    },
+    "evidence": [
+     {
+      "field": "requirement",
+      "quote": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027"
+     },
+     {
+      "field": "key_value",
+      "quote": "March 1, 2026 – February 28, 2027\n4.2%\nMarch 1, 2025 – February 28, 2026\n5.0%\nMarch 1, 2024 – February 28, 2025\n5.2%"
+     },
+     {
+      "field": "status",
+      "quote": "Security Deposit Interest:\n4.2% for March 1, 2026 – February 28, 2027"
+     }
+    ],
+    "changes": [
+     "second check disputes the citation: The document does not cite S.F. Admin. Code ch. 49."
+    ]
+   },
+   "official_text": null,
+   "citation_note": null,
+   "official_condition": null
+  },
+  {
+   "team_rule_id": "r-0106",
    "jurisdiction": "Santa Ana, CA",
    "level": "city",
    "category": "algorithmic_rent_setting",
@@ -5799,7 +6033,7 @@
    "source_in_starter_corpus": false,
    "source_jurisdiction": "Santa Ana, CA",
    "coverage_note": null,
-   "consolidation_note": "Citation from D002; D086 gave \"Santa Ana algorithmic rent-setting ordinance (adopted March 3, 2026; ordinance and code section numbers not stated)\". Also stated in D002 (merged r-0106, Santa Ana Ord. No. NS-3090).",
+   "consolidation_note": "Citation from D002; D086 gave \"Santa Ana algorithmic rent-setting ordinance (adopted March 3, 2026; ordinance and code section numbers not stated)\". Also stated in D002 (merged r-0108, Santa Ana Ord. No. NS-3090).",
    "verification": {
     "model": "claude-sonnet-5-5",
     "verdicts": {
@@ -5845,7 +6079,7 @@
    "official_condition": null
   },
   {
-   "team_rule_id": "r-0107",
+   "team_rule_id": "r-0109",
    "jurisdiction": "Santa Ana, CA",
    "level": "city",
    "category": "just_cause_eviction",
@@ -5893,7 +6127,7 @@
    "source_in_starter_corpus": true,
    "source_jurisdiction": "Santa Ana, CA",
    "coverage_note": null,
-   "consolidation_note": "Also stated in D084 (merged r-0108, Santa Ana Rent Stabilization and Just Cause Eviction Ordinance).",
+   "consolidation_note": "Also stated in D084 (merged r-0110, Santa Ana Rent Stabilization and Just Cause Eviction Ordinance).",
    "verification": {
     "model": "claude-sonnet-5-5",
     "verdicts": {
@@ -5943,7 +6177,7 @@
    "official_condition": "You are protected only after you have lived in the unit continuously and lawfully for 30 days."
   },
   {
-   "team_rule_id": "r-0109",
+   "team_rule_id": "r-0111",
    "jurisdiction": "Santa Ana, CA",
    "level": "city",
    "category": "rent_increase_limits",
@@ -5985,7 +6219,7 @@
    "source_in_starter_corpus": true,
    "source_jurisdiction": "Santa Ana, CA",
    "coverage_note": null,
-   "consolidation_note": "Also stated in D085 (merged r-0110, Santa Ana Rent Stabilization Ordinance).",
+   "consolidation_note": "Also stated in D085 (merged r-0112, Santa Ana Rent Stabilization Ordinance).",
    "verification": {
     "model": "claude-sonnet-5-5",
     "verdicts": {

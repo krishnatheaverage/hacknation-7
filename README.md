@@ -35,12 +35,12 @@ Gulnur Bekmukhanbetova, the lawyer on our team, reviewed all 92 rule cards from 
 | Her review | Agreement |
 | --- | --- |
 | Status (in force, pending, failed and so on) | 89 of 89 matched cards |
-| Effective date, where she gave one | 37 of 48 |
+| Effective date, where she gave one | 36 of 48 |
 | Duplicates she asked us to merge | 9 of 9 |
 | Coverage notes she asked us to fold into their rule | 4 of 4 |
 | Rules behind change tests T1 to T5 | 7 of 7 |
-| Enacted rules that cite a code section or chapter | 63 of 65 |
-| Enacted rules that also quote the law's own text | 58 of 65 |
+| Enacted rules that cite a code section or chapter | 66 of 68 |
+| Enacted rules that also quote the law's own text | 59 of 68 |
 
 Most of the dates we leave blank are dates our sources do not state, such as the 2020 start of Civ. Code § 1946.2 (the code page gives only its latest amendment), and we leave a field blank when the text does not support it. The official texts also corrected two of our citations: the 30-year new-construction exemption is in N.J.S.A. 2A:42-84.2, and Santa Ana's rent stabilization and just-cause rules are in one article of its code (ch. 8, art. XIX, Ord. No. NS-3073).
 
@@ -89,7 +89,7 @@ It saves the text to `corpus_extra/`, extracts the rule cards, runs the second c
 
 ## Output files
 
-- `submission/rules.json` has our 71 rule records in the organizers' schema, each with a citation, source URL, retrieval date and quoted span.
+- `submission/rules.json` has our 74 rule records in the organizers' schema, each with a citation, source URL, retrieval date and quoted span.
 - `submission/lookups.json` has every rule's result (applies, unknown, superseded, not_yet_effective or pending) for all 500 addresses as of 2026-10-01, with an explanation.
 - `submission/changes.json` has the affected addresses and conflict flags for each change test.
 - `out/audit/` keeps the model output for each document, the extraction log and our latest check, and `review/` has the sheets we use for legal review.
@@ -100,7 +100,7 @@ Every rule cites its source and quotes it, and we check each quote against the s
 
 ## Limitations
 
-We cover three states and nine cities with sample addresses (Santa Ana has rules but no addresses). Owner type and owner occupancy are not in public records, so owner-based exemptions stay unknown. We use the year built in place of the certificate-of-occupancy date unless a user enters one. Unit counts we read from land-use codes are ranges (e.g., 7 to 30 units), so a rule whose unit threshold falls inside the range stays unknown. Before a city's published annual figure starts (for example, San Francisco's March 1 figure), the memo says the rent law applies but that the earlier figure is not in our sources. In Los Angeles the Just Cause Ordinance card also shows at buildings under the Rent Stabilization Ordinance, whose own just-cause rules govern there, and our corpus has no card for Costa-Hawkins (Civ. Code § 1954.52), so a single-family home that a user enters may come back as covered by a local rent cap. Following our lawyer, Massachusetts notice-to-quit rules (M.G.L. c. 186 §§ 11, 12 and 31) are not counted as just-cause rules, although the brief's just-cause category mentions notice. A typed address in a city we have no ordinances for shows state law only, with a note saying so. The Los Angeles RSO card has no percentage, so for a rent-stabilized LA unit the check can only say no when an increase is above the state's 10% cap. Our score check is an estimate and may be off in either direction. The laws are as published on October 1, 2026 (October 3 for the pages we added), so anything that changed after that is missing.
+We cover three states and nine cities with sample addresses (Santa Ana has rules but no addresses). Owner type and owner occupancy are not in public records, so owner-based exemptions stay unknown. We use the year built in place of the certificate-of-occupancy date unless a user enters one. Unit counts we read from land-use codes are ranges (e.g., 7 to 30 units), so a rule whose unit threshold falls inside the range stays unknown. Before a city's published annual figure starts (for example, San Francisco's March 1 figure), the memo says the rent law applies but that the earlier figure is not in our sources. In Los Angeles the Just Cause Ordinance card also shows at buildings under the Rent Stabilization Ordinance, whose own just-cause rules govern there, and our corpus has no card for Costa-Hawkins (Civ. Code § 1954.52), so a single-family home that a user enters may come back as covered by a local rent cap. Following our lawyer, Massachusetts notice-to-quit rules (M.G.L. c. 186 §§ 11, 12 and 31) are not counted as just-cause rules, although the brief's just-cause category mentions notice. A typed address in a city we have no ordinances for shows state law only, with a note saying so. Annual figures carry the period our sources give them (for example, LA's 3% for July 1, 2025 to June 30, 2026, or San Francisco's 1.6% and 1.4%); outside those periods the check says it can't tell, unless an increase is above the state's 10% cap. Our score check is an estimate and may be off in either direction. The laws are as published on October 1, 2026 (October 3 for the pages we added), so anything that changed after that is missing.
 
 ## Team
 

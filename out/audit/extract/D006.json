@@ -2,61 +2,25 @@
   "doc_id": "D006",
   "model": "claude-opus-5-5",
   "effort": "medium",
-  "extracted_at": "2026-10-03T17:17:43.914Z",
+  "extracted_at": "2026-10-04T03:57:46.378Z",
   "stop_reason": "end_turn",
   "usage": {
     "input": 5149,
-    "output": 4593,
+    "output": 5590,
     "cache_read": 0,
-    "cache_write": 4936
+    "cache_write": 6034
   },
   "rules": [
     {
       "jurisdiction": "Berkeley, CA",
       "level": "city",
-      "category": "rent_increase_limits",
-      "status": "in_force",
-      "title": "Annual General Adjustment capped at 5% (Measure BB)",
-      "requirement": "If you live in a fully covered Berkeley unit, your landlord's yearly increase is limited to the Annual General Adjustment set by the Rent Board, which can never exceed 5%. A landlord with unused (banked) prior adjustments may still raise rent more than 5% up to the lawful rent ceiling.",
-      "key_value": "AGA tied to CPI, maximum 5%",
-      "coverage": {
-        "summary": "Fully covered units, mainly units in multifamily properties built before 1980 (and single-family homes with tenancies that began before 1996, or rented by the room with five or more rooms). New construction with a certificate of occupancy issued after 1980, most single-family homes and most condominiums are only partially covered (no rent ceiling).",
-        "min_units": null,
-        "max_units": null,
-        "built_on_or_before": "1980-12-31",
-        "built_after": null,
-        "cutoff_uses_certificate_of_occupancy": true,
-        "exempt_if_newer_than_years": null,
-        "owner_based_exemption_max_units": null,
-        "required_facts_not_in_data": [],
-        "minor_exemptions_not_in_data": [
-          "Units where the tenant shares kitchen or bath with a landlord who lived on the property at the start of the tenancy (exempt)",
-          "Most single-family homes and condominiums (partially covered)",
-          "Section 202 / Section 811 units and certain HUD-insured project-based subsidized units (partially covered)"
-        ]
-      },
-      "exemptions": "Partially covered units (post-1980 new construction, most single-family homes and condos, certain federally subsidized units) have no rent ceiling; units shared with a resident landlord who lived there first are exempt.",
-      "effective_date": null,
-      "penalty": null,
-      "citation": "Berkeley Measure BB (Nov. 2024) amending Berkeley Rent Stabilization and Eviction for Good Cause Ordinance",
-      "quoted_span": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%.",
-      "yields_to_local_rule": false,
-      "may_preempt_local_rules": false,
-      "interaction": null,
-      "confidence": 0.75,
-      "conflict_flag": true,
-      "conflict_note": "Document says fully covered units are those in multifamily properties 'built before 1980' while new construction is units with a certificate of occupancy 'issued after 1980'; treatment of 1980 itself is ambiguous. Code section not stated."
-    },
-    {
-      "jurisdiction": "Berkeley, CA",
-      "level": "city",
       "category": "just_cause_eviction",
       "status": "in_force",
-      "title": "Nonpayment eviction requires debt of at least one month's Fair Market Rent",
-      "requirement": "Tenants in fully or partially covered Berkeley units can only be evicted with just cause; for nonpayment, the landlord cannot evict unless you owe at least one month of HUD Fair Market Rent for a comparable unit in the Oakland-Fremont area.",
-      "key_value": "rental debt ≥ 1 month HUD Fair Market Rent",
+      "title": "Just cause required to evict tenants in fully or partially covered units",
+      "requirement": "If your Berkeley unit is fully or partially covered by the Rent Ordinance, your landlord cannot evict you without one of the ordinance's listed just causes. Contact the Rent Board if you get an eviction notice.",
+      "key_value": null,
       "coverage": {
-        "summary": "Units fully or partially covered by the Berkeley Rent Ordinance, including post-1980 new construction, single-family homes, condos, and government-owned or subsidized units.",
+        "summary": "All rental units fully or partially covered by the Berkeley Rent Ordinance, including most multifamily units, new construction, single-family homes and condos, and (after Measure BB) government-owned or subsidized units. Units where the tenant shares kitchen or bath with a landlord who lived on the property at the start of the tenancy are exempt.",
         "min_units": null,
         "max_units": null,
         "built_on_or_before": null,
@@ -66,17 +30,51 @@
         "owner_based_exemption_max_units": null,
         "required_facts_not_in_data": [],
         "minor_exemptions_not_in_data": [
-          "Units where the tenant shares kitchen or bath with a landlord who lived on the property at the start of the tenancy"
+          "Units where the tenant shares kitchen or bath facilities with a landlord who lived on the property at the start of the tenancy"
         ]
       },
-      "exemptions": "Units where the tenant shares kitchen or bath facilities with a landlord who resided there before the tenant are exempt.",
+      "exemptions": "Units where the tenant shares kitchen or bath facilities with the landlord are exempt only if the landlord lived in a unit on the same property at the start of the tenancy.",
       "effective_date": null,
       "penalty": null,
-      "citation": "Berkeley Measure BB (Nov. 2024) amending Berkeley Rent Stabilization and Eviction for Good Cause Ordinance",
+      "citation": "Berkeley Rent Ordinance (as amended by Measure BB, Nov. 2024)",
+      "quoted_span": "In Berkeley, tenants in units that are fully or partially covered by the Rent Ordinance cannot be evicted unless there is \"just cause” (previously called “good cause”).",
+      "yields_to_local_rule": false,
+      "may_preempt_local_rules": false,
+      "interaction": "Measure BB (passed November 2024) changed some just causes and renamed 'good cause' to 'just cause'; the underlying requirement predates Measure BB.",
+      "confidence": 0.85,
+      "conflict_flag": false,
+      "conflict_note": null
+    },
+    {
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "just_cause_eviction",
+      "status": "in_force",
+      "title": "Minimum rental debt for nonpayment eviction (one month Fair Market Rent)",
+      "requirement": "Your landlord cannot evict you for nonpayment unless you owe at least one month of HUD Fair Market Rent for a unit of your size in the Oakland-Fremont metro area. Smaller debts are not grounds for eviction.",
+      "key_value": "Rental debt ≥ 1 month HUD Fair Market Rent (Oakland-Fremont metro) for equivalent unit size",
+      "coverage": {
+        "summary": "Units fully or partially covered by the Berkeley Rent Ordinance.",
+        "min_units": null,
+        "max_units": null,
+        "built_on_or_before": null,
+        "built_after": null,
+        "cutoff_uses_certificate_of_occupancy": false,
+        "exempt_if_newer_than_years": null,
+        "owner_based_exemption_max_units": null,
+        "required_facts_not_in_data": [],
+        "minor_exemptions_not_in_data": [
+          "Units where the tenant shares kitchen or bath facilities with a landlord who lived on the property first"
+        ]
+      },
+      "exemptions": null,
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Berkeley Rent Ordinance (as amended by Measure BB, Nov. 2024)",
       "quoted_span": "For a landlord to evict a tenant for nonpayment of rent, the tenant must owe an amount of rental debt equal to or greater than one month of the Fair Market Rent (FMR) value for a unit of equivalent size in the metro area Oakland-Fremont, CA HUD Metro FMR as determined by the US Department of Housing and Urban Development for the fiscal year in which the rent is demanded.",
       "yields_to_local_rule": false,
       "may_preempt_local_rules": false,
-      "interaction": null,
+      "interaction": "Added by Measure BB (November 2024); effective date not stated in document.",
       "confidence": 0.85,
       "conflict_flag": false,
       "conflict_note": null
@@ -86,8 +84,8 @@
       "level": "city",
       "category": "just_cause_eviction",
       "status": "in_force",
-      "title": "No eviction for refusing to sign a substantially similar lease",
-      "requirement": "In a covered Berkeley unit, your landlord cannot evict you for declining to sign a substantially similar new lease when your fixed-term lease ends.",
+      "title": "No eviction for refusing to sign a new fixed-term lease",
+      "requirement": "When your fixed-term lease expires, your landlord cannot evict you for refusing to sign a substantially similar new lease.",
       "key_value": null,
       "coverage": {
         "summary": "Units fully or partially covered by the Berkeley Rent Ordinance.",
@@ -100,17 +98,17 @@
         "owner_based_exemption_max_units": null,
         "required_facts_not_in_data": [],
         "minor_exemptions_not_in_data": [
-          "Units where the tenant shares kitchen or bath with a landlord who lived on the property at the start of the tenancy"
+          "Units where the tenant shares kitchen or bath facilities with a landlord who lived on the property first"
         ]
       },
       "exemptions": null,
       "effective_date": null,
       "penalty": null,
-      "citation": "Berkeley Measure BB (Nov. 2024) amending Berkeley Rent Stabilization and Eviction for Good Cause Ordinance",
+      "citation": "Berkeley Rent Ordinance (as amended by Measure BB, Nov. 2024)",
       "quoted_span": "A landlord cannot evict a tenant for failing to sign a substantially similar lease upon expiration of a fixed-term lease.",
       "yields_to_local_rule": false,
       "may_preempt_local_rules": false,
-      "interaction": null,
+      "interaction": "Eliminated as a just cause by Measure BB (November 2024).",
       "confidence": 0.85,
       "conflict_flag": false,
       "conflict_note": null
@@ -120,8 +118,8 @@
       "level": "city",
       "category": "just_cause_eviction",
       "status": "in_force",
-      "title": "Lease-breach evictions require actual harm and unreasonable conduct",
-      "requirement": "A landlord evicting you for breaking a lease term must first give a notice describing the specific term, the violation and the harm; the term must be mutually agreed, the violation must cause substantial actual damage, and your conduct must be shown to be unreasonable.",
+      "title": "Stricter limits on eviction for breach of a material lease term",
+      "requirement": "Your landlord can evict you for a lease violation only if the term was mutually agreed, the violation caused the landlord substantial actual harm, and your behavior was unreasonable. You must first get a notice to stop the violation describing the term, violation and harm.",
       "key_value": null,
       "coverage": {
         "summary": "Units fully or partially covered by the Berkeley Rent Ordinance.",
@@ -134,17 +132,17 @@
         "owner_based_exemption_max_units": null,
         "required_facts_not_in_data": [],
         "minor_exemptions_not_in_data": [
-          "Units where the tenant shares kitchen or bath with a landlord who lived on the property at the start of the tenancy"
+          "Units where the tenant shares kitchen or bath facilities with a landlord who lived on the property first"
         ]
       },
       "exemptions": null,
       "effective_date": null,
       "penalty": null,
-      "citation": "Berkeley Measure BB (Nov. 2024) amending Berkeley Rent Stabilization and Eviction for Good Cause Ordinance",
+      "citation": "Berkeley Rent Ordinance (as amended by Measure BB, Nov. 2024)",
       "quoted_span": "The landlord must demonstrate that the tenant’s behavior was unreasonable, and may not evict tenants for lease breaches that do not cause the landlord any actual harm.",
       "yields_to_local_rule": false,
       "may_preempt_local_rules": false,
-      "interaction": null,
+      "interaction": "Added by Measure BB (November 2024).",
       "confidence": 0.8,
       "conflict_flag": false,
       "conflict_note": null
@@ -154,11 +152,11 @@
       "level": "city",
       "category": "just_cause_eviction",
       "status": "in_force",
-      "title": "Eviction notice content and Rent Board filing within three business days",
-      "requirement": "Any termination notice must tell you that advice is available from the Rent Board and give its phone number and website, and the landlord must file copies of notices and eviction lawsuits with the Rent Board within three business days of serving you.",
-      "key_value": "file with Rent Board within 3 business days",
+      "title": "Owner move-in relocation assistance adjusted annually for inflation",
+      "requirement": "If you are evicted for an owner move-in, you are entitled to relocation assistance, and the Rent Board must adjust the amount for inflation each year.",
+      "key_value": null,
       "coverage": {
-        "summary": "Units fully or partially covered by the Berkeley Rent Ordinance.",
+        "summary": "Tenants of units covered by the Berkeley Rent Ordinance facing owner move-in evictions.",
         "min_units": null,
         "max_units": null,
         "built_on_or_before": null,
@@ -167,22 +165,56 @@
         "exempt_if_newer_than_years": null,
         "owner_based_exemption_max_units": null,
         "required_facts_not_in_data": [],
-        "minor_exemptions_not_in_data": [
-          "Units where the tenant shares kitchen or bath with a landlord who lived on the property at the start of the tenancy"
-        ]
+        "minor_exemptions_not_in_data": []
       },
       "exemptions": null,
       "effective_date": null,
       "penalty": null,
-      "citation": "Berkeley Measure BB (Nov. 2024) amending Berkeley Rent Stabilization and Eviction for Good Cause Ordinance",
-      "quoted_span": "The landlord must file with the Rent Board a copy of any notice to terminate a tenancy, notice to quit, and summons and complaint no later than three business days after the tenant was served with the document.",
+      "citation": "Berkeley Rent Ordinance (as amended by Measure BB, Nov. 2024)",
+      "quoted_span": "The Rent Board must make inflationary adjustments to owner move-in eviction relocation assistance amounts each year.",
       "yields_to_local_rule": false,
       "may_preempt_local_rules": false,
-      "interaction": null,
-      "confidence": 0.85,
+      "interaction": "Measure BB made the yearly adjustments mandatory; the payment amounts are not stated in this document.",
+      "confidence": 0.75,
       "conflict_flag": false,
       "conflict_note": null
+    },
+    {
+      "jurisdiction": "Berkeley, CA",
+      "level": "city",
+      "category": "rent_increase_limits",
+      "status": "in_force",
+      "title": "Annual General Adjustment capped at 5% for fully covered units",
+      "requirement": "If your unit is fully covered (most multifamily units built before 1980, and now many subsidized units), your yearly rent increase is limited to the Rent Board's Annual General Adjustment, which can never exceed 5%. A landlord with banked unused increases may still raise rent above 5% up to the rent ceiling.",
+      "key_value": "AGA tied to CPI, never more than 5%",
+      "coverage": {
+        "summary": "Fully covered units: most units in multifamily properties built before 1980, single-family homes with tenancies begun before 1996, and certain room rentals; government-subsidized units of those types. New construction (certificate of occupancy after 1980), most single-family homes and condos are only partially covered (no rent ceiling).",
+        "min_units": null,
+        "max_units": null,
+        "built_on_or_before": "1980-12-31",
+        "built_after": null,
+        "cutoff_uses_certificate_of_occupancy": true,
+        "exempt_if_newer_than_years": null,
+        "owner_based_exemption_max_units": null,
+        "required_facts_not_in_data": [],
+        "minor_exemptions_not_in_data": [
+          "Most single-family homes and condominiums (partially covered)",
+          "Section 202 and Section 811 units and HUD-insured project-based subsidy units (partially covered)",
+          "Units sharing kitchen or bath with a landlord who lived on the property first"
+        ]
+      },
+      "exemptions": "New construction units with a certificate of occupancy issued after 1980, most single-family homes and most condominiums are partially covered (no rent ceiling). Certain federally subsidized units are partially covered regardless of type.",
+      "effective_date": null,
+      "penalty": null,
+      "citation": "Berkeley Rent Ordinance (as amended by Measure BB, Nov. 2024)",
+      "quoted_span": "The maximum AGA is 5%. This means that, if the formula in the Rent Ordinance results in an AGA that is greater than 5%, the AGA approved by the Board for that year can be no more than 5%.",
+      "yields_to_local_rule": false,
+      "may_preempt_local_rules": false,
+      "interaction": "The 5% cap was added by Measure BB (November 2024); the AGA formula tied to CPI predates it. Banked AGAs may still exceed 5%.",
+      "confidence": 0.75,
+      "conflict_flag": true,
+      "conflict_note": "Document says fully covered units are those 'built before 1980' but partially covered new construction has a certificate of occupancy 'issued after 1980'; treatment of 1980 itself is ambiguous."
     }
   ],
-  "notes": "Official Rent Board summary of Measure BB (passed Nov. 2024). No operative effective date or municipal code section is stated, so citations reference the measure. Other changes (utilities, notice of tenant rights, right to organize, registration fines, OMI relocation inflation adjustments) are outside the six categories or lack stated amounts and were not extracted."
+  "notes": "Official Berkeley Rent Board summary of Measure BB (Nov 2024). No code section cited in the document, so citations reference the Rent Ordinance as amended by Measure BB. Eviction notice content/filing requirements, notice of tenant rights at tenancy start, utilities, right to organize, capital improvement petitions, and registration rules are out of scope and not recorded. Measure BB's effective date is not stated."
 }

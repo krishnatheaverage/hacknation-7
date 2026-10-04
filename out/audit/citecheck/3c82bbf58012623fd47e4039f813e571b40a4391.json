@@ -1,0 +1,20 @@
+{
+ "key": "3c82bbf58012623fd47e4039f813e571b40a4391",
+ "team_rule_id": "r-0089",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D070"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Newark Mun. Code § 19:2-3.1 (Ord. 6 PSF-A(S), 9-5-17)",
+  "citation_basis": "§ 19:2-3.1: D070 (city page quoting the code); Ord. 6 PSF-A(S), 9-5-17: D070",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "condition": null,
+  "condition_quote": null,
+  "note": "Unchanged: the citation matches D070, but D070 is a City of Newark Division of Rent Control web page quoting the code rather than the code itself, so the card's quote comes from an agency page and the supplied corpus has no official text to quote from or to check for a missing condition."
+ }
+}

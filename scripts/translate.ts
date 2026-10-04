@@ -27,7 +27,7 @@ const Batch = z.object({
 
 const SYSTEM = `You translate rule cards for a renter-facing housing law tool into clear, plain Spanish as spoken in the United States (neutral Latin American Spanish).
 - Translate meaning faithfully. Do not add, drop or soften anything, and do not add advice.
-- Keep citations, code section numbers, ordinance and bill numbers, dollar amounts, percentages and dates exactly as written.
+- Keep citations, code section numbers, ordinance and bill numbers, dollar amounts and percentages exactly as written. Write dates in Spanish ("1 de marzo de 2026", "del 1 de julio de 2025 al 30 de junio de 2026"); never leave an English month name in the Spanish text.
 - Keep proper names of laws in English, followed by a short Spanish gloss in parentheses the first time when it helps (for example "Tenant Protection Act (Ley de Protección al Inquilino)").
 - Use "inquilino" for tenant, "arrendador" for landlord, "depósito de garantía" for security deposit, "desalojo" for eviction.
 - Return one entry per input card, with the same team_rule_id.`;
@@ -38,7 +38,9 @@ async function main() {
   const rules = normalizeRules(JSON.parse(fs.readFileSync("submission/rules.json", "utf8")), { consolidate: false }).rules;
   const cache: Record<string, Entry> = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, "utf8")) : {};
   const hash = (r: (typeof rules)[number]) => crypto.createHash("sha1").update(`${r.title}\n${r.requirement}\n${r.key_value ?? ""}`).digest("hex");
-  const todo = rules.filter((r) => cache[r.team_rule_id]?.source_hash !== hash(r));
+  // Redo an entry that is stale, or that still has an English month name in it.
+  const english = /\b(January|February|March|April|May|June|July|August|September|October|November|December)\b/;
+  const todo = rules.filter((r) => cache[r.team_rule_id]?.source_hash !== hash(r) || english.test(`${cache[r.team_rule_id]?.title} ${cache[r.team_rule_id]?.requirement} ${cache[r.team_rule_id]?.key_value ?? ""}`));
   console.log(`${rules.length} cards, ${todo.length} to translate`);
 
   const client = new Anthropic({ maxRetries: 6 });

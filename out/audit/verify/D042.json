@@ -1,43 +1,43 @@
 {
- "key": "fa3698a097892a7dac1fdcfab8a51378c7c7b831",
+ "key": "f733e3d25c05361810ca344f62070ff7c805fc4e",
  "doc_id": "D042",
  "ids": [
-  "r-0084"
+  "r-0087"
  ],
  "model": "claude-sonnet-5-5",
- "audited_at": "2026-10-03T23:40:49.792Z",
+ "audited_at": "2026-10-04T03:58:41.641Z",
  "cards": [
   {
-   "team_rule_id": "r-0084",
+   "team_rule_id": "r-0087",
    "requirement": {
     "verdict": "supported",
-    "evidence": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.",
-    "note": "Card's wording matches; the document states it in the context of RSO units' annual increase."
+    "evidence": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective\nJuly 1, 2025, through June 30, 2026\nis\n3%\n.",
+    "note": "Utility sentence and zimas/text instructions are also stated in the document."
    },
    "key_value": {
     "verdict": "supported",
-    "evidence": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.",
-    "note": "0% additional follows directly from 'no longer include any additional percentage increase'."
+    "evidence": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective\nJuly 1, 2025, through June 30, 2026\nis\n3%\n.",
+    "note": "3% for July 1, 2025 – June 30, 2026 matches."
    },
    "effective_date": {
-    "verdict": "supported",
-    "evidence": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.",
-    "note": "The date 2026-02-02 matches. The 2025-07-01 date in the extractor notes refers to the 3% annual increase period, not this rule."
+    "verdict": "not_applicable",
+    "evidence": null,
+    "note": "Field is empty on the card."
    },
    "status": {
-    "verdict": "supported",
-    "evidence": "Beginning February 2, 2026, a landlord can no longer include any additional percentage increase for utilities.",
-    "note": "The page, retrieved 2026-10-01, presents the rule as current law and the date has passed."
+    "verdict": "partly_supported",
+    "evidence": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective\nJuly 1, 2025, through June 30, 2026\nis\n3%\n.",
+    "note": "The page presents the rule as current, but as of 2026-10-01 the stated period (through June 30, 2026) has ended. The document gives no figure for July 1, 2026 onward, so in_force for the 3% figure is doubtful."
    },
    "coverage": {
     "verdict": "not_applicable",
     "evidence": null,
-    "note": "Coverage is empty on the card."
+    "note": "Field is empty on the card."
    },
    "citation": {
     "verdict": "partly_supported",
-    "evidence": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective",
-    "note": "The document refers to the RSO generally but gives no section number. The card cites only the ordinance name, which is consistent with the page but not a specific provision."
+    "evidence": "Annual rent increases for rental units subject to the City of Los Angeles Rent Stabilization Ordinance (RSO), effective\nJuly 1, 2025, through June 30, 2026\nis\n3%\n.",
+    "note": "The document names the Rent Stabilization Ordinance (RSO) but gives no municipal code section. The card cites only the ordinance name, which is thin but consistent."
    }
   }
  ]

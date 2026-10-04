@@ -12,22 +12,22 @@
   "source_hash": "5a704b5fe0dc8090921b50c8326638ccd446a59a"
  },
  "r-0084": {
-  "title": "Reubicación bajo la Resident Protections Ordinance por demolición de Protected Units para nueva construcción",
-  "requirement": "Si su unidad es una Protected Unit (Unidad Protegida; esto incluye todas las unidades bajo la RSO) y será demolida para una nueva construcción, usted tiene derecho a por lo menos el monto de reubicación de la RSO/JCO. Si su hogar es de bajos ingresos, recibe los montos más altos de la RPO (Resident Protections Ordinance, Ordenanza de Protección a Residentes) o del estado, hasta $115,480 para hogares de ingresos extremadamente bajos bajo la opción estandarizada de la Ciudad. Las protecciones de la RPO también incluyen un aviso de 6 meses, el derecho a quedarse hasta 6 meses antes de que comience la construcción, el derecho a regresar si la demolición no se lleva a cabo y, para algunos inquilinos, un derecho de preferencia en el nuevo edificio.",
-  "key_value": "Pagos estandarizados de la RPO: Ingresos extremadamente bajos $115,480; Muy bajos $96,750; Bajos $87,450; por encima de bajos ingresos recibe los montos de la Tabla A (Chart A) de la RSO/JCO (July 1, 2026–June 30, 2027)",
+  "title": "Reubicación bajo la Resident Protections Ordinance (Ordenanza de Protección a los Residentes) por demolición de Unidades Protegidas para nueva construcción",
+  "requirement": "Si su unidad es una Unidad Protegida (esto incluye todas las unidades RSO) y se va a demoler para nueva construcción, usted tiene derecho a recibir por lo menos el monto de reubicación de la RSO/JCO. Si su hogar es de ingresos bajos, recibe los montos más altos de la RPO o del estado, de hasta $115,480 para hogares de ingresos extremadamente bajos bajo la opción estandarizada de la Ciudad. Las protecciones de la RPO también incluyen un aviso con 6 meses de anticipación, el derecho a quedarse hasta 6 meses antes de que comience la construcción, el derecho a regresar si la demolición no se lleva a cabo y, para algunos inquilinos, un derecho de preferencia en el nuevo edificio.",
+  "key_value": "Pagos estandarizados de la RPO: Ingresos extremadamente bajos $115,480; Ingresos muy bajos $96,750; Ingresos bajos $87,450; por encima de ingresos bajos se reciben los montos de la Tabla A (Chart A) de la RSO/JCO (del 1 de julio de 2026 al 30 de junio de 2027)",
   "source_hash": "f0df5eebb5889269027c62698121fc50db1419ee"
  },
  "r-0088": {
-  "title": "Intereses sobre depósitos de garantía en unidades bajo la RSO",
-  "requirement": "Si renta una unidad bajo la RSO en Los Ángeles (con certificado de ocupación emitido por primera vez antes del October 1, 1978) y su arrendador ha tenido su depósito por al menos un año, el arrendador debe pagarle intereses (3.03% para 2026, o los intereses reales obtenidos con un estado de cuenta bancario), como pago directo o crédito a la renta, y cualquier interés no pagado cuando usted se mude. Si no le pagan, puede demandar, incluso en la Corte de Reclamos Menores (Small Claims Court); la ciudad no investigará.",
-  "key_value": "3.03% de interés simple para 2026 (tasa de la Rent Adjustment Commission) o los intereses reales obtenidos",
+  "title": "Intereses sobre depósitos de garantía para unidades RSO",
+  "requirement": "Si usted alquila una unidad RSO en Los Ángeles (cuyo certificado de ocupación se emitió por primera vez antes del 1 de octubre de 1978) y su arrendador ha tenido su depósito por al menos un año, el arrendador debe pagarle intereses (3.03% para 2026, o los intereses realmente ganados con un estado de cuenta bancario), como pago directo o crédito a la renta, y cualquier interés no pagado cuando usted se mude. Si no se los paga, puede demandar, incluso en la Corte de Reclamos Menores; la ciudad no investigará.",
+  "key_value": "3.03% de interés simple para 2026 (tasa de la Rent Adjustment Commission) o los intereses realmente ganados",
   "source_hash": "6994f9200e34ac820718cc04e712fb26e45eb434"
  },
  "r-0089": {
-  "title": "Límite al aumento anual bajo el control de rentas de Newark (máximo 4%)",
-  "requirement": "En unidades con control de rentas en Newark, la renta no puede subir más del porcentaje permitido en ningún período de 12 meses, y nunca más del 4%, aunque cambien los inquilinos o los dueños. No se permite ningún aumento si el edificio no cumple sustancialmente con las normas o si el arrendador no ha registrado la unidad, así que verifique el registro con la Office of Rent Control (Oficina de Control de Rentas).",
-  "key_value": "máximo 4% por cada 12 meses",
-  "source_hash": "cb4068cce3446631234b249a3f162153858d51cb"
+  "title": "Control de alquileres en Newark: límite al aumento anual de alquiler",
+  "requirement": "Si su apartamento en Newark tiene control de alquiler, su alquiler no puede subir más del porcentaje permitido en ningún período de 12 meses, y nunca más del 4%, aunque la unidad cambie de inquilinos o de dueños. No se permite ningún aumento si el edificio no cumple sustancialmente con los códigos o si el arrendador no ha registrado la unidad.",
+  "key_value": "nunca más del 4% en cualquier período consecutivo de 12 meses",
+  "source_hash": "74d13ba25facaad904926cfb4f69433b4b165d8a"
  },
  "r-0090": {
   "title": "Prohibición de fijación de rentas anticompetitiva automatizada (dispositivos algorítmicos)",
@@ -54,16 +54,16 @@
   "source_hash": "039af61c547aac2c3086d74b62894f2612e4b7ea"
  },
  "r-0097": {
-  "title": "Se requiere causa justa para desalojar a inquilinos en unidades cubiertas por la Rent Ordinance",
-  "requirement": "Un arrendador solo puede desalojarlo de una unidad cubierta por la SF Rent Ordinance (Ordenanza de Rentas de San Francisco) por una de 17 causas justas de la lista, y esa causa debe ser el motivo principal del arrendador. El simple vencimiento del contrato o la venta del edificio no es una causa justa, y el arrendador también necesita causa justa para quitar servicios de vivienda como estacionamiento, almacenamiento o lavandería.",
-  "key_value": "17 causas justas",
-  "source_hash": "fa87e4bdd892bb1e9a898d3485e40e152b2a7d74"
+  "title": "Pagos de reubicación por desplazamiento temporal de menos de 20 días",
+  "requirement": "Si usted es desplazado temporalmente por obras de mejoras de capital por menos de 20 días con un aviso entregado entre el 1 de marzo de 2026 y el 28 de febrero de 2027, a su hogar se le deben $446 por día más los gastos reales de mudanza.",
+  "key_value": "$446.00/día más los gastos reales de mudanza (3/01/26 – 2/28/27); $436.00/día (3/01/25 – 2/28/26)",
+  "source_hash": "f32c1500ba659443496b19d8eb223e45ce22280d"
  },
  "r-0098": {
-  "title": "Pagos de reubicación por desalojos bajo la Ellis Act",
-  "requirement": "Si recibe un aviso de desalojo bajo la Ellis Act (Ley Ellis) entre el 3/1/26 y el 2/28/27, se le deben $11,110.05 por inquilino, hasta $33,330.13 por unidad. Cada inquilino mayor (62+) o con discapacidad recibe $7,443.90 adicionales.",
-  "key_value": "$11,110.05 por inquilino; máximo $33,330.13 por unidad; más $7,443.90 por cada inquilino mayor (62+) o con discapacidad",
-  "source_hash": "22512059b64824ecf65ec003bfc035682166945e"
+  "title": "Se requiere causa justificada para desalojar a inquilinos en unidades cubiertas por la Rent Ordinance",
+  "requirement": "Un arrendador solo puede desalojarlo de una unidad cubierta por la SF Rent Ordinance (Ordenanza de Alquileres de San Francisco) por una de 17 causas justificadas enumeradas, y esa causa debe ser el motivo principal del arrendador. El simple vencimiento del contrato de arrendamiento o la venta del edificio no son causa justificada, y el arrendador también necesita causa justificada para quitar servicios de vivienda como estacionamiento, almacenamiento o lavandería.",
+  "key_value": "17 causas justificadas",
+  "source_hash": "fa87e4bdd892bb1e9a898d3485e40e152b2a7d74"
  },
  "r-0002": {
   "title": "Prohibición de usar o distribuir un algoritmo común de precios como parte de una conspiración para restringir el comercio",
@@ -192,10 +192,10 @@
   "source_hash": "0b77acece7fa8f65b961604d583732bf749faa47"
  },
  "r-0054": {
-  "title": "El desalojo por falta de pago requiere una deuda de al menos un mes de Fair Market Rent",
-  "requirement": "Los inquilinos de unidades de Berkeley cubiertas total o parcialmente solo pueden ser desalojados con causa justificada; por falta de pago, el arrendador no puede desalojarlo a menos que usted deba al menos un mes de la Fair Market Rent (Renta Justa de Mercado) de HUD para una unidad comparable en el área de Oakland-Fremont.",
-  "key_value": "deuda de renta ≥ 1 mes de la Fair Market Rent de HUD",
-  "source_hash": "0fd0cd51a94b34707c89dea4c4d941772cde5e80"
+  "title": "Se requiere causa justificada para desalojar a inquilinos en unidades total o parcialmente cubiertas",
+  "requirement": "Si su unidad en Berkeley está total o parcialmente cubierta por la Rent Ordinance (Ordenanza de Alquileres), su arrendador no puede desalojarlo sin una de las causas justificadas que enumera la ordenanza. Comuníquese con la Rent Board (Junta de Alquileres) si recibe un aviso de desalojo.",
+  "key_value": "Deuda de alquiler ≥ 1 mes del HUD Fair Market Rent (Renta Justa de Mercado del HUD) (área metropolitana Oakland-Fremont) para una unidad de tamaño equivalente",
+  "source_hash": "eb8878fa4c329485a54ee296c7adca7f1843e886"
  },
  "r-0056": {
   "title": "Asistencia de reubicación por desalojos para que el propietario se mude a la unidad (ajuste por inflación de 2026)",
@@ -204,10 +204,10 @@
   "source_hash": "6080836a8a86c987d0516421a16886fd5ebc52a4"
  },
  "r-0058": {
-  "title": "Ajuste General Anual (AGA) de Berkeley de 1.0% para 2026",
-  "requirement": "Para 2026, los arrendadores de Berkeley que califiquen pueden aumentar el límite de renta de una unidad cubierta en no más de 1.0%, y no antes del 1 de enero de 2026. El arrendador debe cumplir las condiciones de la Regulation 1148 y dar el aviso requerido. Los inquilinos pueden comunicarse con la Rent Board (Junta de Rentas) al 510-981-7368 si tienen preguntas.",
-  "key_value": "AGA 2026 de 1.0% (65% del aumento del CPI del Área de la Bahía); el AGA nunca puede superar el 5%",
-  "source_hash": "440beba1ddcfae497cf5df37f5bd99b627d41f37"
+  "title": "Ajuste General Anual limitado a 5% para unidades totalmente cubiertas",
+  "requirement": "Si su unidad está totalmente cubierta (la mayoría de las unidades multifamiliares construidas antes de 1980, y ahora muchas unidades subsidiadas), su aumento anual de alquiler está limitado al Ajuste General Anual de la Rent Board (Junta de Alquileres), que nunca puede superar el 5%. Un arrendador con aumentos no utilizados acumulados aún puede subir el alquiler por encima del 5% hasta el alquiler máximo.",
+  "key_value": "AGA vinculado al CPI (Índice de Precios al Consumidor), nunca más del 5%",
+  "source_hash": "1e38983e955d328a631591227be64938f33fcfc4"
  },
  "r-0061": {
   "title": "Intereses anuales sobre los depósitos de garantía según la Rent Ordinance de Berkeley",
@@ -271,8 +271,8 @@
  },
  "r-0076": {
   "title": "Pregunta pública de Hoboken de 2024 para permitir renta a precio de mercado en unidades desocupadas a cambio de una tarifa de $2,500 (rechazada)",
-  "requirement": "Esta propuesta no es ley. Los votantes de Hoboken la rechazaron el November 5, 2024 (6,082 a favor y 16,371 en contra), así que los arrendadores no pueden pagar una tarifa de $2,500 para restablecer a precio de mercado la renta de un apartamento desocupado con control de rentas.",
-  "key_value": "tarifa de $2,500 para renta a precio de mercado al desocuparse (rechazada)",
+  "requirement": "Esta propuesta no es ley. Los votantes de Hoboken la rechazaron el 5 de noviembre de 2024 (6,082 a favor y 16,371 en contra), por lo que los arrendadores no pueden pagar una tarifa de $2,500 para restablecer a renta de mercado un apartamento con control de renta que haya quedado desocupado.",
+  "key_value": "Tarifa de $2,500 para renta a precio de mercado al desocuparse la unidad (rechazada)",
   "source_hash": "09138aa0e01b4ef6b5b2a0a9cebb3cac3675a0d4"
  },
  "r-0078": {
@@ -294,22 +294,22 @@
   "source_hash": "a0a2bd4addde59eb1e39f6fec8ae2c14fb02e68d"
  },
  "r-0101": {
-  "title": "Aumento anual permitido de renta para unidades con control de rentas, March 1, 2026 – February 28, 2027",
-  "requirement": "Si vive en una unidad con control de rentas en San Francisco, el aumento anual de su arrendador del March 1, 2026 al February 28, 2027 está limitado al 1.6% de su renta base. Por ejemplo, con una renta base de $2,000 el aumento es de $32, para una nueva renta base de $2,032.",
-  "key_value": "1.6%",
-  "source_hash": "da8a510bfef5f253f94857094042893561ccb224"
+  "title": "Pagos de reubicación por desalojos para mudanza del dueño o un familiar, demolición/retiro, mejoras de capital temporales o rehabilitación sustancial",
+  "requirement": "Si su arrendador en San Francisco le entrega un aviso de desalojo para que se mude el dueño o un familiar, por demolición o retiro permanente de la unidad, por obras temporales de mejoras de capital o por rehabilitación sustancial entre el 3/1/2026 y el 2/28/2027, se le deben $8,245 por inquilino, hasta $24,733 por unidad. Cada inquilino de edad avanzada (60+) o con discapacidad, o un hogar con hijos menores de edad, recibe $5,497 adicionales.",
+  "key_value": "$8,245.00 por inquilino, máximo $24,733.00 por unidad, más $5,497.00 por inquilino de edad avanzada (60+)/con discapacidad u hogar con hijos menores (3/01/26 – 2/28/27); $8,062.00 / $24,184.00 / $5,375.00 (3/01/25 – 2/28/26)",
+  "source_hash": "c20e851ace0af177a1b57bdbc00d0faad4beb871"
  },
  "r-0103": {
-  "title": "Fair Chance Ordinance (Ordenanza de Oportunidad Justa): antecedentes penales en decisiones de vivienda asequible",
-  "requirement": "Si está solicitando vivienda asequible en San Francisco y tiene antecedentes de arrestos o condenas, la Fair Chance Ordinance limita cómo se pueden usar esos antecedentes en la decisión sobre la vivienda. Puede comunicarse con la Human Rights Commission (Comisión de Derechos Humanos) para presentar una queja.",
-  "key_value": null,
-  "source_hash": "e89fb92626972f20c9ad8eb1fbe573ac76e71305"
+  "title": "Aumento anual de alquiler permitido en San Francisco para unidades con control de alquiler (3/1/2026 - 2/28/2027)",
+  "requirement": "Si vive en una unidad con control de alquiler en San Francisco, el aumento anual de alquiler de su arrendador vigente del 1 de marzo de 2026 al 28 de febrero de 2027 no puede superar el 1.6% de su alquiler base. Multiplique su alquiler base por .016 para saber el aumento máximo en dólares.",
+  "key_value": "1.6% del 1 de marzo de 2026 al 28 de febrero de 2027; 1.4% del 1 de marzo de 2025 al 28 de febrero de 2026",
+  "source_hash": "1f615d0428d5b5834d521889b140b1d0e6e3fa0f"
  },
  "r-0104": {
-  "title": "Prohibición de software algorítmico para fijar rentas que use datos no públicos",
-  "requirement": "En Santa Ana, los arrendadores no pueden usar cierto software para fijar rentas que se basa en datos de mercado no públicos, como las rentas en tiempo real de la competencia, la actividad de contratos o la ocupación, para establecer las rentas. Si su arrendador usó ese software, usted puede demandar sin tener que probar colusión y puede recuperar daños, obtener una orden judicial (injunction), hasta $1,000 por violación y honorarios de abogado.",
-  "key_value": "hasta $1,000 por violación",
-  "source_hash": "2218df5eb4ab0aed5801e4d2d73a8cc5f1355b54"
+  "title": "Fair Chance Ordinance – antecedentes penales en decisiones sobre vivienda asequible",
+  "requirement": "Si usted solicita vivienda asequible en San Francisco y tiene antecedentes de arresto o condena, la Fair Chance Ordinance (Ordenanza de Oportunidad Justa) limita cómo se pueden usar esos antecedentes en la decisión sobre la vivienda. Puede comunicarse con la Human Rights Commission (Comisión de Derechos Humanos) para presentar una queja.",
+  "key_value": null,
+  "source_hash": "e89fb92626972f20c9ad8eb1fbe573ac76e71305"
  },
  "r-0030": {
   "title": "Prohibición estatal del control local de rentas (Rent Control Prohibition Act (Ley de Prohibición del Control de Rentas))",
@@ -319,8 +319,8 @@
  },
  "r-0081": {
   "title": "Asistencia de reubicación y presentación ante LAHD en desalojos sin culpa bajo la RSO y la JCO",
-  "requirement": "Si su arrendador lo desaloja por una razón sin culpa del inquilino (que el dueño o un familiar se mude a la unidad, demolición o retiro del uso de alquiler, orden del gobierno de desocupar, conversión y casos similares), el arrendador primero debe presentar una Declaration of Intent to Evict (Declaración de Intención de Desalojar) ante LAHD. El arrendador también debe pagarle asistencia de reubicación por unidad dentro de 15 días después de entregar el aviso; los montos de 2026-27 van de $11,000 a $27,400 según la duración de su arrendamiento, sus ingresos, su edad, discapacidad o si tiene hijos. Si no le pagan, puede usar la falta de pago como defensa contra el desalojo y presentar una queja ante LAHD.",
-  "key_value": "Elegible: $11,000 (<3 años) / $14,400 (3+ años o bajos ingresos); Calificado: $23,150 / $27,400; mudanza del dueño Mom & Pop: $10,550 / $21,250; casa unifamiliar bajo la JCO propiedad de una persona física: 1 mes de renta (July 1, 2026–June 30, 2027)",
+  "requirement": "Si su arrendador lo desaloja por una razón sin culpa (mudanza del propietario o de un familiar, demolición o retiro del uso de alquiler, orden gubernamental de desocupar, conversión y casos similares), el arrendador primero debe presentar una Declaración de Intención de Desalojo (Declaration of Intent to Evict) ante LAHD. El arrendador también debe pagarle asistencia de reubicación por unidad dentro de los 15 días de entregarle el aviso; los montos de 2026-27 van de $11,000 a $27,400 según la duración de su arrendamiento, sus ingresos, su edad, si tiene una discapacidad o si tiene hijos. Si no le pagan, puede usar la falta de pago como defensa contra el desalojo y presentar una queja ante LAHD.",
+  "key_value": "Elegible: $11,000 (<3 años) / $14,400 (3+ años o bajos ingresos); Calificado: $23,150 / $27,400; mudanza del propietario en propiedades de pequeños propietarios (Mom & Pop): $10,550 / $21,250; JCO, casa unifamiliar de propiedad de una persona física: 1 mes de renta (del 1 de julio de 2026 al 30 de junio de 2027)",
   "source_hash": "ad5b4e5316c9d70394e77481928bd89c066e471a"
  },
  "r-0095": {
@@ -354,28 +354,22 @@
   "source_hash": "bc16e81aac4dde1d413f427378a9d48885eb50fd"
  },
  "r-0086": {
-  "title": "Aumento anual permitido de renta bajo la Rent Stabilization Ordinance (RSO)",
-  "requirement": "Si su unidad en Los Ángeles se construyó originalmente el October 1, 1978 o antes, su arrendador solo puede subir la renta una vez cada 12 meses, sin pasar del porcentaje permitido que publica la ciudad. Desde el February 2, 2026, los arrendadores no pueden agregar un porcentaje adicional por servicios públicos ni un aumento del 10% por un dependiente adicional. Los aumentos por encima de esto, como por mejoras de capital, necesitan la aprobación de LAHD.",
-  "key_value": "Una vez cada 12 meses según el porcentaje de aumento permitido por LAHD; sin porcentaje adicional por servicios públicos después del 2026-02-02",
-  "source_hash": "8612a9d9f750ea77e0451c468fc48731d7771e44"
+  "title": "Aumento anual de alquiler permitido bajo la Rent Stabilization Ordinance (RSO) (Ordenanza de Estabilización de Alquileres)",
+  "requirement": "Si su unidad en Los Ángeles se construyó por primera vez el 1 de octubre de 1978 o antes, su arrendador puede aumentar el alquiler solo una vez cada 12 meses, y no más del porcentaje permitido que publica la ciudad. Desde el 2 de febrero de 2026, los arrendadores no pueden agregar un porcentaje adicional por servicios públicos ni un aumento del 10% por un dependiente adicional. Los aumentos mayores, como por mejoras de capital, necesitan la aprobación de LAHD (Departamento de Vivienda de Los Ángeles).",
+  "key_value": "3% del 1 de julio de 2025 al 30 de junio de 2026 (porcentaje de aumento de alquiler permitido por LAHD), una vez cada 12 meses; sin porcentaje adicional por servicios públicos después del 2026-02-02",
+  "source_hash": "6583ff48d93e8e296df0f93ef6249e30a46200ea"
  },
  "r-0099": {
-  "title": "Pagos de reubicación por desalojos para mudanza del dueño o familiar, demolición/retiro, mejora de capital temporal o rehabilitación sustancial",
-  "requirement": "Si recibe un aviso de desalojo entre el 3/1/26 y el 2/28/27 porque el dueño o un familiar se mudará a la unidad, por demolición o retiro permanente, por obras temporales de mejora de capital o por rehabilitación sustancial, se le deben $8,245 por inquilino, hasta $24,733 por unidad. Cada inquilino mayor (60+) o con discapacidad, o cada hogar con hijos menores de edad, recibe $5,497 adicionales.",
-  "key_value": "$8,245 por inquilino; máximo $24,733 por unidad; más $5,497 por cada inquilino mayor (60+), con discapacidad, u hogar con hijos menores",
-  "source_hash": "7920a1b9566add4bd2718d87a70fd62efe741255"
- },
- "r-0107": {
-  "title": "Just Cause Eviction Ordinance (Ordenanza de Desalojo por Causa Justa) de Santa Ana",
-  "requirement": "Después de 30 días de arrendamiento, su arrendador no puede terminar su arrendamiento sin una causa justa de la lista indicada en un aviso por escrito y, en el caso de causas por culpa del inquilino, primero debe darle la oportunidad de corregir la violación. En desalojos sin culpa (mudanza del dueño, retiro del mercado, demolición o remodelación sustancial), el arrendador debe pagar 3 meses de asistencia de reubicación o perdonarle los últimos 3 meses de renta.",
-  "key_value": "3 meses de asistencia de reubicación o perdón de 3 meses de renta en desalojos sin culpa",
-  "source_hash": "d29c8c6cd0e49a00111975e7e51114b12ebce391"
+  "title": "Pagos de reubicación por desalojos bajo la Ellis Act",
+  "requirement": "Si usted es desalojado bajo la Ellis Act (Ley Ellis) con un aviso entregado entre el 1 de marzo de 2026 y el 28 de febrero de 2027, se le deben $11,110.05 por inquilino (hasta $33,330.13 por unidad), más $7,443.90 por cada inquilino de edad avanzada (62+) o con discapacidad.",
+  "key_value": "$11,110.05 por inquilino, máximo $33,330.13 por unidad, más $7,443.90 por cada inquilino de edad avanzada (62+) o con discapacidad (avisos entregados 3/1/26–2/28/27)",
+  "source_hash": "d987c8088ea8fc102c0716f8750eec8950a25ff2"
  },
  "r-0109": {
-  "title": "Límite al aumento anual de renta en Santa Ana",
-  "requirement": "Su arrendador solo puede subir la renta una vez al año, sin pasar de lo que sea menor entre el 3% o el 80% del cambio en el CPI (Índice de Precios al Consumidor). Del September 1, 2026 al August 31, 2027 el máximo es 2.87%, y usted puede presentar una Tenant Petition (Petición del Inquilino) si su aumento es mayor.",
-  "key_value": "lo menor entre 3% o el 80% del cambio en el CPI (0% si el CPI es negativo); 2.87% del 2026-09-01 al 2027-08-31",
-  "source_hash": "8d469237dcb3d9a462343a89dff20b22b196c47e"
+  "title": "Santa Ana Just Cause Eviction Ordinance (Ordenanza de Desalojo por Causa Justificada de Santa Ana)",
+  "requirement": "Después de 30 días de arrendamiento, su arrendador no puede terminar su arrendamiento sin una causa justificada de la lista, indicada en un aviso por escrito, y en el caso de causas por culpa del inquilino primero debe darle la oportunidad de corregir la infracción. En desalojos sin culpa del inquilino (mudanza del dueño, retiro del mercado, demolición o remodelación sustancial), el arrendador debe pagar 3 meses de asistencia de reubicación o perdonar los últimos 3 meses de alquiler.",
+  "key_value": "3 meses de asistencia de reubicación o perdón de 3 meses de alquiler en desalojos sin culpa del inquilino",
+  "source_hash": "d29c8c6cd0e49a00111975e7e51114b12ebce391"
  },
  "r-0009": {
   "title": "Requisito de causa justa para el desalojo según la Tenant Protection Act (Ley de Protección al Inquilino)",
@@ -424,5 +418,29 @@
   "requirement": "Incluso después de una oferta condicional, un arrendador de New Jersey nunca puede considerar arrestos sin condena, antecedentes borrados (expunged), indultados, anulados o sellados, ni adjudicaciones juveniles. Solo puede considerar las condenas graves enumeradas, los delitos de primer grado dentro de 6 años, los delitos de segundo o tercer grado dentro de 4 años y los delitos de cuarto grado dentro de 1 año. Si el arrendador retira la oferta, debe darle las razones por escrito y una evaluación individualizada, y usted puede solicitar dentro de 30 días, sin costo, toda la información en la que se basó.",
   "key_value": "Período de revisión: 1er grado 6 años; 2º/3er grado 4 años; 4º grado 1 año",
   "source_hash": "9d117de4b72f3bcfcee1074ed3b4d1b2d594ff47"
+ },
+ "r-0057": {
+  "title": "Ajuste General Anual (AGA) de Berkeley para 2026 de 1.0%",
+  "requirement": "Para 2026, los arrendadores elegibles de Berkeley pueden aumentar el alquiler máximo de una unidad cubierta en no más de 1.0%, y no antes del 1 de enero de 2026. El arrendador debe cumplir las condiciones requeridas en la Regulation 1148 (Reglamento 1148) y dar el aviso requerido. Los inquilinos pueden comunicarse con la Rent Board (Junta de Alquileres) al 510-981-7368 si tienen preguntas.",
+  "key_value": "1.0% (65% del aumento del CPI (Índice de Precios al Consumidor) del Área de la Bahía)",
+  "source_hash": "5f16603685ebab4399675e283e1c5f08b3cb5404"
+ },
+ "r-0105": {
+  "title": "Tasa de interés del depósito de garantía",
+  "requirement": "Su arrendador debe pagarle intereses sobre su depósito de garantía a una tasa de 4.2% para el período del 1 de marzo de 2026 al 28 de febrero de 2027. Solicite estos intereses si no se los han pagado.",
+  "key_value": "4.2% del 1 de marzo de 2026 al 28 de febrero de 2027 (5.0% del 1 de marzo de 2025 al 28 de febrero de 2026; 5.2% del 1 de marzo de 2024 al 28 de febrero de 2025)",
+  "source_hash": "af05a1265296d8d4a7860aa5fc07454eb19a9a25"
+ },
+ "r-0106": {
+  "title": "Prohibición de software algorítmico para fijar alquileres que usa datos no públicos",
+  "requirement": "Los arrendadores en Santa Ana no pueden usar cierto software para fijar alquileres que se basa en datos de mercado no públicos, como los alquileres en tiempo real de la competencia, la actividad de contratos de arrendamiento o la ocupación, para fijar los alquileres. Si su arrendador usó ese tipo de software, usted puede demandar sin tener que probar colusión y puede obtener daños y perjuicios, una orden judicial, hasta $1,000 por infracción y honorarios de abogado.",
+  "key_value": "hasta $1,000 por infracción",
+  "source_hash": "2218df5eb4ab0aed5801e4d2d73a8cc5f1355b54"
+ },
+ "r-0111": {
+  "title": "Límite al aumento anual de alquiler en Santa Ana",
+  "requirement": "Su arrendador puede aumentar el alquiler solo una vez al año, y no más de lo que sea menor entre 3% o el 80% del cambio en el CPI (Índice de Precios al Consumidor). Del 1 de septiembre de 2026 al 31 de agosto de 2027, el máximo es 2.87%, y usted puede presentar una Tenant Petition (Petición del Inquilino) si su aumento es mayor.",
+  "key_value": "lo que sea menor entre 3% o el 80% del cambio en el CPI (0% si el CPI es negativo); 2.87% del 2026-09-01 al 2027-08-31",
+  "source_hash": "8d469237dcb3d9a462343a89dff20b22b196c47e"
  }
 }

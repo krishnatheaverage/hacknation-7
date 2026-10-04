@@ -1,43 +1,43 @@
 {
- "key": "36d4d1662dc6522fe59a3159e6d1b89cd58bc084",
+ "key": "5d2f722d39be9b8aa66965116c8948825aa771ef",
  "doc_id": "D070",
  "ids": [
-  "r-0086"
+  "r-0089"
  ],
  "model": "claude-sonnet-5-5",
- "audited_at": "2026-10-03T23:40:54.372Z",
+ "audited_at": "2026-10-04T03:58:40.762Z",
  "cards": [
   {
-   "team_rule_id": "r-0086",
+   "team_rule_id": "r-0089",
    "requirement": {
     "verdict": "supported",
-    "evidence": "In no case shall the allowable rent increase exceed 4%. The allowable annual increase will not be permitted, if the dwelling is not in substantial compliance and/or if the landlord has not met the registration requirements as specified in this subsection 19:2-9.8.",
-    "note": "The 12-month window and the tenant/owner change language are in the page's general paragraph. The advice to check registration with the Office of Rent Control is a minor addition."
+    "evidence": "The rents for any housing space shall not be increased more than the percentages stated below in any consecutive 12-month period, irrespective of the number of different tenants occupying the housing space during the 12-month period, any change of ownership of the Landlord or vacancy of the housing space.",
+    "note": "Also supported by the 4% cap and the substantial compliance/registration condition in 19:2-3.1 text."
    },
    "key_value": {
     "verdict": "supported",
     "evidence": "In no case shall the allowable rent increase exceed 4%.",
-    "note": "The 12-month period is stated in the preceding paragraph."
+    "note": "The 12-month period language appears in the preceding paragraph."
    },
    "effective_date": {
-    "verdict": "partly_supported",
-    "evidence": "The Rent Control Ordinance was amended on September 05, 2017.",
-    "note": "The 4% provision cites Ord. 6 PSF-A(S), 9-5-17, which is the adoption date. The document gives no explicit effective date, and the card does not explain the step from adoption to effectiveness."
+    "verdict": "not_applicable",
+    "evidence": null,
+    "note": "Field is null on the card."
    },
    "status": {
     "verdict": "supported",
-    "evidence": "In no case shall the allowable rent increase exceed 4%.",
-    "note": "The page presents the cap as current law. The moratorium was rescinded on September 18, 2023."
+    "evidence": "In no case shall the allowable rent increase exceed 4%. The allowable annual increase will not be permitted, if the dwelling is not in substantial compliance and/or if the landlord has not met the registration requirements",
+    "note": "The page presents the rule as current law. The moratorium was rescinded 2023-09-18, so it does not block the rule as of 2026-10-01."
    },
    "coverage": {
     "verdict": "not_applicable",
     "evidence": null,
-    "note": "Coverage is empty on the card."
+    "note": "Field is null on the card."
    },
    "citation": {
     "verdict": "supported",
-    "evidence": "Pursuant to 19:2-3. Rent Increases. 19:2-3.1. Determination of Rents. In no case shall the allowable rent increase exceed 4%.",
-    "note": "The page cites 19:2-3 and Ord. 6 PSF-A(S), 9-5-17."
+    "evidence": "Pursuant to 19:2-3. Rent Increases. 19:2-3.1. Determination of Rents. In no case shall the allowable rent increase exceed 4%. The allowable annual increase will not be permitted, if the dwelling is not in substantial compliance and/or if the landlord has not met the registration requirements as specified in this subsection 19:2-9.8. (Ord. 6 PSF-A(S), 9-5-17)",
+    "note": "The section number and ordinance reference match the document."
    }
   }
  ]

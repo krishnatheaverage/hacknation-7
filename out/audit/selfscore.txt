@@ -1,5 +1,5 @@
 SELF-CHECK (not the official score.py)
-  rules 71 | addresses 500 | as of 2026-10-01
+  rules 74 | addresses 500 | as of 2026-10-01
 
 Extraction         25.0 / 25   (27 rules named in the brief)
 Address coverage   20.0 / 20   (no silver address key yet; using the brief's invariants)
@@ -14,7 +14,7 @@ Address coverage   20.0 / 20   (no silver address key yet; using the brief's inv
      71/71  SF pre-1979: local rent cap applies
      25/25  LA post-1978: RSO does not apply
       7/7   SF post-1979: local rent cap does not apply
-Citations          14.3 / 15   (3953/4142 'applies' answers quote the supplied corpus; the rest quote official texts we added, which the organizers don't count)
+Citations          14.3 / 15   (4113/4302 'applies' answers quote the supplied corpus; the rest quote official texts we added, which the organizers don't count)
 Change tracking    15.0 / 15
     T1: overlap 1.00 (ours 250, expected 250)
     T2: overlap 1.00 (ours 90, expected 90)
@@ -24,11 +24,11 @@ Change tracking    15.0 / 15
 SCRIPTED TOTAL     74.3 / 75
 
 LAWYER REVIEW (Gulnur Bekmukhanbetova, 92 cards)
-  matched to a current card   89/92
-  status agrees               89/89
-  effective date agrees       37/48
-  duplicates merged           9/9
+  matched to a current card   88/92
+  status agrees               88/88
+  effective date agrees       32/47
+  duplicates merged           7/9
   coverage notes folded       4/4
   test rule map agrees        7/7
-  cite a code section or chapter 63/65 enacted rules
-  quote the law's own text       58/65 (18 from the supplied corpus)
+  cite a code section or chapter 66/68 enacted rules
+  quote the law's own text       59/68 (18 from the supplied corpus)
