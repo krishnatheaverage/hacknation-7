@@ -1,0 +1,22 @@
+{
+ "key": "cee1e8e8ff658d8d595b7d5234522359143f5498",
+ "team_rule_id": "r-0098",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D083",
+  "D082",
+  "O040",
+  "O041",
+  "O042"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "S.F. Admin. Code § 37.9A(e)",
+  "citation_basis": "§ 37.9A(e): O040 (subsections 37.9A(e)(1)(A)-(D) and (e)(2)); 37.9A also named in D083 ('578 Multilingual Relocation Payments 37.9A')",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "note": "Adopted the lawyer's form with the (e) pinpoint, which O040 places on the Ellis Act relocation payments, and dropped the card's 'Rent Ordinance Section 37.9A' parenthetical because it is a nickname, not a citation; no quote is given because D083 and D082 are Rent Board rate pages and O040 says it is not the official record (American Legal is the official publisher)."
+ }
+}

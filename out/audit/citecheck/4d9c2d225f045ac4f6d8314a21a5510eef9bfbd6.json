@@ -1,0 +1,25 @@
+{
+ "key": "4d9c2d225f045ac4f6d8314a21a5510eef9bfbd6",
+ "team_rule_id": "r-0086",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D041",
+  "D044",
+  "D042",
+  "O034",
+  "O033",
+  "O030",
+  "O032",
+  "O085"
+ ],
+ "retried": true,
+ "result": {
+  "citation": "L.A. Mun. Code § 151.06(D) (annual increase) (Ord. No. 188795); see also id. § 151.02 (coverage) (Ord. No. 184822)",
+  "citation_basis": "§ 151.06(D) and Ord. No. 188795: O032; § 151.02 and Ord. No. 184822: O085, O034",
+  "source_is_law_text": false,
+  "official_doc_id": "O032",
+  "official_quote": "The allowable annual rent adjustment shall be 90 percent of the percentage change rounded off to the nearest whole number as determined by the Department. If the allowable annual rent adjustment is less than one percent, a landlord may increase the maximum or maximum adjusted rent by up to one percent. In no event, however, may an annual rent increase under this subsection exceed four percent.",
+  "is_city_policy": false,
+  "note": "Followed the lawyer's form but narrowed § 151.06 to subsection D, because O032 shows the annual-increase rule there as amended by Ord. No. 188795 (effective Feb. 2, 2026); added Ord. No. 184822 for § 151.02 per O085 and O034; dropped the nickname-only cite."
+ }
+}

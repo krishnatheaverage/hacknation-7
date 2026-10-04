@@ -13,6 +13,7 @@
 //
 //   npx tsx scripts/citecheck.ts                     # reads the grouped rules, writes out/citecheck.json
 //   npx tsx scripts/citecheck.ts --only "CA;NJ"      # just these jurisdictions
+//   npx tsx scripts/citecheck.ts --cards r-0019,r-0090  # just these cards
 import "./load-env";
 import crypto from "node:crypto";
 import fs from "node:fs";
@@ -332,8 +333,11 @@ async function main() {
   // --only "CA,NJ" limits a run to some jurisdictions; the others keep their last result.
   const only = process.argv.includes("--only") ? process.argv[process.argv.indexOf("--only") + 1].split(/\s*;\s*/) : null;
   const previous: Record<string, CiteCheckEntry> = fs.existsSync("out/citecheck.json") ? JSON.parse(fs.readFileSync("out/citecheck.json", "utf8")) : {};
-  const todo = only ? rules.filter((r) => only.includes(r.jurisdiction)) : rules.slice();
-  if (only) for (const r of rules) if (!only.includes(r.jurisdiction) && previous[r.team_rule_id]) out[r.team_rule_id] = previous[r.team_rule_id];
+  // --cards r-0019,r-0090 rechecks just those cards; every other card keeps its last result.
+  const cards = process.argv.includes("--cards") ? process.argv[process.argv.indexOf("--cards") + 1].split(/\s*,\s*/) : null;
+  const picked = (r: RuleRecord) => (only ? only.includes(r.jurisdiction) : true) && (cards ? cards.includes(r.team_rule_id) : true);
+  const todo = rules.filter(picked);
+  if (only || cards) for (const r of rules) if (!picked(r) && previous[r.team_rule_id]) out[r.team_rule_id] = previous[r.team_rule_id];
   await Promise.all(
     Array.from({ length: 6 }, async () => {
       while (next < todo.length) {

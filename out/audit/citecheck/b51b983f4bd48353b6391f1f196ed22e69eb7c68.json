@@ -1,0 +1,21 @@
+{
+ "key": "b51b983f4bd48353b6391f1f196ed22e69eb7c68",
+ "team_rule_id": "r-0097",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D079",
+  "O040",
+  "O041",
+  "O042"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "S.F. Admin. Code § 37.9(a) (Ord. No. 03-26); see also id. §§ 37.9(c), 37.2(r)",
+  "citation_basis": "§ 37.9(a): D079, O040; Ord. No. 03-26 (amending § 37.9, adding the 17th just cause): O040 table of recent changes; § 37.9(c) (dominant motive): O040; § 37.2(r) (housing services cannot be severed without just cause): O040",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "note": "Kept the § 37.9(a) pinpoint and added Ord. No. 03-26, which per O040 last amended § 37.9 by adding the 17th just cause; added see-also cites to § 37.9(c) for the dominant-motive rule and § 37.2(r) for housing services; no quote is given because D079 is an agency page and O040 is the Rent Board's copy, which it says is not the official record."
+ }
+}

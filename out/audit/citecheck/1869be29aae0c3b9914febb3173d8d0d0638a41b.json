@@ -1,0 +1,23 @@
+{
+ "key": "1869be29aae0c3b9914febb3173d8d0d0638a41b",
+ "team_rule_id": "r-0060",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D003",
+  "O094",
+  "O050",
+  "O092",
+  "O053",
+  "X002"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Berkeley Mun. Code § 13.106.040(A) (Ord. 7692-NS, Ronald V. Dellums Fair Chance Access to Housing Ordinance); see also id. § 13.106.040(E)",
+  "citation_basis": "§ 13.106.040(A), (E), ch. 13.106 and Ord. 7692-NS: O094; short title: O094 § 13.106.010",
+  "source_is_law_text": false,
+  "official_doc_id": "O094",
+  "official_quote": "A. Except as provided in Paragraphs B and C of this Section, a Housing Provider shall not, at any time or by any means, whether direct or indirect, inquire about an Applicant’s Criminal History, require an Applicant to disclose their Criminal History, require an Applicant to authorize the release of their Criminal History or, if such information is received, base an Adverse Action in whole or in part on an Applicant’s Criminal History.",
+  "is_city_policy": false,
+  "note": "Narrowed the chapter cite to § 13.106.040(A), which holds the ban on criminal-history inquiries; added § 13.106.040(E) for the written-notice and opportunity-to-respond rule and the enacting ordinance from the code's history note; the fines and Rent Board complaint process are left uncited because no document states their section numbers."
+ }
+}

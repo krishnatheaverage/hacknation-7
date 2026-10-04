@@ -1,0 +1,23 @@
+{
+ "key": "33eb2d22b8a747706e7a47c5641a778b481082c1",
+ "team_rule_id": "r-0078",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D035",
+  "D002",
+  "O083",
+  "O082",
+  "O084",
+  "O081"
+ ],
+ "retried": true,
+ "result": {
+  "citation": "Jersey City Code § 218-12(2)(a) (Ord. 25-057, as amended by Ord. 25-076); see also id. § 218-12(2)(b), (4)",
+  "citation_basis": "§ 218-12 and subsections 2(a), 2(b): D035, O082; Ord. 25-057: D035, O084; Ord. 25-076: O082; enforcement renumbered to subsection 4: O083",
+  "source_is_law_text": true,
+  "official_doc_id": "O082",
+  "official_quote": "It is unlawful for any real estate lessor, agent, or subcontractor thereof, to subscribe to, contract with, or otherwise exchange anything of value in return for or otherwise utilize the services of a Service Provider.",
+  "is_city_policy": false,
+  "note": "The citation now pinpoints subsection 2(a), which holds the ban, and adds Ord. 25-076 because that ordinance last changed this subsection (adding 'or otherwise utilize'). It also points to the service-provider ban in 2(b) and to enforcement and penalties, which Ord. 25-098 renumbered as subsection 4. The section is not yet codified: Municode's current § 218-12 is still 'Exempt dwellings', so the quote comes from the amending ordinance."
+ }
+}

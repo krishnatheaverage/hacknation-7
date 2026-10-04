@@ -1,0 +1,23 @@
+{
+ "key": "8259f726f8619143ab8e9f96d9ae0b1b0ef482a8",
+ "team_rule_id": "r-0032",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D059",
+  "O101",
+  "O072",
+  "O070",
+  "O100",
+  "O099"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026)",
+  "citation_basis": "Cella v. Attorney General, SJC-13893: O101, D059; (Mass. June 23, 2026): O101 (date also D059)",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "note": "Adopted the lawyer's form, which O101 and D059 support, citing the case itself instead of the petition name; the Supreme Judicial Court held that Initiative Petition 25-21 (statewide rent control) relates to religion under Article 48 and barred it from the November 2026 ballot, so it creates no rent cap."
+ }
+}

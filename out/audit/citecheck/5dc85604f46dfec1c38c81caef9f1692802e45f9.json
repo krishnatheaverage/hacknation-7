@@ -1,0 +1,21 @@
+{
+ "key": "5dc85604f46dfec1c38c81caef9f1692802e45f9",
+ "team_rule_id": "r-0099",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D083",
+  "O040",
+  "O041",
+  "O042"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "S.F. Admin. Code § 37.9C(e)",
+  "citation_basis": "§ 37.9C and subsection (e) (relocation amounts, incl. (e)(2) additional payment and (e)(3) annual adjustment): O040 (also § 37.9C named in D083)",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "note": "Pinpointed to subsection (e), which sets the relocation amounts, and dropped the parenthetical 'Rent Ordinance Section 37.9C' because that label comes from the Rent Board page, not the law's own text; the only full text supplied (O040) is the Rent Board's copy, which disclaims being the official record, so no quote is given."
+ }
+}

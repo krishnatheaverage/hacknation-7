@@ -1,0 +1,24 @@
+{
+ "key": "dcb478443a9bf3146752ea497673d884d2ff67e9",
+ "team_rule_id": "r-0109",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D084",
+  "D085",
+  "O060",
+  "D086",
+  "D087",
+  "O061",
+  "O063"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3140(a) (Rent Stabilization and Just Cause Eviction Ordinance, Ord. No. NS-3073, Measure CC); see also id. §§ 8-3140(b), 8-3144(a)(1)",
+  "citation_basis": "ch. 8, art. XIX, § 8-3140(a), § 8-3140(b), § 8-3144(a)(1), Ord. No. NS-3073, Measure CC, short title 'Rent Stabilization and Just Cause Eviction Ordinance': O063",
+  "source_is_law_text": false,
+  "official_doc_id": "O063",
+  "official_quote": "Increases in Rent on Residential Real Property or Mobilehome Spaces in the City of Santa Ana in excess of three percent (3%), or eighty (80%) of the change in the Consumer Price Index, whichever is less, and more than one Rent Increase in any twelve (12) month period, are prohibited, unless expressly exempt under the Costa-Hawkins Rental Housing Act codified in California Civil Code section 1954.50, et seq., or the Mobilehome Residency Law codified in California Civil Code sections 798, et seq. If the change in the Consumer Price Index is negative, no Rent Increase is permitted.",
+  "is_city_policy": false,
+  "note": "Kept the lawyer's ch. 8, art. XIX (confirmed by O063), but replaced Ord. NS-3010 with Ord. No. NS-3073 (Measure CC), added the § 8-3140(a) pinpoint holding the cap, the § 8-3140(b) annual-announcement and § 8-3144(a)(1) Tenant Petition provisions, and the Ordinance's own short title, all per O063, since no document mentions NS-3010."
+ }
+}

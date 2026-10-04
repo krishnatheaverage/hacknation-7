@@ -1,0 +1,20 @@
+{
+ "key": "d4fe070f713999a07e58b1df98e7a0bc4d2f0ce2",
+ "team_rule_id": "r-0090",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D076",
+  "D074",
+  "D075"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "San Diego Mun. Code § 98.1103 (Ord. O-21955 N.S.); see also id. §§ 98.1102, 98.1104(a)",
+  "citation_basis": "§ 98.1103, § 98.1102, § 98.1104(a), O-21955 N.S.: D074",
+  "source_is_law_text": false,
+  "official_doc_id": "D074",
+  "official_quote": "It is unlawful for a person to sell, license, or otherwise provide an algorithmic device to a landlord. (b) It is unlawful for a landlord to use an algorithmic device to set rental rates or occupancy levels for residential rental property.",
+  "is_city_policy": false,
+  "note": "Added the 'Ord.' label and moved the related sections into a 'see also id.' cite with the § 98.1104(a) pinpoint, and replaced the quote taken from the draft proposal (D076, O-2025-107) with the adopted code text in D074, which also makes attorney's fees available to a prevailing landlord, not only a tenant."
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "key": "b223297819ba99e5813eee09aecd15691bf3d330",
+ "team_rule_id": "r-0104",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D086",
+  "D002",
+  "O060",
+  "O097",
+  "O061",
+  "O062",
+  "D087"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Santa Ana Mun. Code § 8-3702(b) (Ord. No. NS-3090); see also id. § 8-3703(a)",
+  "citation_basis": "§ 8-3702(b), § 8-3703(a), ch. 8, art. XXIV: O097 (also O062 for §§ 8-3700 to 8-3703); Ord. No. NS-3090: O097, O061, O062",
+  "source_is_law_text": false,
+  "official_doc_id": "O097",
+  "official_quote": "It is unlawful for a Landlord to use an Algorithmic Device to set rental rates or occupancy levels for Residential Real Property.",
+  "is_city_policy": false,
+  "note": "The bare ordinance number from the council agenda (O061) is kept in parentheses, but the citation now leads with the codified section holding the landlord-use ban, § 8-3702(b), with remedies in § 8-3703(a), per the official code (O097) and staff report (O062); the agenda exhibit's art. XXIII/§ 8-3600 numbering (O060) was not used because the adopted, codified text is art. XXIV, §§ 8-3700 to 8-3703."
+ }
+}

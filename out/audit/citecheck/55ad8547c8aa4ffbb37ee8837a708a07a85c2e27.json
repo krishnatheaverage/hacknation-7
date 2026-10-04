@@ -1,0 +1,21 @@
+{
+ "key": "55ad8547c8aa4ffbb37ee8837a708a07a85c2e27",
+ "team_rule_id": "r-0103",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D078",
+  "O042",
+  "O041",
+  "O040"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "S.F. Police Code art. 49, § 4906 (Fair Chance Ordinance) (as amended through Bd. of Supervisors File No. 171170); see also id. § 4911",
+  "citation_basis": "art. 49, § 4906 (Procedures for Use of Criminal History Information in Housing Decisions), § 4911 (HRC enforcement and reporting), File No. 171170 and the name 'Fair Chance Ordinance (Article 49)': O042; art. 49 and § 4901 as the Policy section: O041",
+  "source_is_law_text": false,
+  "official_doc_id": "O042",
+  "official_quote": "Accordingly, the matters identified in this subsection (a) may not be considered in any manner by the Housing Provider. An applicant or other person may report to the HRC any suspected violation of this Article 49 within 60 days of the date the suspected violation occurred.",
+  "is_city_policy": false,
+  "note": "The pinpoint changed from § 4901 et seq. to § 4906, with see also § 4911, because O041 shows § 4901 is only the Policy section and O042 shows the housing rule in § 4906 and HRC reporting in § 4911; O042 gives File No. 171170 as the latest amendment, and no document states its ordinance number."
+ }
+}

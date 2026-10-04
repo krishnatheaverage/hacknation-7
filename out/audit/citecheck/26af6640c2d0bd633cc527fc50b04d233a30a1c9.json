@@ -1,0 +1,23 @@
+{
+ "key": "26af6640c2d0bd633cc527fc50b04d233a30a1c9",
+ "team_rule_id": "r-0101",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D080",
+  "D079",
+  "D083",
+  "O040",
+  "O041",
+  "O042"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "S.F. Admin. Code § 37.3(a)(1)",
+  "citation_basis": "§ 37.3(a)(1): O040",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "note": "Narrowed the lawyer's § 37.3(a) to § 37.3(a)(1) because O040 places the annual rent increase rule (the Board publishes the CPI figure and caps increases at 60% of it) in subsection (a)(1); the 1.6% figure itself comes from the Rent Board's announcement (D080), and O040 is not quoted because it is the Rent Board's copy, which states it is not the official record."
+ }
+}
