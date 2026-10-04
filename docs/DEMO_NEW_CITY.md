@@ -1,6 +1,6 @@
 # Adding a new city live (technical video)
 
-This segment shows that adding a jurisdiction is a data step and not a code change. We add Oakland, California, which is not in the challenge data, from two official pages while the camera is rolling, and then we look up an Oakland address. Everything runs in a throwaway copy of the repo, so the submitted files never change.
+This segment shows that adding a city in California, New Jersey or Massachusetts is a data step and not a code change (a new state also needs its name added to the geocoding and engine code). We add Oakland, California, which is not in the challenge data, from two official pages while the camera is rolling, and then we look up an Oakland address. Everything runs in a throwaway copy of the repo, so the submitted files never change.
 
 ## Before recording (about 2 minutes)
 

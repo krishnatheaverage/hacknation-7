@@ -1,0 +1,25 @@
+{
+ "key": "be371706d649b67ca25e0fb4db77df2d941e0021",
+ "team_rule_id": "r-0086",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D041",
+  "D044",
+  "D042",
+  "O034",
+  "O033",
+  "O030",
+  "O032",
+  "O085"
+ ],
+ "retried": true,
+ "result": {
+  "citation": "L.A. Mun. Code § 151.06(D) (annual increase) (Ord. No. 188795); see also id. § 151.02 (coverage) (Ord. No. 184822)",
+  "citation_basis": "§ 151.06(D) and Ord. No. 188795: O032 (amends § 151.06(D), the annual automatic adjustment, effective Feb. 2, 2026); § 151.02 and Ord. No. 184822: O085 (current code history note) and O034",
+  "source_is_law_text": false,
+  "official_doc_id": "O032",
+  "official_quote": "Any annual rent increase not previously noticed and served during the period beginning June 1,2025, through June 30, 2026, shall comply with this subsection. Any such rent increase shall not exceed three percent and shall not include any additional increase based on the landlord’s payment of utilities.",
+  "is_city_policy": false,
+  "note": "Kept the lawyer's sections and parentheticals but narrowed § 151.06 to subsection D and added Ord. No. 188795 because O032 shows that ordinance rewrote § 151.06(D), the 12-month and no-utility-increase rule, and added Ord. No. 184822 for § 151.02 per O085 and O034; the card's own quote stays from D041, an LAHD web page, not the law's text."
+ }
+}

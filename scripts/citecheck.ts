@@ -49,11 +49,14 @@ const SYSTEM = `You cite-check one rule card from a housing-law database, for a 
 1. Write the card's citation in this style.
 - A citation is code + section, with the ordinance, chapter or bill in parentheses: "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12)", "N.J.S.A. 2A:18-61.1(f)", "San Diego Mun. Code § 98.1103 (Ord. O-21955 N.S.)", "L.A. Mun. Code § 165.00 et seq. (Ord. No. 187737)", "S.F. Police Code art. 49, § 4901 et seq. (Fair Chance Ordinance)", "Berkeley Mun. Code ch. 13.77 (Ellis Implementation Ordinance)".
 - A law's nickname ("Just Cause Ordinance", "FEHA", "Measure BB", "Rent Ordinance") is not a citation. It may follow the code cite in parentheses.
-- One name per code: "Cal. Civ. Code", "Cal. Gov. Code", "Cal. Bus. & Prof. Code", "N.J.S.A.", "L.A. Mun. Code", "S.F. Admin. Code", "S.F. Police Code", "San Diego Mun. Code", "Berkeley Mun. Code", "Santa Ana Mun. Code", "Cambridge Mun. Code", "Hoboken Code", "Newark Mun. Code". Keep the card's existing form for Massachusetts ("M.G.L. c. 186 § 18"), Boston and Jersey City codes.
+- One name per code: "Cal. Civ. Code", "Cal. Gov. Code", "Cal. Bus. & Prof. Code", "N.J.S.A.", "L.A. Mun. Code", "S.F. Admin. Code", "S.F. Police Code", "San Diego Mun. Code", "Berkeley Mun. Code", "Santa Ana Mun. Code", "Cambridge Mun. Code", "Hoboken Code", "Jersey City Code", "Newark Mun. Code".
+- The note says only what the documents show. Do not claim a document lacks something without checking it, and say plainly when the card's own quote stays from the supplied corpus. Keep the card's existing form for Massachusetts ("M.G.L. c. 186 § 18"), Boston and Jersey City codes.
 - A court case: the citation is the case itself, "Name v. Name, docket number (Court Month Day, Year)"; what the case decided goes in the note. A ballot measure: what it is, the jurisdiction and the election date. A pending or failed bill: bill number and session. An agency policy: its name and date, and say it is a policy.
 - If a document says a proposal was adopted, cite the adopted law, never "proposed" or a draft number.
 - Lead with the section that holds the card's rule, never a purpose or definitions section, and do not widen a pinpoint into a range. Keep a subsection when the card's main rule sits in it; list other subsections the card also states after "see also id.".
-- A session law in parentheses names the act that added or last changed the cited provision. For a whole section, write "as amended through" the latest session law the text shows.
+- A session law in parentheses names the act that added or last changed the cited provision. When the text's history note shows a later amendment, write "as amended through" that act by name (e.g., "as amended through Stats. 2025, ch. 340, AB 414"), never a vague "as later amended".
+- A "see also" list names every other subsection whose rule the card states. "id." stands only for the code just cited; never put "id." in front of a code name, and repeat the code name when switching codes.
+- Number subsections as the current text numbers them (the latest amending ordinance), and name every ordinance that changed the cited section's numbering.
 - Use only numbers (sections, chapters, articles, ordinance, docket and bill numbers, dates) that appear in the documents. If no document states the section, cite what they do state and add "(section not stated)". Never guess a number.
 - A name in parentheses (a short title such as "Fair Chance Ordinance") must be a name the law's own text uses; leave out names that only agency pages or news use.
 - If the citation is already right, return it unchanged.
@@ -88,7 +91,7 @@ function loadCrosscheck(): Doc[] {
 
 // Agendas, staff reports, newsletters and old copies help confirm a number, but a
 // quote of the law has to come from the law's text.
-const lawText = (d: Doc) => !/^secondary|not (?:the law's|code) text|record|older version|newsletter|staff report/i.test(d.source_type);
+const lawText = (d: Doc) => !/^secondary|not (?:the law's|code|the enacted) text|record|older version|newsletter|staff report|draft/i.test(d.source_type);
 
 const STATE_NAMES: Record<string, string> = { california: "CA", "new jersey": "NJ", massachusetts: "MA" };
 function sameJurisdiction(doc: Doc, card: RuleRecord): boolean {

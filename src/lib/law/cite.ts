@@ -12,6 +12,8 @@ const NAMES: [RegExp, string][] = [
   [/\bCambridge Municipal Code\b/g, "Cambridge Mun. Code"],
   [/\bSan Francisco Administrative Code\b/g, "S.F. Admin. Code"],
   [/\bSanta Ana Municipal Code\b/g, "Santa Ana Mun. Code"],
+  [/\bJersey City Mun(?:icipal|\.) Code\b/g, "Jersey City Code"],
+  [/\bRAC Regulations\b/g, "Rent Adjustment Commission Regulations"],
 ];
 
 export function standardize(citation: string): string {

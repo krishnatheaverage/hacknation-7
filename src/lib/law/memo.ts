@@ -42,12 +42,14 @@ export type MemoItem = {
   second_check: string | null;
   source_added: boolean; // the source is a text we captured, outside the supplied corpus
   official_text: RuleRecord["official_text"]; // the cited law's own words, when the source is a summary
+  missing: string[]; // what the public data lacks, when the answer is unknown
+  governed_by: { title: string; citation: string } | null; // the local rule that supersedes this one here
 };
 
 export type Memo = {
   as_of: string;
   address: { id: string | null; line: string; mailing_city: string; state: string; zip: string; use: string | null };
-  jurisdiction: { state: string; county: string | null; city: string | null; mailing_differs: boolean; method: string; matched_address: string | null; note: string | null };
+  jurisdiction: { state: string; county: string | null; city: string | null; mailing_differs: boolean; method: string; matched_address: string | null; note: string | null; local_gap: string | null };
   facts: FactSheet;
   categories: { category: Category; label: string; items: MemoItem[] }[];
   changing: MemoItem[];
@@ -120,6 +122,8 @@ function item(e: Evaluation, facts: FactSheet): MemoItem {
       : null,
     source_added: r.source_in_starter_corpus === false,
     official_text: r.official_text && r.official_text.doc_id !== r.source_doc_id ? r.official_text : null,
+    missing: e.missing,
+    governed_by: e.governed_by ?? null,
   };
 }
 
@@ -153,6 +157,15 @@ export function targetFromRow(a: AddressRow): MemoTarget {
   };
 }
 
+// A typed address in a covered state but outside the cities we have rules for: say
+// plainly that its local (or county) ordinances are not in our sources.
+export function localGap(rules: RuleRecord[], t: Pick<MemoTarget, "state" | "legal_city">): string | null {
+  if (!["CA", "NJ", "MA"].includes(t.state)) return null;
+  if (!t.legal_city) return "This address is outside any incorporated city; county ordinances are not in our sources, so only state law is shown.";
+  const covered = rules.some((r) => r.level === "city" && r.jurisdiction.toLowerCase() === `${t.legal_city}, ${t.state}`.toLowerCase());
+  return covered ? null : `Local ordinances for ${t.legal_city} are not in our sources, so only ${t.state} state law is shown. ${t.legal_city} may have its own rent or eviction rules.`;
+}
+
 export function buildMemo(rules: RuleRecord[], t: MemoTarget, asOf: string, user: UserFacts = {}): Memo {
   const facts = factSheet(t.parcel, user);
   const evals = lookup(rules, buildingFrom(t.state, t.legal_city, facts), asOf);
@@ -170,7 +183,8 @@ export function buildMemo(rules: RuleRecord[], t: MemoTarget, asOf: string, user
     .map((i) => ({
       team_rule_id: i.team_rule_id,
       citation: i.citation,
-      text: i.explanation.match(/Flag for review: [^.]*\./)?.[0] ?? i.conflict_note ?? "Sources disagree; a person should check this rule.",
+      // Flags sit at the end of the explanation; cutting at the first period would stop at "N.J.S.A.".
+      text: i.explanation.includes("Flag for review:") ? i.explanation.slice(i.explanation.indexOf("Flag for review:")) : (i.conflict_note ?? "Sources disagree; a person should check this rule."),
     }));
 
   const counts = Object.fromEntries(ORDER.map((r) => [r, items.filter((i) => i.result === r).length])) as Record<Result, number>;
@@ -187,6 +201,7 @@ export function buildMemo(rules: RuleRecord[], t: MemoTarget, asOf: string, user
       method: t.geocode_method,
       matched_address: t.matched_address,
       note: t.override_note ?? null,
+      local_gap: localGap(rules, t),
     },
     facts,
     categories,

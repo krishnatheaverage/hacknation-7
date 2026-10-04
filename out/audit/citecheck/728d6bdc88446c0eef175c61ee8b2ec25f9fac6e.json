@@ -1,0 +1,20 @@
+{
+ "key": "728d6bdc88446c0eef175c61ee8b2ec25f9fac6e",
+ "team_rule_id": "r-0090",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D076",
+  "D074",
+  "D075"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "San Diego Mun. Code § 98.1103(b) (Ord. O-21955 N.S.); see also id. §§ 98.1103(a), 98.1102, 98.1104(a)",
+  "citation_basis": "§ 98.1103(b), § 98.1103(a), § 98.1102, § 98.1104(a) and Ord. O-21955 N.S.: D074 (codified Div. 11 history notes: added 5-22-2025 by O-21955 N.S.; effective 6-21-2025)",
+  "source_is_law_text": false,
+  "official_doc_id": "D074",
+  "official_quote": "It is unlawful for a landlord to use an algorithmic device to set rental rates or occupancy levels for residential rental property. For each month a violation of section 98.1103(b) exists or continues, and for each residential rental property a landlord uses an algorithmic device, it shall constitute a separate and distinct violation.",
+  "is_city_policy": false,
+  "note": "The citation now pinpoints § 98.1103(b), the landlord-use ban; it lists the sale ban in (a), the \"two or more landlords\" definition in § 98.1102 and the remedies in § 98.1104(a) as see-also cites, and puts the ordinance in house form; the quote now comes from the adopted code text (D074), because the card's own quote stays from the supplied corpus D076, which is only the unadopted draft O-2025-107, whose definition and fee terms differ from the adopted law."
+ }
+}

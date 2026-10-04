@@ -102,7 +102,17 @@ function similar(a: RuleRecord, b: RuleRecord, min = 0.25): boolean {
 // A figure that names its own date range ("0.8% for 8/1/25 – 7/31/26") is stale
 // once that range has ended before the query date.
 const MONTHS: Record<string, number> = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12 };
-function figureEnds(kv: string | null): string | null {
+// A published figure's period, "March 1, 2026 – February 28, 2027", as ISO dates.
+export function figurePeriod(text: string | null): { start: string; end: string } | null {
+  const m = (text ?? "").match(/([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2}),\s*(\d{4})\s*(?:–|—|-|\bto\b|\bthrough\b)\s*([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2}),\s*(\d{4})/);
+  if (!m) return null;
+  const iso = (mo: string, d: string, y: string) => (MONTHS[mo.toLowerCase()] ? `${y}-${String(MONTHS[mo.toLowerCase()]).padStart(2, "0")}-${d.padStart(2, "0")}` : null);
+  const start = iso(m[1], m[2], m[3]);
+  const end = iso(m[4], m[5], m[6]);
+  return start && end ? { start, end } : null;
+}
+
+export function figureEnds(kv: string | null): string | null {
   if (!kv) return null;
   const ends = [...kv.matchAll(/(?:–|—|-|\bto\b|\bthrough\b)\s*(?:([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2}),\s*(\d{4})|(\d{1,2})\/(\d{1,2})\/(\d{2,4}))/g)];
   const m = ends.at(-1);
@@ -247,6 +257,9 @@ function consolidate(rules: RuleRecord[]): { kept: RuleRecord[]; notes: string[]
         r.title = donor.title;
         r.requirement = donor.requirement;
         r.key_value = donor.key_value ?? r.key_value;
+        r.penalty = donor.penalty ?? r.penalty;
+        r.exemptions = donor.exemptions ?? r.exemptions;
+        if (donor.coverage_conditions.summary) r.coverage_conditions = { ...donor.coverage_conditions };
       } else if (!r.effective_date && donor.effective_date && enacted(r)) {
         r.effective_date = donor.effective_date;
         if (r.status === "in_force" && donor.effective_date > QUERY_DATE) r.status = "not_yet_effective";

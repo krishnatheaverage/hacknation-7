@@ -1,0 +1,23 @@
+{
+ "key": "bb17f1150849170ac99526bdbeee6ca3fc5a3a14",
+ "team_rule_id": "r-0081",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D043",
+  "O032",
+  "O030",
+  "O091",
+  "O090",
+  "O034"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "L.A. Mun. Code § 151.09(G) (Ord. No. 184822; Ord. No. 187737, as amended through Ord. No. 188795); L.A. Mun. Code § 165.06 (Just Cause for Eviction Ordinance) (Ord. No. 187737, as amended through Ord. No. 188795); see also id. §§ 165.03(H)-(N), 165.05(B)(2)-(4), 165.07, 151.09(A), 151.30(E), 47.06, 47.07; RAC Regulations § 960.00",
+  "citation_basis": "§ 151.09(G): O032, O034, O030; § 165.06: O091, O030; Ord. No. 184822: O034; Ord. No. 187737: O030, O090; Ord. No. 188795: O032, O091; §§ 165.03(H)-(N), 165.05(B)(2)-(4), 165.07: O030; § 151.09(A): O030, D043; § 151.30(E): O032, O030; §§ 47.06, 47.07: D043, O032; RAC Regulations § 960.00: O091, D043",
+  "source_is_law_text": false,
+  "official_doc_id": "O091",
+  "official_quote": "The landlord shall perform the acts described in this section within 15 days of service of a written notice of termination described in California Civil Code Section 1946.",
+  "is_city_policy": false,
+  "note": "Recast the LAMC/RSO/JCO shorthand into house style, named the enacting and amending ordinances shown in O030, O032, O034 and O091 (Ord. No. 188795 last amended §§ 151.09(G) and 165.06(F)), added the declaration-filing (§ 165.05(B)) and remedies (§ 165.07) sections the card states, and noted that the card's own quote comes from D043, an LAHD bulletin in the supplied corpus rather than the law's text, so the official quote is taken from the current code text in O091."
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "key": "defaac735f5a543827d8cb6caf3ea129b0b1aa4f",
+ "team_rule_id": "r-0101",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D080",
+  "D079",
+  "D083",
+  "O040",
+  "O041",
+  "O042"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "S.F. Admin. Code § 37.3(a)(1) (as amended through Ord. No. 3-26)",
+  "citation_basis": "§ 37.3(a)(1) and Ord. No. 3-26 (last entry in § 37.3's history note): O040",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "note": "Narrowed the lawyer's § 37.3(a) to § 37.3(a)(1) and added Ord. No. 3-26 because O040, the Rent Board's text of § 37.3, places the annual CPI-based increase rule in (a)(1) with that ordinance last in its history note; the card's own quote stays from D080, a Rent Board news page that is not law text, and no quote is given because O040 itself says it is not the official record (American Legal is the official publisher)."
+ }
+}

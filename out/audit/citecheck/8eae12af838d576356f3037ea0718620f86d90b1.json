@@ -1,0 +1,23 @@
+{
+ "key": "8eae12af838d576356f3037ea0718620f86d90b1",
+ "team_rule_id": "r-0084",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D043",
+  "O034",
+  "O033",
+  "O030",
+  "O085",
+  "O032"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "L.A. Ord. No. 188481 and Ord. No. 188482 (section not stated)",
+  "citation_basis": "Ord. Nos. 188481 and 188482: D043 (LAHD Relocation Assistance Bulletin B, 'effective 2/11/2025 under Ordinances # 188481 and #188482')",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "note": "The card's LAMC § 165.03.I(1) and §§ 151.22-151.28 cites were dropped because they cover the JCO eviction declaration and Ellis Act withdrawal, not the RPO relocation rule; no supplied document gives the RPO's codified section, so '(section not stated)' was added. The name 'Resident Protections Ordinance' was also dropped because it appears only in the LAHD bulletin and no supplied ordinance text uses it. The card's quote stays from D043, an LAHD bulletin in the supplied corpus that is not the law's text, and no supplied document is the RPO ordinance text."
+ }
+}

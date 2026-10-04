@@ -1,6 +1,7 @@
 SOURCE: https://www.sf.gov/sites/default/files/2022-12/FCO%20Legistar.pdf
 RETRIEVED: 2026-10-04 00:19 UTC
 JURISDICTION: San Francisco, CA
+TYPE: committee draft with a blank ordinance number, not the enacted text
 CITES: S.F. Police Code art. 49, §§ 4903, 4904, 4906, 4909, 4911 (2018 amendments)
 NOTE: Board of Supervisors ordinance, File No. 171170 (amended in committee 3/14/18), amending Police Code Article 49 (Fair Chance Ordinance); copy published by the City on sf.gov
 

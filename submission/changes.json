@@ -1354,7 +1354,7 @@
    "A0495"
   ],
   "conflict_flag_address_ids": [],
-  "notes": "Matched team rules: r-0070 (Hoboken Code § 158-2 (Ord. No. B-781, adopted July 9, 2025); in_force, effective 2025-07-29); r-0078 (Jersey City Code § 218-12(2)(a) (Ord. 25-057, as amended by Ord. 25-076); see also id. § 218-12(2)(b), (4); in_force, effective 2025-06-10). 90 affected, 0 flagged for human review.",
+  "notes": "Matched team rules: r-0070 (Hoboken Code § 158-2 (Ord. No. B-781, adopted July 9, 2025); in_force, effective 2025-07-29); r-0078 (Jersey City Code § 218-12(2)(1) (Ord. 25-057, as amended by Ord. 25-076 and Ord. 25-098); see also id. § 218-12(2)(2), (4)(a)(i)(1), (4)(b), (4)(c)(i); in_force, effective 2025-06-10). 90 affected, 0 flagged for human review.",
   "team_rule_ids": [
    "r-0070",
    "r-0078"
@@ -3089,7 +3089,7 @@
  "T5": {
   "affected_address_ids": [],
   "conflict_flag_address_ids": [],
-  "notes": "Matched team rules: r-0032 (Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026); failed). Struck or failed measures are never reported as in force. Recorded as failed: Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026). 0 affected, 0 flagged for human review.",
+  "notes": "Matched team rules: r-0032 (Initiative Petition 25-21 (barred from the 2026 ballot by Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026)); failed). Struck or failed measures are never reported as in force. Recorded as failed: Initiative Petition 25-21 (barred from the 2026 ballot by Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026)). 0 affected, 0 flagged for human review.",
   "team_rule_ids": [
    "r-0032"
   ],

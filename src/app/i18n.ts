@@ -57,6 +57,9 @@ const en = {
   keyFigure: "Key figure:",
   takesEffect: (d: string) => `Takes effect ${d}.`,
   why: "Why:",
+  unknownBecause: "Unknown because",
+  supersededBy: (title: string, citation: string) => `A stricter local rule governs here: ${title} (${citation}).`,
+  localGap: "",
   showSource: "Show source text",
   hideSource: "Hide source text",
   quoteVerified: "Quote checked word for word against the source. ",
@@ -150,6 +153,9 @@ const es: typeof en = {
   keyFigure: "Cifra clave:",
   takesEffect: (d) => `Entra en vigor el ${d}.`,
   why: "Por qué (en inglés):",
+  unknownBecause: "Desconocido porque (en inglés)",
+  supersededBy: (title, citation) => `Aquí rige una norma local más estricta: ${title} (${citation}).`,
+  localGap: "Las ordenanzas locales de esta ciudad no están en nuestras fuentes; solo se muestra la ley estatal. La ciudad puede tener sus propias normas de renta o desalojo.",
   showSource: "Mostrar texto de la fuente",
   hideSource: "Ocultar texto de la fuente",
   quoteVerified: "Cita verificada palabra por palabra con la fuente. ",
@@ -214,6 +220,10 @@ const amountText = (kind: ProposalKind, n: number | null, lang: Lang) => {
 // Builds the check's headline in the reader's language from the structured result.
 export function headline(c: CheckResult, kind: ProposalKind, amount: number, lang: Lang): string {
   if (lang === "en") return c.headline;
+  return headlineEs(c, kind, amount) + (c.local_gap && c.verdict !== "over_limit" ? ` ${STRINGS.es.localGap}` : "");
+}
+
+function headlineEs(c: CheckResult, kind: ProposalKind, amount: number): string {
   const d = fmtDate(c.as_of, "es");
   const amt = amountText(kind, amount, "es");
   switch (c.verdict) {

@@ -18,4 +18,4 @@ NJ,screening_restrictions,10:5-12|Law Against Discrimination,N.J.S.A. 10:5-12(g)
 "Boston, MA",screening_restrictions,Fair Housing,"The Boston Code chapter for the Fair Housing Commission regulations, or mark as ""regulation, section not stated""",
 "Boston, MA",screening_restrictions,Fair Chance Tenant,(citation unchanged),"A city policy, not law: say ""policy"" in the title."
 "Hoboken, NJ",algorithmic_rent_setting,158,"Hoboken Code § 158-2 (ordinance adopted July 9, 2025)","The ordinance body's ""§ 154-8"" heading belongs in the reviewer note, not the citation."
-MA,rent_increase_limits,Cella|initiative,"Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026)",
+MA,rent_increase_limits,Cella|initiative,"Initiative Petition 25-21 (barred from the 2026 ballot by Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026))","Name the petition first, since the change test names it; the case is why it failed."

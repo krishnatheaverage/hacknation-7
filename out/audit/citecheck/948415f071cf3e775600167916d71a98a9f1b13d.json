@@ -1,0 +1,20 @@
+{
+ "key": "948415f071cf3e775600167916d71a98a9f1b13d",
+ "team_rule_id": "r-0067",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D012",
+  "O072",
+  "O070"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Boston Fair Housing Commission Regulations, Reg. 1.04(m) (adopted Mar. 1, 2001); see also id. Reg. 1.01, 1.02(kk) (authority: City of Boston Code, Ordinances, Title 10, §§ 150-157 (1982); St. 1994, c. 37)",
+  "citation_basis": "Reg. 1.04(m), 1.01, 1.02(kk), adopted March 1, 2001: O072; City of Boston Code, Ordinances, Title 10, §§ 150-157 (1982) and St. 1994, c. 37: O072",
+  "source_is_law_text": false,
+  "official_doc_id": "O072",
+  "official_quote": "It is unlawful to deny equal access to or to discriminate in housing regardless of the public or private source of denial or discrimination against an individual or group based on race, color, religious creed, marital status, handicap, military status, children, national origin, sex, age, ancestry, sexual orientation or source of income.",
+  "is_city_policy": false,
+  "note": "Replaced the unnumbered 'Boston Fair Housing Regulations' cite with Reg. 1.04(m) (Source of Income Discrimination In Credit and Rentals, whose text is cut from the O072 capture), Reg. 1.01 and the source-of-income definition in 1.02(kk), all from O072; O072 gives the ordinance authority as Title 10, §§ 150-157 rather than a Boston Code chapter number, its closing certification calls the text 'Proposed Amended Regulations' despite the 'Adopted March 1, 2001' cover, and the card's quoted span stays from D012, a boston.gov agency page that is not the law's text."
+ }
+}

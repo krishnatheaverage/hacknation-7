@@ -22,6 +22,7 @@ export type CheckResult = {
   as_of: string;
   limit: number | null; // the cap that blocks it, when one does
   unsettled_count: number;
+  local_gap: string | null; // the city whose local ordinances are not in our sources
 };
 
 export const PROPOSAL_CATEGORY: Record<ProposalKind, Category> = {
@@ -89,7 +90,7 @@ export function readBound(kind: ProposalKind, kv: string | null, requirement = "
   return m ? { max: Number(m[1]), floor: null, cpi } : null;
 }
 
-const LIMIT_WORDS = /\b(caps?|capped|limits?|limited|maximum|max|not (?:to )?exceed|no more than|allowable)\b/i;
+const LIMIT_WORDS = /\b(caps?|capped|limits?|limited|maximum|max|not (?:to )?exceed|never exceed|no more than|allowable)\b/i;
 // "No state cap" or "No local rent control" isn't a limit, so we show it as context.
 const NO_CAP = /\bno\b[^.;]{0,30}\b(cap|rent control|limit)|\bbars?\b[^.;]{0,30}rent control|\bprohibit\w*\b[^.;]{0,30}rent control/i;
 
@@ -98,7 +99,7 @@ function line(e: Evaluation, text: string): CheckLine {
   return { team_rule_id: r.team_rule_id, citation: r.citation, title: r.title, key_value: r.key_value, text };
 }
 
-export function checkProposal(rules: RuleRecord[], b: Building, asOf: string, p: Proposal): CheckResult {
+export function checkProposal(rules: RuleRecord[], b: Building, asOf: string, p: Proposal, localGap: string | null = null): CheckResult {
   const cat = PROPOSAL_CATEGORY[p.kind];
   const amount = UNIT[p.kind](p.amount);
   const evals = lookup(rules, b, asOf).filter((e) => e.rule.category === cat);
@@ -114,7 +115,17 @@ export function checkProposal(rules: RuleRecord[], b: Building, asOf: string, p:
       could_change.push(line(e, e.result === "pending" ? "Pending proposal, not law." : `Enacted, takes effect ${e.rule.effective_date ?? "later"}.`));
       continue;
     }
-    if (e.result === "superseded") continue; // a stricter local rule governs; it is evaluated on its own
+    if (e.result === "superseded") {
+      // A stricter local rule governs, so the state cap is an upper bound: anything above
+      // it is above the local limit too, even when the local figure is not in our sources.
+      const state = readBound(p.kind, e.rule.key_value, e.rule.requirement, asOf);
+      if (state?.max != null && p.amount > state.max) blocking.push(line(e, `A stricter local rule governs here, and ${amount} is above even this state cap of ${show(state.max)}.`));
+      continue;
+    }
+    if (e.figure_ended) {
+      unsettled.push(line(e, `Limits increases here, but its figure (${e.rule.key_value ?? "on this card"}) ran through ${e.figure_ended}; the figure in force on ${asOf} is not in our sources.`));
+      continue;
+    }
     if (e.figure_from) {
       unsettled.push(line(e, `Limits increases here, but the figure in force on ${asOf} is not in our sources (${e.rule.key_value ?? "the figure on this card"} starts ${e.figure_from}).`));
       continue;
@@ -151,9 +162,15 @@ export function checkProposal(rules: RuleRecord[], b: Building, asOf: string, p:
   let headline: string;
   if (blocking.length) {
     verdict = "over_limit";
-    const first = evals.find((e) => e.rule.team_rule_id === blocking[0].team_rule_id)!;
+    const first = evals.find((e) => e.rule.team_rule_id === blocking[0].team_rule_id)!; // a superseded state cap counts too
     const cap = readBound(p.kind, first.rule.key_value, first.rule.requirement, asOf)?.max ?? null;
-    headline = cap === 0 ? `No. ${blocking[0].citation} does not allow this at this address on ${asOf}.` : `No. ${blocking[0].citation} limits this to ${show(cap)} at this address on ${asOf}.`;
+    const governs = first.result === "superseded" ? evals.find((e) => e.rule.level === "city" && e.result === "applies" && e.rule.category === cat) : undefined;
+    headline =
+      first.result === "superseded"
+        ? `No. ${governs ? governs.rule.citation : "A stricter local rule"} governs here, and ${amount} is above even the state cap of ${show(cap)} (${blocking[0].citation}) on ${asOf}.`
+        : cap === 0
+          ? `No. ${blocking[0].citation} does not allow this at this address on ${asOf}.`
+          : `No. ${blocking[0].citation} limits this to ${show(cap)} at this address on ${asOf}.`;
   } else if (unsettled.length) {
     verdict = "cant_tell";
     headline = `Can't tell from public data. ${unsettled.length === 1 ? "One rule" : `${unsettled.length} rules`} could limit ${amount}; see what would settle it below.`;
@@ -164,7 +181,8 @@ export function checkProposal(rules: RuleRecord[], b: Building, asOf: string, p:
     verdict = "no_cap_found";
     headline = `We found no rule in our sources that limits this at this address on ${asOf}.${context.length ? ` ${context[0].citation}: ${context[0].key_value ?? context[0].title}.` : ""} Other rules, such as notice periods, may still apply.`;
   }
+  if (localGap && verdict !== "over_limit") headline += ` ${localGap}`;
   const top = blocking.length ? evals.find((e) => e.rule.team_rule_id === blocking[0].team_rule_id) : undefined;
   const limit = top ? (readBound(p.kind, top.rule.key_value, top.rule.requirement, asOf)?.max ?? null) : null;
-  return { verdict, headline, blocking, within, unsettled, could_change, context, as_of: asOf, limit, unsettled_count: unsettled.length };
+  return { verdict, headline, blocking, within, unsettled, could_change, context, as_of: asOf, limit, unsettled_count: unsettled.length, local_gap: localGap };
 }

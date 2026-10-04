@@ -1,0 +1,21 @@
+{
+ "key": "5eda0167bcc94d4492518da2810c858d556cd3ce",
+ "team_rule_id": "r-0097",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D079",
+  "O040",
+  "O041",
+  "O042"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "S.F. Admin. Code § 37.9(a) (as amended by Ord. No. 03-26); see also id. §§ 37.9(c), 37.2(r)",
+  "citation_basis": "§ 37.9(a): D079, O040; § 37.9(c) dominant motive: O040; § 37.2(r) housing services severable only with just cause: O040; Ord. No. 03-26 (2/8/26, amended § 37.9 to add the 17th just cause): O040",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "note": "The pinpoint § 37.9(a) is kept and Ord. No. 03-26 is added, because O040's change table shows it amended § 37.9 to add the 17th just cause; see also id. §§ 37.9(c) (dominant motive) and 37.2(r) (housing services) are added because the card also states those rules. The card's own quote stays from the supplied corpus (D079, a Rent Board info page, not the law's text), and no quote is given from O040 because that Rent Board copy states it is not the official record and that American Legal is the official publisher."
+ }
+}

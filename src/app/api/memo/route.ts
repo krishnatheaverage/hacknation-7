@@ -66,7 +66,7 @@ export async function POST(request: Request) {
   if (!target) return Response.json({ error: "Pick a sample address or enter a full US address." }, { status: 404 });
 
   const memo = buildMemo(RULES, target, as_of, facts);
-  const check = proposal ? checkProposal(RULES, buildingFrom(target.state, target.legal_city, factSheet(target.parcel, facts)), as_of, proposal) : null;
+  const check = proposal ? checkProposal(RULES, buildingFrom(target.state, target.legal_city, factSheet(target.parcel, facts)), as_of, proposal, memo.jurisdiction.local_gap) : null;
   if (lang === "es") {
     // Swap in the Spanish card text. Citations, quotes and the engine's reasons stay in English.
     const es = (id: string) => RULES_ES[id];

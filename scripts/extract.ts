@@ -190,6 +190,14 @@ async function main() {
     }
   });
 
+  // A document that failed would drop its rules from rules.json without a trace, so stop
+  // here and leave the last good rules.json in place; rerunning retries only the failures.
+  const failed = docs.filter((_, i) => !results[i]).map((d) => d.doc_id);
+  if (failed.length) {
+    console.error(`\nExtraction failed for ${failed.join(", ")}; out/rules.json was not changed. Run again to retry them.`);
+    process.exit(1);
+  }
+
   // Check the quotes, clean up the fields and attach where each record came from.
   const byDoc = new Map(docs.map((d) => [d.doc_id, d]));
   type Candidate = Omit<RuleRecord, "team_rule_id" | "overrides"> & { official: boolean; jurisdiction_matches_doc: boolean };

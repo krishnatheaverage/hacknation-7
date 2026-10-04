@@ -1,0 +1,22 @@
+{
+ "key": "edea4557d9ab603e95f5d22f02f3756032e3dc9a",
+ "team_rule_id": "r-0098",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D083",
+  "D082",
+  "O040",
+  "O041",
+  "O042"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "S.F. Admin. Code § 37.9A(e) (as amended through Ord. No. 03-26)",
+  "citation_basis": "§ 37.9A(e), incl. (e)(1)(C), (e)(1)(D) and (e)(2): O040; Ord. No. 03-26 (2/8/26, amending § 37.9A): O040 'Recent Changes to the Ordinance' table",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "note": "Kept the lawyer's pinpoint § 37.9A(e), which O040 confirms holds the Ellis Act relocation amounts, the elderly/disabled supplement and the annual CPI adjustment; I added 'as amended through Ord. No. 03-26' because O040's amendment table lists that ordinance (2/8/26) as changing § 37.9A, and I dropped the 'Rent Ordinance Section 37.9A' label as a nickname; the card's quote stays from the supplied corpus (D083, a Rent Board rate page that, like D082, is not the law's text), and no document is quoted as official because O040, though City-published, states it is not an official record and names American Legal as the official publisher."
+ }
+}

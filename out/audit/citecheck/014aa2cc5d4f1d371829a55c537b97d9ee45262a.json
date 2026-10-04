@@ -1,0 +1,23 @@
+{
+ "key": "014aa2cc5d4f1d371829a55c537b97d9ee45262a",
+ "team_rule_id": "r-0032",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D059",
+  "O101",
+  "O072",
+  "O070",
+  "O100",
+  "O099"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026)",
+  "citation_basis": "Cella v. Attorney General and SJC-13893: D059 and O101; June 23, 2026: D059 (dateline) and O101 (cites line and 'Published June 23, 2026'); Mass. (Supreme Judicial Court): D059 and O101",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "note": "The citation now uses the lawyer's form, which D059 and O101 support with no conflicting docket number or date; per D059 and O101 the Supreme Judicial Court held that Initiative Petition 25-21 (statewide rent control) is barred from the November 2026 ballot under Article 48 because its religious-facility exemption impermissibly relates to religion, and the card's quote stays from D059, a news report, since no supplied document is the court's opinion."
+ }
+}

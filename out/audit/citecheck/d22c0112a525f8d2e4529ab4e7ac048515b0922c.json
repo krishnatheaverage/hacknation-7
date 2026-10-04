@@ -1,0 +1,23 @@
+{
+ "key": "d22c0112a525f8d2e4529ab4e7ac048515b0922c",
+ "team_rule_id": "r-0032",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D059",
+  "O101",
+  "O072",
+  "O070",
+  "O100",
+  "O099"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Initiative Petition 25-21 (barred from the 2026 ballot by Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026))",
+  "citation_basis": "Initiative Petition 25-21: O101; Cella v. Attorney General, SJC-13893: O101 and D059; June 23, 2026: O101 and D059; 2026 ballot: O101 and D059",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "note": "The descriptive citation was replaced with the lawyer's form, which no document contradicts: O101 (Mintz alert) confirms the petition number, case name, docket and date, and holds the petition was barred under Article 48 for its religious exemption; the card's own quote still comes from the D059 news report, and no supplied document is the petition text or the court's opinion."
+ }
+}

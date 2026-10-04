@@ -41,6 +41,20 @@
   "note": null,
   "history": null
  },
+ "r-0011": {
+  "from_citation": "Cal. Gov. Code § 66300.6(b)(4)(A) (Housing Crisis Act of 2019, SB 330, as amended by SB 8 and AB 1218)",
+  "citation": "Cal. Gov. Code § 66300.6(b)(4)(A) (Housing Crisis Act of 2019, as amended through Stats. 2025, ch. 511, SB 21)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O001",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=66300.6",
+   "retrieved_at": "2026-10-04 00:17 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "The developer agrees to provide both of the following to the existing occupants of any protected units that are lower income households:\n\n(A) Relocation benefits that are equivalent to the relocation benefits required to be paid by public entities pursuant to Chapter 16 (commencing with Section 7260) of Division 7 of Title 1 and any implementing regulations."
+  },
+  "note": "Replaced the bill list (SB 330, SB 8, AB 1218) with the latest session law shown in the official code text, Stats. 2025, ch. 511 (SB 21), because no document shows which act last changed (b)(4)(A).",
+  "history": null
+ },
  "r-0012": {
   "from_citation": "Cal. Civ. Code § 1947.12",
   "citation": "Cal. Civ. Code § 1947.12",
@@ -67,6 +81,20 @@
    "quoted_span": "(o) (1) In instances in which there is a government rent subsidy, to do either of the following:\n(A) Use a financial or income standard in assessing eligibility for the rental of housing that is not based on the portion of the rent to be paid by the tenant."
   },
   "note": null,
+  "history": null
+ },
+ "r-0019": {
+  "from_citation": "Cal. Civ. Code § 1950.5",
+  "citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. § 1950.5(e), (g), (h)",
+  "title": null,
+  "official_text": {
+   "doc_id": "D025",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
+   "retrieved_at": "2026-10-01T22:35Z",
+   "in_supplied_corpus": true,
+   "quoted_span": "Except as provided in paragraph (2), (3), or (5), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy."
+  },
+  "note": "The lawyer's pinpoint (c) and AB 12 parenthetical are kept (O002 shows AB 12 as Stats. 2023, ch. 733, amending § 1950.5), with a see-also added for (e) wear and tear, (g) photographs and (h) 21-day return as numbered in the current leginfo text D025, which also shows a later change to (c) (new service-member paragraph (c)(4) from April 1, 2025, moving the small-landlord exception from AB 12's (c)(4) to (c)(5)) that no supplied document names by act, while the bad-faith penalty and nonrefundable-deposit subdivisions the card cites as (m) and (n) are omitted because the supplied D025 text is cut off after (h)(4) and does not show them; the card's own quote comes from D025 in the supplied corpus.",
   "history": null
  },
  "r-0023": {
@@ -407,6 +435,20 @@
   "note": "Followed the lawyer's request to cite § 13.76.110 rather than subsection A, because the card merges the formula and cap (A), notice (B) and eligibility conditions (D). The amending law is identified by its ordinance number, Ord. No. 7,950-N.S., and Reg. 1148 is kept as the order setting the 2026 rate. The name 'Measure BB' is left out because the law text in the documents does not use it.",
   "history": null
  },
+ "r-0060": {
+  "from_citation": "Berkeley Mun. Code ch. 13.106",
+  "citation": "Berkeley Mun. Code § 13.106.040(A) (Ord. 7692-NS, Ronald V. Dellums Fair Chance Access to Housing Ordinance); see also id. § 13.106.040(E)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O094",
+   "url": "https://berkeley.municipal.codes/BMC/13.106",
+   "retrieved_at": "2026-10-04 00:45 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "A. Except as provided in Paragraphs B and C of this Section, a Housing Provider shall not, at any time or by any means, whether direct or indirect, inquire about an Applicant’s Criminal History, require an Applicant to disclose their Criminal History, require an Applicant to authorize the release of their Criminal History or, if such information is received, base an Adverse Action in whole or in part on an Applicant’s Criminal History."
+  },
+  "note": "Narrowed the chapter cite to § 13.106.040(A), which holds the ban on criminal-history inquiries; added § 13.106.040(E) for the written-notice and opportunity-to-respond rule and the enacting ordinance from the code's history note; the fines and Rent Board complaint process are left uncited because no document states their section numbers.",
+  "history": null
+ },
  "r-0061": {
   "from_citation": "Berkeley Rent Ordinance",
   "citation": "Berkeley Mun. Code § 13.76.070 (Rent Stabilization and Eviction for Just Cause Ordinance)",
@@ -453,6 +495,20 @@
   "note": null,
   "history": null
  },
+ "r-0067": {
+  "from_citation": "Boston Fair Housing Regulations (Boston Fair Housing Commission; ordinance section not stated in document)",
+  "citation": "Boston Fair Housing Commission Regulations, Reg. 1.04(m) (adopted Mar. 1, 2001); see also id. Reg. 1.01, 1.02(kk) (authority: City of Boston Code, Ordinances, Title 10, §§ 150-157 (1982); St. 1994, c. 37)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O072",
+   "url": "https://www.cityofboston.gov/images_documents/BFHC%20Regulations_tcm3-45622.pdf",
+   "retrieved_at": "2026-10-04 00:21 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "It is unlawful to deny equal access to or to discriminate in housing regardless of the\npublic or private source of denial or discrimination against an individual or group based\non race, color, religious creed, marital status, handicap, military status, children, national\norigin, sex, age, ancestry, sexual orientation or source of income."
+  },
+  "note": "Replaced the unnumbered 'Boston Fair Housing Regulations' cite with Reg. 1.04(m) (Source of Income Discrimination In Credit and Rentals, whose text is cut from the O072 capture), Reg. 1.01 and the source-of-income definition in 1.02(kk), all from O072; O072 gives the ordinance authority as Title 10, §§ 150-157 rather than a Boston Code chapter number, its closing certification calls the text 'Proposed Amended Regulations' despite the 'Adopted March 1, 2001' cover, and the card's quoted span stays from D012, a boston.gov agency page that is not the law's text.",
+  "history": null
+ },
  "r-0068": {
   "from_citation": "Cambridge Mun. Code ch. 8.71",
   "citation": "Cambridge Mun. Code § 8.71.040.1 (Ord. No. 2020-15; Ord. No. 2024-3)",
@@ -479,6 +535,20 @@
    "quoted_span": "For any person to refuse to rent, lease, sell, or negotiate for sale, or otherwise to deny or withhold from any person or persons a dwelling or any services or facilities in connection therewith, or to print, publicize, advertise, make any written or oral statement, or otherwise communicate publicly or privately, in a manner that indicates any preference, limitation, or discrimination because of race, color, religious creed, sex, age, disability, national origin or ancestry, sexual orientation, relationship status, family structure, gender identity, marital status, family status, military status, or source of income."
   },
   "note": "Changed to the standard 'Cambridge Mun. Code' form, cited the unlawful-practices section § 14.04.040 with its ordinance numbers from O100, and dropped 'Cambridge Fair Housing Ordinance' because only the agency page uses that name, not the code text.",
+  "history": null
+ },
+ "r-0070": {
+  "from_citation": "Hoboken Code § 158-2",
+  "citation": "Hoboken Code § 158-2 (Ord. No. B-781, adopted July 9, 2025)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O080",
+   "url": "https://ecode360.com/46833413",
+   "retrieved_at": "2026-10-04 00:30 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "Landlords who rent any residential dwelling unit (defined as any primary residence excluding medical/long-term care or detention facilities) in the City of Hoboken are prohibited from price fixing using algorithmic pricing. For purposes of this chapter, \"price fixing using algorithmic pricing\" shall be defined as the use of software, algorithms, or data-sharing platforms to collect and analyze nonpublic competitor information from other real estate lessors in order to coordinate, recommend, or implement rental prices, lease terms, or occupancy levels for residential dwelling units among competing real estate lessors."
+  },
+  "note": "Kept the lawyer's § 158-2 pinpoint and adoption date but added the ordinance number B-781, which the codified ecode360 text (O080) states; the '§ 154-8' heading in the ordinance as adopted (D034) is a drafting mislabel, as the ordinance title and O080 both place the rule at § 158-2.",
   "history": null
  },
  "r-0071": {
@@ -551,6 +621,34 @@
   "note": null,
   "history": null
  },
+ "r-0078": {
+  "from_citation": "Jersey City Code § 218-12 (Ord. 25-057)",
+  "citation": "Jersey City Code § 218-12(2)(1) (Ord. 25-057, as amended by Ord. 25-076 and Ord. 25-098); see also id. § 218-12(2)(2), (4)(a)(i)(1), (4)(b), (4)(c)(i)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O082",
+   "url": "https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/16093/1418863/pdf",
+   "retrieved_at": "2026-10-04 00:34 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "It is unlawful for any real estate lessor, agent, or subcontractor thereof, to subscribe to, contract with, or \notherwise exchange anything of value in return for or otherwise utilize the services of a Service \nProvider."
+  },
+  "note": "Added the pinpoint to the unlawful-conduct subsection and the two amending ordinances: Ord. 25-076 (O082) renumbered subsection 2's items as 1 and 2 and added 'or otherwise utilize', and Ord. 25-098 (O083) inserted a new subsection 3 and moved Enforcement to 4. The card's quote from D035 is Ord. 25-057's original wording, now superseded, so the quote is taken from O082. The Municode code (O084, Apr. 3, 2026) still shows § 218-12 as 'Exempt dwellings' and lists 25-057 and 25-098 as pending amendments, so this section is not yet codified there. D002 is a law-firm alert, not law text.",
+  "history": null
+ },
+ "r-0079": {
+  "from_citation": "Jersey City Mun. Code ch. 260",
+  "citation": "Jersey City Code ch. 260 (Ord. No. C-14A); see also id. § 260-1 (definition of \"Dwelling,\" exemption A.1)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O081",
+   "url": "https://library.municode.com/nj/jersey_city/codes/code_of_ordinances?nodeId=CH260RECO",
+   "retrieved_at": "2026-10-04 00:33 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "Dwellings with four or less housing spaces; provided, however, that this exemption shall be suspended for non-owner occupied dwellings with four or less housing spaces until the end of the state of emergency or six months from adoption of these amendments whichever comes first."
+  },
+  "note": "Added the adopting ordinance (Ord. No. C-14A) and a see-also to § 260-1's exemption A.1 for dwellings with four or fewer housing spaces, both from the official code (O081); the card's own quote stays from D036, a city agency web page in the supplied corpus, not the law's text.",
+  "history": null
+ },
  "r-0080": {
   "from_citation": "LAMC § 151.09 (§ 151.09.C.9; § 165.05.B.5)",
   "citation": "L.A. Mun. Code § 151.09 (Rent Stabilization Ordinance)",
@@ -563,6 +661,20 @@
    "quoted_span": "A copy of any written notice terminating a tenancy shall be filed with the Department either electronically in the manner prescribed by the Department or by means of a form approved by the Department and the City Attorney for this purpose. The landlord shall file with the Department any such written notice terminating a tenancy within three business days of service on the tenant."
   },
   "note": "Changed to the standard 'L.A. Mun. Code' form at section level because the card merges the eviction grounds (A), filing (C.9) and relocation (G) subsections, and dropped § 165.05(B)(5), which is the Just Cause Ordinance provision for non-RSO units rather than the RSO rule on this card.",
+  "history": "Official code (O088) history for § 151.09: Ord. No. 187,763, effective 2023-03-27; Ord. No. 188,757, effective 2025-12-17; Ord. No. 188,795, effective 2026-02-02; Ord. No. 187,737, effective 2023-01-27."
+ },
+ "r-0081": {
+  "from_citation": "LAMC § 151.09.G (RSO); LAMC § 165.06 (JCO) (see also LAMC §§ 151.09.A, 165.03, 151.30, 47.06-47.07; RAC Regulations § 960.00)",
+  "citation": "L.A. Mun. Code § 151.09(G) (Ord. No. 184822; Ord. No. 187737, as amended through Ord. No. 188795); L.A. Mun. Code § 165.06 (Just Cause for Eviction Ordinance) (Ord. No. 187737, as amended through Ord. No. 188795); see also id. §§ 165.03(H)-(N), 165.05(B)(2)-(4), 165.07, 151.09(A), 151.30(E), 47.06, 47.07; Rent Adjustment Commission Regulations § 960.00",
+  "title": null,
+  "official_text": {
+   "doc_id": "O091",
+   "url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-361750",
+   "retrieved_at": "2026-10-04 00:42 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "The landlord shall perform the acts described in this section within 15 days of service of a written notice of termination described in California Civil Code Section 1946."
+  },
+  "note": "Recast the LAMC/RSO/JCO shorthand into house style, named the enacting and amending ordinances shown in O030, O032, O034 and O091 (Ord. No. 188795 last amended §§ 151.09(G) and 165.06(F)), added the declaration-filing (§ 165.05(B)) and remedies (§ 165.07) sections the card states, and noted that the card's own quote comes from D043, an LAHD bulletin in the supplied corpus rather than the law's text, so the official quote is taken from the current code text in O091.",
   "history": "Official code (O088) history for § 151.09: Ord. No. 187,763, effective 2023-03-27; Ord. No. 188,757, effective 2025-12-17; Ord. No. 188,795, effective 2026-02-02; Ord. No. 187,737, effective 2023-01-27."
  },
  "r-0082": {
@@ -593,6 +705,28 @@
   "note": "The requested cite (§ 165.00 et seq., Ord. No. 187737) was not used: the fair-market-rent threshold was added by Ord. No. 187763 to § 165.03(A) (JCO units) and § 151.09(A)(1) (RSO units), while Ord. No. 187737 had enacted only a bare nonpayment ground, so the card, which covers both RSO and JCO units, now cites both subsections and Ord. No. 187763.",
   "history": "Official code (O088) history for § 151.09: Ord. No. 187,763, effective 2023-03-27; Ord. No. 188,757, effective 2025-12-17; Ord. No. 188,795, effective 2026-02-02; Ord. No. 187,737, effective 2023-01-27."
  },
+ "r-0084": {
+  "from_citation": "Ord. No. 188481 and Ord. No. 188482 (Resident Protections Ordinance); LAMC § 165.03.I(1); LAMC §§ 151.22-151.28",
+  "citation": "L.A. Ord. No. 188481 and Ord. No. 188482",
+  "title": null,
+  "official_text": null,
+  "note": "The card's LAMC § 165.03.I(1) and §§ 151.22-151.28 cites were dropped because they cover the JCO eviction declaration and Ellis Act withdrawal, not the RPO relocation rule; no supplied document gives the RPO's codified section, so '(section not stated)' was added. The name 'Resident Protections Ordinance' was also dropped because it appears only in the LAHD bulletin and no supplied ordinance text uses it. The card's quote stays from D043, an LAHD bulletin in the supplied corpus that is not the law's text, and no supplied document is the RPO ordinance text.",
+  "history": null
+ },
+ "r-0086": {
+  "from_citation": "Los Angeles Rent Stabilization Ordinance (LAMC Chapter XV; replacement units LAMC § 151.28)",
+  "citation": "L.A. Mun. Code § 151.06(D) (Ord. No. 188795); see also id. § 151.02 (Ord. No. 184822)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O032",
+   "url": "https://cityclerk.lacity.org/onlinedocs/2023/23-1134_ord_188795_12-24-25.pdf",
+   "retrieved_at": "2026-10-04 00:21 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "Any annual rent increase not previously noticed and served during the\n        period beginning June 1,2025, through June 30, 2026, shall comply with this\n        subsection. Any such rent increase shall not exceed three percent and shall not\n        include any additional increase based on the landlord’s payment of utilities."
+  },
+  "note": "Kept the lawyer's sections and parentheticals but narrowed § 151.06 to subsection D and added Ord. No. 188795 because O032 shows that ordinance rewrote § 151.06(D), the 12-month and no-utility-increase rule, and added Ord. No. 184822 for § 151.02 per O085 and O034; the card's own quote stays from D041, an LAHD web page, not the law's text.",
+  "history": "Official code (O087) history for § 151.06: Ord. No. 188,795, effective 2026-02-02; Ord. No. 188,911, effective 2026-04-20."
+ },
  "r-0088": {
   "from_citation": "L.A. Mun. Code § 151.06.02 (Ord. No. 175020; Ord. No. 166368; Ord. No. 174017)",
   "citation": "L.A. Mun. Code § 151.06.02 (Ord. No. 175020; Ord. No. 166368; Ord. No. 174017)",
@@ -607,154 +741,26 @@
   "note": null,
   "history": "Official code (O086) history for § 151.06.02: Ord. No. 187,122, effective 2021-08-08."
  },
- "r-0032": {
-  "from_citation": "Massachusetts statewide rent control initiative petition (Cella v. Attorney General, SJC-13893)",
-  "citation": "Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026)",
-  "title": null,
-  "official_text": null,
-  "note": "Adopted the lawyer's form, which O101 and D059 support, citing the case itself instead of the petition name; the Supreme Judicial Court held that Initiative Petition 25-21 (statewide rent control) relates to religion under Article 48 and barred it from the November 2026 ballot, so it creates no rent cap.",
-  "history": null
- },
- "r-0060": {
-  "from_citation": "Berkeley Mun. Code ch. 13.106",
-  "citation": "Berkeley Mun. Code § 13.106.040(A) (Ord. 7692-NS, Ronald V. Dellums Fair Chance Access to Housing Ordinance); see also id. § 13.106.040(E)",
-  "title": null,
-  "official_text": {
-   "doc_id": "O094",
-   "url": "https://berkeley.municipal.codes/BMC/13.106",
-   "retrieved_at": "2026-10-04 00:45 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "A. Except as provided in Paragraphs B and C of this Section, a Housing Provider shall not, at any time or by any means, whether direct or indirect, inquire about an Applicant’s Criminal History, require an Applicant to disclose their Criminal History, require an Applicant to authorize the release of their Criminal History or, if such information is received, base an Adverse Action in whole or in part on an Applicant’s Criminal History."
-  },
-  "note": "Narrowed the chapter cite to § 13.106.040(A), which holds the ban on criminal-history inquiries; added § 13.106.040(E) for the written-notice and opportunity-to-respond rule and the enacting ordinance from the code's history note; the fines and Rent Board complaint process are left uncited because no document states their section numbers.",
-  "history": null
- },
- "r-0011": {
-  "from_citation": "Cal. Gov. Code § 66300.6(b)(4)(A) (Housing Crisis Act of 2019, SB 330, as amended by SB 8 and AB 1218)",
-  "citation": "Cal. Gov. Code § 66300.6(b)(4)(A) (Housing Crisis Act of 2019, as amended through Stats. 2025, ch. 511, SB 21)",
-  "title": null,
-  "official_text": {
-   "doc_id": "O001",
-   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=GOV&sectionNum=66300.6",
-   "retrieved_at": "2026-10-04 00:17 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "The developer agrees to provide both of the following to the existing occupants of any protected units that are lower income households:\n\n(A) Relocation benefits that are equivalent to the relocation benefits required to be paid by public entities pursuant to Chapter 16 (commencing with Section 7260) of Division 7 of Title 1 and any implementing regulations."
-  },
-  "note": "Replaced the bill list (SB 330, SB 8, AB 1218) with the latest session law shown in the official code text, Stats. 2025, ch. 511 (SB 21), because no document shows which act last changed (b)(4)(A).",
-  "history": null
- },
- "r-0070": {
-  "from_citation": "Hoboken Code § 158-2",
-  "citation": "Hoboken Code § 158-2 (Ord. No. B-781, adopted July 9, 2025)",
-  "title": null,
-  "official_text": {
-   "doc_id": "O080",
-   "url": "https://ecode360.com/46833413",
-   "retrieved_at": "2026-10-04 00:30 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "Landlords who rent any residential dwelling unit (defined as any primary residence excluding medical/long-term care or detention facilities) in the City of Hoboken are prohibited from price fixing using algorithmic pricing. For purposes of this chapter, \"price fixing using algorithmic pricing\" shall be defined as the use of software, algorithms, or data-sharing platforms to collect and analyze nonpublic competitor information from other real estate lessors in order to coordinate, recommend, or implement rental prices, lease terms, or occupancy levels for residential dwelling units among competing real estate lessors."
-  },
-  "note": "Kept the lawyer's § 158-2 pinpoint and adoption date but added the ordinance number B-781, which the codified ecode360 text (O080) states; the '§ 154-8' heading in the ordinance as adopted (D034) is a drafting mislabel, as the ordinance title and O080 both place the rule at § 158-2.",
-  "history": null
- },
- "r-0067": {
-  "from_citation": "Boston Fair Housing Regulations (Boston Fair Housing Commission; ordinance section not stated in document)",
-  "citation": "Boston Fair Housing Commission Regulations, Reg. 1.04(m) (amended Mar. 1, 2001); see also id. Reg. 1.01, 1.02(kk) (authority: City of Boston Code, Ordinances, Title 10, §§ 150-157 (1982); St. 1994, c. 37)",
-  "title": null,
-  "official_text": {
-   "doc_id": "O072",
-   "url": "https://www.cityofboston.gov/images_documents/BFHC%20Regulations_tcm3-45622.pdf",
-   "retrieved_at": "2026-10-04 00:21 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "It is unlawful to deny equal access to or to discriminate in housing regardless of the\npublic or private source of denial or discrimination against an individual or group based\non race, color, religious creed, marital status, handicap, military status, children, national\norigin, sex, age, ancestry, sexual orientation or source of income."
-  },
-  "note": "Replaced the unsectioned regulation cite with the section numbers in O072: Reg. 1.04(m) (Source of Income Discrimination in Credit and Rentals, named in O072's table of contents) leads, with Reg. 1.01 and 1.02(kk) also cited; the 1.04(m) text itself is cut off in O072, so the quote comes from 1.01. O072 names the authorizing ordinance only as Title 10, §§ 150-157, not by chapter, so no chapter number is given and the lawyer's \"section not stated\" fallback was not needed.",
-  "history": null
- },
- "r-0019": {
-  "from_citation": "Cal. Civ. Code § 1950.5",
-  "citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12, as later amended); see also id. § 1950.5(e), (g), (h)",
-  "title": null,
-  "official_text": {
-   "doc_id": "D025",
-   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1950.5",
-   "retrieved_at": "2026-10-01T22:35Z",
-   "in_supplied_corpus": true,
-   "quoted_span": "(1) Except as provided in paragraph (2), (3), or (5), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy."
-  },
-  "note": "Kept the lawyer's § 1950.5(c) pinpoint and AB 12 (ch. 733, per O002) but added 'as later amended', because D025's current subdivision (c) differs from AB 12's text in O002 (paragraph (5) cross-reference, service-member paragraph (4) from April 1, 2025) and no document names the later act; added see-also cites to (e), (g) and (h), which D025 shows, and omitted (m) and (n), which no document states.",
-  "history": null
- },
- "r-0079": {
-  "from_citation": "Jersey City Mun. Code ch. 260",
-  "citation": "Jersey City Mun. Code ch. 260 (Ord. No. C-14A)",
-  "title": null,
-  "official_text": {
-   "doc_id": "O081",
-   "url": "https://library.municode.com/nj/jersey_city/codes/code_of_ordinances?nodeId=CH260RECO",
-   "retrieved_at": "2026-10-04 00:33 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "Dwellings with four or less housing spaces; provided, however, that this exemption shall be suspended for non-owner occupied dwellings with four or less housing spaces until the end of the state of emergency or six months from adoption of these amendments whichever comes first."
-  },
-  "note": "Added the adopting ordinance (Ord. No. C-14A, per the code's chapter history) to the chapter cite, which stays chapter-wide because the card covers the whole Rent Control chapter and its 1-4 unit exemption sits in the § 260-1 definitions section.",
-  "history": null
- },
- "r-0081": {
-  "from_citation": "LAMC § 151.09.G (RSO); LAMC § 165.06 (JCO) (see also LAMC §§ 151.09.A, 165.03, 151.30, 47.06-47.07; RAC Regulations § 960.00)",
-  "citation": "L.A. Mun. Code § 151.09(G) (as amended through Ord. No. 188795) (Rent Stabilization Ordinance); L.A. Mun. Code § 165.06 (as amended through Ord. No. 188795) (Just Cause for Eviction Ordinance) (see also id. §§ 151.09(A), 165.03, 165.05(B), 165.07, 151.30(E), 47.06, 47.07; RAC Regulations § 960.00)",
-  "title": null,
-  "official_text": {
-   "doc_id": "O091",
-   "url": "https://codelibrary.amlegal.com/codes/los_angeles/latest/lamc/0-0-0-361750",
-   "retrieved_at": "2026-10-04 00:42 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "The landlord shall perform the acts described in this section within 15 days of service of a written notice of termination described in California Civil Code Section 1946. The landlord may in its sole discretion elect to pay the monetary relocation benefits pursuant to this section to an escrow account to be disbursed to the tenant upon certification of vacation of the unit."
-  },
-  "note": "Converted 'LAMC' to the house form 'L.A. Mun. Code' with parenthetical subsections, added the latest amending ordinance (Ord. No. 188795) and the codes' own short titles, and listed the declaration-filing (§ 165.05(B)) and affirmative-defense (§ 165.07) provisions the card also states under see also.",
-  "history": "Official code (O088) history for § 151.09: Ord. No. 187,763, effective 2023-03-27; Ord. No. 188,757, effective 2025-12-17; Ord. No. 188,795, effective 2026-02-02; Ord. No. 187,737, effective 2023-01-27."
- },
- "r-0084": {
-  "from_citation": "Ord. No. 188481 and Ord. No. 188482 (Resident Protections Ordinance); LAMC § 165.03.I(1); LAMC §§ 151.22-151.28",
-  "citation": "Ord. No. 188481 and Ord. No. 188482; see also id. L.A. Mun. Code § 165.03(I)(1); L.A. Mun. Code §§ 151.22-151.28",
-  "title": null,
-  "official_text": null,
-  "note": "The RPO ordinances now lead because they hold the relocation rule, but no document states their codified section, so '(section not stated)' is added. The nickname 'Resident Protections Ordinance' is dropped because only the LAHD bulletin uses it. 'LAMC' becomes 'L.A. Mun. Code', and the filing-procedure sections move to see also.",
-  "history": "Official code (O089) history for § 165.03: Ord. No. 187,763, effective 2023-03-27."
- },
  "r-0089": {
   "from_citation": "Newark Mun. Code § 19:2-3 (Ord. 6 PSF-A(S), 9-5-17)",
   "citation": "Newark Mun. Code § 19:2-3.1 (Ord. 6 PSF-A(S), 9-5-17)",
   "title": null,
   "official_text": null,
-  "note": "The pinpoint was narrowed from § 19:2-3 to § 19:2-3.1 (Determination of Rents), which D070 shows holds the 4% cap; D070 is a city agency page quoting the code, not the law's official text, so no quote is given.",
-  "history": null
- },
- "r-0078": {
-  "from_citation": "Jersey City Code § 218-12 (Ord. 25-057)",
-  "citation": "Jersey City Code § 218-12(2)(a) (Ord. 25-057, as amended by Ord. 25-076); see also id. § 218-12(2)(b), (4)",
-  "title": null,
-  "official_text": {
-   "doc_id": "O082",
-   "url": "https://mcclibraryfunctions.azurewebsites.us/api/ordinanceDownload/16093/1418863/pdf",
-   "retrieved_at": "2026-10-04 00:34 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "It is unlawful for any real estate lessor, agent, or subcontractor thereof, to subscribe to, contract with, or \notherwise exchange anything of value in return for or otherwise utilize the services of a Service \nProvider."
-  },
-  "note": "The citation now pinpoints subsection 2(a), which holds the ban, and adds Ord. 25-076 because that ordinance last changed this subsection (adding 'or otherwise utilize'). It also points to the service-provider ban in 2(b) and to enforcement and penalties, which Ord. 25-098 renumbered as subsection 4. The section is not yet codified: Municode's current § 218-12 is still 'Exempt dwellings', so the quote comes from the amending ordinance.",
+  "note": "Narrowed the pinpoint from § 19:2-3 to § 19:2-3.1 (Determination of Rents), the subsection D070 shows holding the 4% cap and the compliance and registration bar; D070 is a City of Newark Division of Rent Control web page quoting the code, not the code's text, so the card's quote comes only from that agency page and no supplied document is the official law text.",
   "history": null
  },
  "r-0090": {
   "from_citation": "San Diego Mun. Code § 98.1103 (O-21955 N.S.; see also §§ 98.1102, 98.1104)",
-  "citation": "San Diego Mun. Code § 98.1103 (Ord. O-21955 N.S.); see also id. §§ 98.1102, 98.1104(a)",
+  "citation": "San Diego Mun. Code § 98.1103(b) (Ord. O-21955 N.S.); see also id. §§ 98.1103(a), 98.1102, 98.1104(a)",
   "title": null,
   "official_text": {
    "doc_id": "D074",
    "url": "https://docs.sandiego.gov/municode/MuniCodeChapter09/Ch09Art08Division11.pdf",
    "retrieved_at": "2026-10-03 20:58 UTC",
    "in_supplied_corpus": false,
-   "quoted_span": "It is unlawful for a person to sell, license, or otherwise provide an algorithmic \ndevice to a landlord. \n(b) It is unlawful for a landlord to use an algorithmic device to set rental rates or \noccupancy levels for residential rental property."
+   "quoted_span": "It is unlawful for a landlord to use an algorithmic device to set rental rates or \noccupancy levels for residential rental property. \nFor each month a violation of section 98.1103(b) exists or continues, and for \neach residential rental property a landlord uses an algorithmic device, it shall \nconstitute a separate and distinct violation."
   },
-  "note": "Added the 'Ord.' label and moved the related sections into a 'see also id.' cite with the § 98.1104(a) pinpoint, and replaced the quote taken from the draft proposal (D076, O-2025-107) with the adopted code text in D074, which also makes attorney's fees available to a prevailing landlord, not only a tenant.",
+  "note": "The citation now pinpoints § 98.1103(b), the landlord-use ban; it lists the sale ban in (a), the \"two or more landlords\" definition in § 98.1102 and the remedies in § 98.1104(a) as see-also cites, and puts the ordinance in house form; the quote now comes from the adopted code text (D074), because the card's own quote stays from the supplied corpus D076, which is only the unadopted draft O-2025-107, whose definition and fee terms differ from the adopted law.",
   "history": null
  },
  "r-0093": {
@@ -771,36 +777,6 @@
   "note": "Recast the amendment parenthetical as 'as amended through' the latest ordinance shown (O-21769 N.S.) and added see-also cites to § 98.0706(b)(1) and (e), which hold the card's 30/60-day no-fault notice and void-notice rules.",
   "history": null
  },
- "r-0086": {
-  "from_citation": "Los Angeles Rent Stabilization Ordinance (LAMC Chapter XV; replacement units LAMC § 151.28)",
-  "citation": "L.A. Mun. Code § 151.06(D) (Ord. No. 188795); see also id. § 151.02 (Ord. No. 184822)",
-  "title": null,
-  "official_text": {
-   "doc_id": "O032",
-   "url": "https://cityclerk.lacity.org/onlinedocs/2023/23-1134_ord_188795_12-24-25.pdf",
-   "retrieved_at": "2026-10-04 00:21 UTC",
-   "in_supplied_corpus": false,
-   "quoted_span": "The allowable annual rent adjustment shall be 90 percent of the\n        percentage change rounded off to the nearest whole number as determined by\n        the Department. If the allowable annual rent adjustment is less than one percent,\n        a landlord may increase the maximum or maximum adjusted rent by up to one\n        percent. In no event, however, may an annual rent increase under this\n        subsection exceed four percent."
-  },
-  "note": "Followed the lawyer's form but narrowed § 151.06 to subsection D, because O032 shows the annual-increase rule there as amended by Ord. No. 188795 (effective Feb. 2, 2026); added Ord. No. 184822 for § 151.02 per O085 and O034; dropped the nickname-only cite.",
-  "history": "Official code (O087) history for § 151.06: Ord. No. 188,795, effective 2026-02-02; Ord. No. 188,911, effective 2026-04-20."
- },
- "r-0097": {
-  "from_citation": "S.F. Admin. Code § 37.9(a)",
-  "citation": "S.F. Admin. Code § 37.9(a) (Ord. No. 03-26); see also id. §§ 37.9(c), 37.2(r)",
-  "title": null,
-  "official_text": null,
-  "note": "Kept the § 37.9(a) pinpoint and added Ord. No. 03-26, which per O040 last amended § 37.9 by adding the 17th just cause; added see-also cites to § 37.9(c) for the dominant-motive rule and § 37.2(r) for housing services; no quote is given because D079 is an agency page and O040 is the Rent Board's copy, which it says is not the official record.",
-  "history": null
- },
- "r-0098": {
-  "from_citation": "S.F. Admin. Code § 37.9A (Rent Ordinance Section 37.9A)",
-  "citation": "S.F. Admin. Code § 37.9A(e)",
-  "title": null,
-  "official_text": null,
-  "note": "Adopted the lawyer's form with the (e) pinpoint, which O040 places on the Ellis Act relocation payments, and dropped the card's 'Rent Ordinance Section 37.9A' parenthetical because it is a nickname, not a citation; no quote is given because D083 and D082 are Rent Board rate pages and O040 says it is not the official record (American Legal is the official publisher).",
-  "history": null
- },
  "r-0094": {
   "from_citation": "San Diego Mun. Code § 98.0706(c) (Ord. O-21647 N.S.)",
   "citation": "San Diego Mun. Code § 98.0706(c) (Ord. O-21647 N.S.); see also id. § 98.0706(b)(1)(B)(i)",
@@ -813,14 +789,6 @@
    "quoted_span": "(i) Unless section 98.0706(c)(1)(A)(ii) applies, the direct \npayment to the tenant shall be in an amount equal to \ntwo months of actual rent under the tenant’s lease in \neffect at the date of the notice.  \n \n(ii) If the tenant is a senior or disabled, the direct payment \nto the tenant shall be in an amount equal to three \nmonths of actual rent under the tenant’s lease in effect \nat the date of the notice."
   },
   "note": "Kept the § 98.0706(c) pinpoint and Ord. O-21647 N.S., and added a see-also cite to § 98.0706(b)(1)(B)(i), which holds the card's 15-day direct-payment rule.",
-  "history": null
- },
- "r-0099": {
-  "from_citation": "S.F. Admin. Code § 37.9C (Rent Ordinance Section 37.9C)",
-  "citation": "S.F. Admin. Code § 37.9C(e)",
-  "title": null,
-  "official_text": null,
-  "note": "Pinpointed to subsection (e), which sets the relocation amounts, and dropped the parenthetical 'Rent Ordinance Section 37.9C' because that label comes from the Rent Board page, not the law's own text; the only full text supplied (O040) is the Rent Board's copy, which disclaims being the official record, so no quote is given.",
   "history": null
  },
  "r-0095": {
@@ -839,7 +807,7 @@
  },
  "r-0096": {
   "from_citation": "S.F. Admin. Code § 37.10C",
-  "citation": "S.F. Admin. Code § 37.10C (as amended through Ord. No. 169-25)",
+  "citation": "S.F. Admin. Code § 37.10C(b) (Ord. No. 224-24, as amended through Ord. No. 169-25); see also id. § 37.10C(a), (d)",
   "title": null,
   "official_text": {
    "doc_id": "O040",
@@ -848,29 +816,59 @@
    "in_supplied_corpus": false,
    "quoted_span": "It shall be unlawful for a landlord to use an algorithmic device \ndescribed in subdivision (a) when setting rents or occupancy levels for residential dwelling units \nin San Francisco. Each separate month that a violation exists or continues, and each separate \nresidential dwelling unit for which the landlord used the algorithmic device, shall constitute a \nseparate and distinct violation."
   },
-  "note": "Added 'as amended through Ord. No. 169-25' because the Rent Board's published text of the Rent Ordinance shows § 37.10C was added by Ord. No. 224-24 and last amended by Ord. No. 169-25. That text carries a Rent Board disclaimer that it is not the official record (American Legal is the official publisher), and the card's source D081 is a Rent Board news page, not the law's text.",
+  "note": "Added pinpoint (b) for the ban on use and per-unit, per-month violations, a see also for (a) on sales and for (d) on remedies (cited only by the D002 law-firm alert because O040's excerpt is truncated), and the enacting Ord. No. 224-24 and amending Ord. No. 169-25 shown in O040; the card's quoted span still comes from D081, a supplied-corpus SF.gov news page that is not the law's text, and O040 is the Rent Board's published text, which it says is not the official record.",
+  "history": null
+ },
+ "r-0097": {
+  "from_citation": "S.F. Admin. Code § 37.9(a)",
+  "citation": "S.F. Admin. Code § 37.9(a) (as amended by Ord. No. 03-26); see also id. §§ 37.9(c), 37.2(r)",
+  "title": null,
+  "official_text": null,
+  "note": "The pinpoint § 37.9(a) is kept and Ord. No. 03-26 is added, because O040's change table shows it amended § 37.9 to add the 17th just cause; see also id. §§ 37.9(c) (dominant motive) and 37.2(r) (housing services) are added because the card also states those rules. The card's own quote stays from the supplied corpus (D079, a Rent Board info page, not the law's text), and no quote is given from O040 because that Rent Board copy states it is not the official record and that American Legal is the official publisher.",
+  "history": null
+ },
+ "r-0098": {
+  "from_citation": "S.F. Admin. Code § 37.9A (Rent Ordinance Section 37.9A)",
+  "citation": "S.F. Admin. Code § 37.9A(e) (as amended through Ord. No. 03-26)",
+  "title": null,
+  "official_text": null,
+  "note": "Kept the lawyer's pinpoint § 37.9A(e), which O040 confirms holds the Ellis Act relocation amounts, the elderly/disabled supplement and the annual CPI adjustment; I added 'as amended through Ord. No. 03-26' because O040's amendment table lists that ordinance (2/8/26) as changing § 37.9A, and I dropped the 'Rent Ordinance Section 37.9A' label as a nickname; the card's quote stays from the supplied corpus (D083, a Rent Board rate page that, like D082, is not the law's text), and no document is quoted as official because O040, though City-published, states it is not an official record and names American Legal as the official publisher.",
+  "history": null
+ },
+ "r-0099": {
+  "from_citation": "S.F. Admin. Code § 37.9C (Rent Ordinance Section 37.9C)",
+  "citation": "S.F. Admin. Code § 37.9C(e)(1) (Prop. H, eff. Dec. 22, 2006); see also id. § 37.9C(a)(1), (e)(2), (e)(3)",
+  "title": null,
+  "official_text": {
+   "doc_id": "O040",
+   "url": "https://media.api.sf.gov/documents/600_Ordinance_6-29-26.pdf",
+   "retrieved_at": "2026-10-04 00:17 UTC",
+   "in_supplied_corpus": false,
+   "quoted_span": "Each Eligible Tenant receiving a Covered No-Fault Eviction Notice shall \nreceive $4,500, $2,250 of which shall be paid at the time of the service of the notice to quit, and \n$2,250 of which shall be paid when the unit is vacated. In no case, however, shall the landlord \nbe obligated under this section 37.9C(e)(1) to provide more than $13,500 in relocation expenses \nto all Eligible Tenants in the same unit."
+  },
+  "note": "The pinpoint now leads with § 37.9C(e)(1), where O040's text sets the per-tenant and per-unit relocation amounts; see also covers (a)(1) (covered evictions), (e)(2) (the senior, disabled and child-household add-on) and (e)(3) (the annual adjustment behind D083's 2026–27 figures); Prop. H is added as the enacting law per O040's history note; and 'Rent Ordinance Section 37.9C' is dropped because that name appears only on the Rent Board's rate page (D083) and its publication notes, while the card's own quote stays sourced to D083, a Rent Board rate page in the supplied corpus, not the law's text, and O040 is the Rent Board's published text of the ordinance, which it notes is not the official record.",
   "history": null
  },
  "r-0101": {
   "from_citation": "S.F. Admin. Code § 37.3",
-  "citation": "S.F. Admin. Code § 37.3(a)(1)",
+  "citation": "S.F. Admin. Code § 37.3(a)(1) (as amended through Ord. No. 3-26)",
   "title": null,
   "official_text": null,
-  "note": "Narrowed the lawyer's § 37.3(a) to § 37.3(a)(1) because O040 places the annual rent increase rule (the Board publishes the CPI figure and caps increases at 60% of it) in subsection (a)(1); the 1.6% figure itself comes from the Rent Board's announcement (D080), and O040 is not quoted because it is the Rent Board's copy, which states it is not the official record.",
+  "note": "Narrowed the lawyer's § 37.3(a) to § 37.3(a)(1) and added Ord. No. 3-26 because O040, the Rent Board's text of § 37.3, places the annual CPI-based increase rule in (a)(1) with that ordinance last in its history note; the card's own quote stays from D080, a Rent Board news page that is not law text, and no quote is given because O040 itself says it is not the official record (American Legal is the official publisher).",
   "history": null
  },
  "r-0103": {
   "from_citation": "San Francisco Fair Chance Ordinance",
-  "citation": "S.F. Police Code art. 49, § 4906 (Fair Chance Ordinance) (as amended through Bd. of Supervisors File No. 171170); see also id. § 4911",
+  "citation": "S.F. Police Code art. 49, § 4906 (Ord. No. 17-14) (Fair Chance Ordinance); see also id. § 4911",
   "title": null,
   "official_text": {
-   "doc_id": "O042",
-   "url": "https://www.sf.gov/sites/default/files/2022-12/FCO%20Legistar.pdf",
+   "doc_id": "O041",
+   "url": "https://sfbos.archive.sf.gov/ftp/uploadedfiles/bdsupvrs/ordinances14/o0017-14.pdf",
    "retrieved_at": "2026-10-04 00:19 UTC",
    "in_supplied_corpus": false,
-   "quoted_span": "(47)   An applicant or other person may report to the HRC any suspected \nviolation of this Article 49 within 60 days of the date the suspected violation occurred. The \nHRC shall encourage reporting pursuant to this subsection by keeping confidential, to the \n \n \nSupervisors Cohen;"
+   "quoted_span": "18 ffii> It shall be unlawful (or any Housing Provider to produce or disseminate any \n19 advertisement related to Affordable Housing that expresses, directly or indirectly, that any person \n20 with an arrest or conviction record will not be considered (or the rental or lease of real property or \n21 may not apply for the rental or lease of real property, except as required by local, state."
   },
-  "note": "The pinpoint changed from § 4901 et seq. to § 4906, with see also § 4911, because O041 shows § 4901 is only the Policy section and O042 shows the housing rule in § 4906 and HRC reporting in § 4911; O042 gives File No. 171170 as the latest amendment, and no document states its ordinance number.",
+  "note": "Replaced the nickname with the lawyer's form but moved the pinpoint from § 4901, a policy section per O041, to § 4906, the housing-decisions section (numbered 4906 in O041 and O042), added Ord. No. 17-14 from O041 and § 4911 for the HRC complaint process, and did not cite the 2018 amendment (File No. 171170) because O042 is a committee draft with a blank ordinance number; the card's own quote comes from D078, an HRC agency web page in the supplied corpus that is not the law's text, and the O041 quote is reproduced as OCR'd, with the scan's line numbers removed.",
   "history": null
  },
  "r-0104": {
@@ -913,6 +911,14 @@
    "quoted_span": "Increases in Rent on Residential Real Property or Mobilehome Spaces in \nthe City of Santa Ana in excess of three percent (3%), or eighty (80%) of \nthe change in the Consumer Price Index, whichever is less, and more than \none Rent Increase in any twelve (12) month period, are prohibited, unless \nexpressly exempt under the Costa-Hawkins Rental Housing Act codified in \nCalifornia Civil Code section 1954.50, et seq., or the Mobilehome \nResidency Law codified in California Civil Code sections 798, et seq.  If \nthe change in the Consumer Price Index is negative, no Rent Increase is \npermitted."
   },
   "note": "Kept the lawyer's ch. 8, art. XIX (confirmed by O063), but replaced Ord. NS-3010 with Ord. No. NS-3073 (Measure CC), added the § 8-3140(a) pinpoint holding the cap, the § 8-3140(b) annual-announcement and § 8-3144(a)(1) Tenant Petition provisions, and the Ordinance's own short title, all per O063, since no document mentions NS-3010.",
+  "history": null
+ },
+ "r-0032": {
+  "from_citation": "Massachusetts statewide rent control initiative petition (Cella v. Attorney General, SJC-13893)",
+  "citation": "Initiative Petition 25-21 (barred from the 2026 ballot by Cella v. Attorney General, SJC-13893 (Mass. June 23, 2026))",
+  "title": null,
+  "official_text": null,
+  "note": "The descriptive citation was replaced with the lawyer's form, which no document contradicts: O101 (Mintz alert) confirms the petition number, case name, docket and date, and holds the petition was barred under Article 48 for its religious exemption; the card's own quote still comes from the D059 news report, and no supplied document is the petition text or the court's opinion.",
   "history": null
  }
 }

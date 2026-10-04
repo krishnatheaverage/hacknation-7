@@ -1,3 +1,4 @@
+import { figurePeriod } from "./rules";
 import type { Category, LookupEntry, Result, RuleRecord } from "./schema";
 
 // Module B. Given one building and one date, figure out which rules apply.
@@ -33,14 +34,20 @@ const isNewConstructionExemption = (r: RuleRecord) =>
 // 2026", Berkeley's "2026 AGA") carries that period's start as its date, but the
 // ordinance behind it is older: its own coverage cutoff (1979, 1980) says so.
 // Before that date the ordinance still applies; only the figure is unknown.
+// The same goes for a card whose figure carries its own period starting on the card's
+// date (LA's relocation amounts "July 1, 2026–June 30, 2027").
 export function figureStart(r: RuleRecord): string | null {
   const d = r.effective_date;
-  const cut = r.coverage_conditions.built_on_or_before;
-  if (r.level !== "city" || r.category !== "rent_increase_limits" || !d || !cut) return null;
-  if (yearOf(cut) >= yearOf(d) - 1) return null;
+  if (r.level !== "city" || !d) return null;
   const text = `${r.title} ${r.key_value ?? ""}`;
+  if (figurePeriod(text)?.start === d) return d;
+  const cut = r.coverage_conditions.built_on_or_before;
+  if (r.category !== "rent_increase_limits" || !cut || yearOf(cut) >= yearOf(d) - 1) return null;
   return /\b(annual|AGA|allowable)\b/i.test(text) && text.includes(d.slice(0, 4)) ? d : null;
 }
+
+// After a published figure's period ends, the rule still applies but its figure is old.
+export const figureEnd = (r: RuleRecord): string | null => figurePeriod(`${r.title} ${r.key_value ?? ""}`)?.end ?? null;
 
 function yearsBefore(date: string, years: number): string {
   return `${String(Number.parseInt(date.slice(0, 4), 10) - years).padStart(4, "0")}${date.slice(4)}`;
@@ -52,6 +59,9 @@ export type Evaluation = LookupEntry & {
   rule: RuleRecord;
   reasons: string[]; // why the rule covers / might cover the building
   figure_from?: string; // the card's figure starts later than the query date (see figureStart)
+  figure_ended?: string; // the card's figure ran out before the query date
+  missing: string[]; // facts the public data lacks, when coverage is unknown
+  governed_by?: { title: string; citation: string }; // the local rule that supersedes this one here
 };
 
 const yearOf = (d: string) => Number.parseInt(d.slice(0, 4), 10);
@@ -175,6 +185,9 @@ export function lookup(rules: RuleRecord[], b: Building, asOf: string): Evaluati
       lead = rule.category === "rent_increase_limits" && BARS_RENT_CONTROL.test(`${rule.key_value ?? ""} ${rule.title}`) ? "No rent cap: state law bars local rent control here. This rule applies." : "Applies.";
     }
 
+    const ended = figureEnd(rule);
+    const figureOld = Boolean(!figureLater && result === "applies" && ended && ended < asOf);
+    if (figureOld) lead += ` The figure on this card applied through ${ended}; the figure in force on ${asOf} is not in our sources.`;
     const detail = [...cov.reasons, ...cov.missing.map((m) => `Unknown: ${m}`)];
     // A flagged card says why in its explanation (preemption flags are added further down).
     const flagNote = rule.conflict_flag && !preempts(rule) && rule.conflict_note ? `Note: ${rule.conflict_note}` : "";
@@ -182,6 +195,8 @@ export function lookup(rules: RuleRecord[], b: Building, asOf: string): Evaluati
       team_rule_id: rule.team_rule_id,
       result,
       ...(figureLater ? { figure_from: effective! } : {}),
+      ...(figureOld ? { figure_ended: ended! } : {}),
+      missing: cov.missing,
       explanation: [lead, rule.requirement, detail.length ? `(${detail.join("; ")}.)` : "", rule.coverage_note ?? "", flagNote].filter(Boolean).join(" "),
       // For a state rule that might preempt local law, the flag is really about the
       // local ordinance, so we set it further down only where one reaches this
@@ -218,10 +233,30 @@ export function lookup(rules: RuleRecord[], b: Building, asOf: string): Evaluati
       conflict_flag: false,
       rule: x,
       reasons: [],
+      missing: ["whether the owner filed the new-construction notice"],
     });
     for (const e of out.filter((o) => o.rule.level === "city" && o.rule.category === "rent_increase_limits" && o.result === "applies")) {
       e.result = "unknown";
       e.explanation = `May apply. New construction can be exempt from local rent control for ${n} years under ${x.citation} if the owner filed a notice, and here ${age}. ${e.rule.requirement}`;
+    }
+  }
+
+  // A city rule that covers only units "not regulated by the Rent Stabilization
+  // Ordinance" (LA's Just Cause Ordinance) steps aside where that ordinance covers
+  // the unit, and is unknown where its coverage is unknown. The other ordinance's
+  // coverage comes from its rent card when it has one.
+  for (const e of [...out]) {
+    const name = e.rule.coverage_conditions.summary?.match(/\bnot (?:regulated by|covered by|subject to) the ([A-Z][A-Za-z' ]*?(?:Ordinance|Act|Law))\b/)?.[1];
+    if (!name) continue;
+    const named = rules.filter((r) => r !== e.rule && inJurisdiction(r, b) && r.status === "in_force" && `${r.title} ${r.citation}`.includes(name));
+    const other = named.find((r) => r.category === "rent_increase_limits") ?? named[0];
+    if (!other) continue;
+    const tri = coverage(other, b, asOf).tri;
+    if (tri === "yes") out.splice(out.indexOf(e), 1);
+    else if (tri === "unknown" && e.result === "applies") {
+      e.result = "unknown";
+      e.missing = [...e.missing, `whether the ${name} covers this unit`];
+      e.explanation = `May apply: it covers only units not regulated by the ${name}, and the data cannot settle that here. ${e.rule.requirement}`;
     }
   }
 
@@ -233,6 +268,7 @@ export function lookup(rules: RuleRecord[], b: Building, asOf: string): Evaluati
     // Name the local rule itself, not a relocation-payment rule in the same category.
     const applying = locals.filter((l) => l.result === "applies");
     const governing = applying.find((l) => !/relocation/i.test(`${l.rule.title} ${l.rule.citation}`)) ?? applying[0];
+    if (governing) e.governed_by = { title: governing.rule.title, citation: governing.rule.citation };
     if (governing && e.result === "applies") {
       e.result = "superseded";
       e.explanation = `Covered, but superseded here: ${governing.rule.title} (${governing.rule.citation}) governs this address. ${e.rule.requirement}`;

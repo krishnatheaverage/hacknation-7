@@ -1,11 +1,5 @@
-import { getConfig } from "@/lib/llm";
-
-// Quick deploy check: open /api/health on the live URL. Never returns keys.
+// Quick deploy check: open /api/health on the live URL. Answers come from the rules
+// engine, so no model or API key is used at question time.
 export async function GET() {
-  const cfg = getConfig();
-  return Response.json({
-    ok: cfg !== null,
-    llm: cfg,
-    hint: cfg ? undefined : "Set ANTHROPIC_API_KEY or OPENAI_API_KEY in the deployment's env vars.",
-  });
+  return Response.json({ ok: true, engine: "rules engine, no model at query time" });
 }

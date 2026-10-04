@@ -45,7 +45,7 @@ function FactRow({ label, fact, L }: { label: string; fact: Fact<number | string
 
 function RuleCard({ it, L, lang }: { it: MemoItem; L: S; lang: Lang }) {
   const [open, setOpen] = useState(false);
-  const detail = it.explanation.match(/\(([^()]*)\.\)/)?.[1];
+  const detail = [...it.reasons, ...(it.result === "unknown" ? it.missing.map((m) => `${L.unknownBecause} ${m}`) : [])].join("; ");
   return (
     <li className="rounded-lg border border-stone-200 bg-white p-4">
       <div className="flex flex-wrap items-start gap-2">
@@ -67,7 +67,7 @@ function RuleCard({ it, L, lang }: { it: MemoItem; L: S; lang: Lang }) {
           <span className="font-medium">{it.key_value}</span>
         </p>
       )}
-      {it.result === "superseded" && <p className="mt-2 text-sm text-slate-600">{it.explanation.split(". ").slice(0, 1).join("")}.</p>}
+      {it.result === "superseded" && it.governed_by && <p className="mt-2 text-sm text-slate-600">{L.supersededBy(it.governed_by.title, it.governed_by.citation)}</p>}
       {it.result === "not_yet_effective" && it.effective_date && <p className="mt-2 text-sm text-sky-800">{L.takesEffect(fmtDate(it.effective_date, lang))}</p>}
       {detail && (
         <p className="mt-2 text-xs leading-relaxed text-stone-500">
@@ -402,6 +402,7 @@ function Home() {
                 {memo.jurisdiction.county ? ` › ${memo.jurisdiction.county}` : ""} › {memo.jurisdiction.city ?? L.unincorporated}
               </p>
               {memo.jurisdiction.mailing_differs && <p className="mt-1 text-sm text-amber-800">{L.mailingNote(memo.address.mailing_city, memo.jurisdiction.city ?? "")}</p>}
+              {memo.jurisdiction.local_gap && <p className="mt-1 text-sm font-medium text-amber-800">{lang === "es" ? L.localGap : memo.jurisdiction.local_gap}</p>}
               <p className="mt-1 text-xs text-stone-500">
                 {memo.jurisdiction.method === "census" || memo.jurisdiction.method === "census_without_zip"
                   ? L.geocoded(memo.jurisdiction.matched_address ?? "")

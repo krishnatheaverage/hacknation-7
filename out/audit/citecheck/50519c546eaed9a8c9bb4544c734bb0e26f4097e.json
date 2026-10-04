@@ -1,0 +1,24 @@
+{
+ "key": "50519c546eaed9a8c9bb4544c734bb0e26f4097e",
+ "team_rule_id": "r-0019",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D025",
+  "D007",
+  "O002",
+  "D044",
+  "O086",
+  "O033",
+  "O030"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. § 1950.5(e), (g), (h)",
+  "citation_basis": "§ 1950.5(c), (e), (g), (h): D025; Stats. 2023, ch. 733, AB 12: O002",
+  "source_is_law_text": true,
+  "official_doc_id": "D025",
+  "official_quote": "Except as provided in paragraph (2), (3), or (5), a landlord shall not demand or receive security, however denominated, in an amount or value in excess of an amount equal to one month’s rent, in addition to any rent for the first month paid on or before initial occupancy.",
+  "is_city_policy": false,
+  "note": "The lawyer's pinpoint (c) and AB 12 parenthetical are kept (O002 shows AB 12 as Stats. 2023, ch. 733, amending § 1950.5), with a see-also added for (e) wear and tear, (g) photographs and (h) 21-day return as numbered in the current leginfo text D025, which also shows a later change to (c) (new service-member paragraph (c)(4) from April 1, 2025, moving the small-landlord exception from AB 12's (c)(4) to (c)(5)) that no supplied document names by act, while the bad-faith penalty and nonrefundable-deposit subdivisions the card cites as (m) and (n) are omitted because the supplied D025 text is cut off after (h)(4) and does not show them; the card's own quote comes from D025 in the supplied corpus."
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "key": "2d99b8531d0b174d422d7897a646d0a9ef192440",
+ "team_rule_id": "r-0103",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D078",
+  "O042",
+  "O041",
+  "O040"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "S.F. Police Code art. 49, § 4906 (Ord. No. 17-14) (Fair Chance Ordinance); see also id. § 4911",
+  "citation_basis": "Art. 49, § 4906 (Procedures for Use of Criminal History Information in Housing Decisions), § 4911 (Implementation and Enforcement of Housing Provisions), Ord. No. 17-14: O041; § 4906 heading and § 4911 HRC enforcement also: O042; 'Fair Chance Ordinance (Article 49)' name: O042 ordinance title",
+  "source_is_law_text": false,
+  "official_doc_id": "O041",
+  "official_quote": "It shall be unlawful (or any Housing Provider to produce or disseminate any advertisement related to Affordable Housing that expresses, directly or indirectly, that any person with an arrest or conviction record will not be considered (or the rental or lease of real property or may not apply for the rental or lease of real property, except as required by local, state. or federal law.",
+  "is_city_policy": false,
+  "note": "Replaced the nickname with the lawyer's form but moved the pinpoint from § 4901, a policy section per O041, to § 4906, the housing-decisions section (numbered 4906 in O041 and O042), added Ord. No. 17-14 from O041 and § 4911 for the HRC complaint process, and did not cite the 2018 amendment (File No. 171170) because O042 is a committee draft with a blank ordinance number; the card's own quote comes from D078, an HRC agency web page in the supplied corpus that is not the law's text, and the O041 quote is reproduced as OCR'd, with the scan's line numbers removed."
+ }
+}
