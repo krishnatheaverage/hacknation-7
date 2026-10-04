@@ -237,6 +237,7 @@ export function lookup(rules: RuleRecord[], b: Building, asOf: string): Evaluati
     });
     for (const e of out.filter((o) => o.rule.level === "city" && o.rule.category === "rent_increase_limits" && o.result === "applies")) {
       e.result = "unknown";
+      e.missing = [...e.missing, `whether the owner filed for the ${n}-year new-construction exemption (${x.citation})`];
       e.explanation = `May apply. New construction can be exempt from local rent control for ${n} years under ${x.citation} if the owner filed a notice, and here ${age}. ${e.rule.requirement}`;
     }
   }
@@ -278,6 +279,7 @@ export function lookup(rules: RuleRecord[], b: Building, asOf: string): Evaluati
       e.explanation = `Superseded here: ${governing.rule.title} (${governing.rule.citation}) governs this address, whether or not the state rule would otherwise cover this unit. ${e.rule.requirement}`;
     } else if (!governing && e.result === "applies" && locals.some((l) => l.result === "unknown")) {
       e.result = "unknown";
+      e.missing = [...e.missing, `whether ${locals.find((l) => l.result === "unknown")!.rule.citation} covers this unit`];
       e.explanation = `Applies unless the local rule ${locals.find((l) => l.result === "unknown")!.rule.citation} covers this unit, which the data cannot settle. ${e.rule.requirement}`;
     }
   }
