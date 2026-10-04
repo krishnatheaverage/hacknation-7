@@ -182,6 +182,9 @@ export function checkProposal(rules: RuleRecord[], b: Building, asOf: string, p:
     }
   }
 
+  // A rule that blocks this directly leads; a superseded state cap used as a bound goes last.
+  const superseded = new Set(evals.filter((e) => e.result === "superseded").map((e) => e.rule.team_rule_id));
+  blocking.sort((x, y) => Number(superseded.has(x.team_rule_id)) - Number(superseded.has(y.team_rule_id)));
   let verdict: Verdict;
   let headline: string;
   if (blocking.length) {
