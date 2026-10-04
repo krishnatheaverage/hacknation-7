@@ -1,6 +1,6 @@
 jurisdiction,category,match,requested_citation,reviewer_note
 San Diego, CA,algorithmic_rent_setting,98\.110,San Diego Mun. Code § 98.1103 (Ord. O-21955 N.S.),"The ordinance was adopted; drop ""proposed"" and the draft number."
-CA,security_deposits,1950\.5|AB 12,"Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12)",The AB 12 deposit cap is subdivision (c).
+CA,security_deposits,1950\.5|AB 12,"Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12)","The AB 12 deposit cap is subdivision (c). The card also states (e), (g), (h), (m) and (n), so list all of them after see also."
 NJ,screening_restrictions,10:5-12|Law Against Discrimination,N.J.S.A. 10:5-12(g),"""NJ LAD"" is a nickname, not a citation."
 "Berkeley, CA",just_cause_eviction,Ellis,Berkeley Mun. Code ch. 13.77 (Ellis Implementation Ordinance),
 "Berkeley, CA",just_cause_eviction,Measure BB,"Berkeley Mun. Code § 13.76.130 (as amended by Measure BB, Nov. 5, 2024)",The nonpayment threshold is in § 13.76.130.

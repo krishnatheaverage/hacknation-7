@@ -177,7 +177,7 @@
   "lawyer_date": "2024-07-01",
   "lawyer_note": "Duplicate of r-0016 (AB 12 = Civ. Code § 1950.5(c)). Merge into r-0016.",
   "current_id": "r-0019",
-  "current_citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. § 1950.5(e), (g), (h)",
+  "current_citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. (e), (g), (h)",
   "current_status": "in_force",
   "current_date": "2024-07-01"
  },
@@ -190,7 +190,7 @@
   "lawyer_date": "2024-07-01",
   "lawyer_note": "OK. Small-landlord 2-month exception needs owner type → 'unknown' from our data; say so in the explanation.",
   "current_id": "r-0019",
-  "current_citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. § 1950.5(e), (g), (h)",
+  "current_citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. (e), (g), (h)",
   "current_status": "in_force",
   "current_date": "2024-07-01"
  },
@@ -203,7 +203,7 @@
   "lawyer_date": "2025-04-01",
   "lawyer_note": "OK.",
   "current_id": "r-0019",
-  "current_citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. § 1950.5(e), (g), (h)",
+  "current_citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. (e), (g), (h)",
   "current_status": "in_force",
   "current_date": "2024-07-01"
  },
@@ -216,7 +216,7 @@
   "lawyer_date": "",
   "lawyer_note": "OK.",
   "current_id": "r-0019",
-  "current_citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. § 1950.5(e), (g), (h)",
+  "current_citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. (e), (g), (h)",
   "current_status": "in_force",
   "current_date": "2024-07-01"
  },
@@ -229,7 +229,7 @@
   "lawyer_date": "",
   "lawyer_note": "OK.",
   "current_id": "r-0019",
-  "current_citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. § 1950.5(e), (g), (h)",
+  "current_citation": "Cal. Civ. Code § 1950.5(c) (Stats. 2023, ch. 733, AB 12); see also id. (e), (g), (h)",
   "current_status": "in_force",
   "current_date": "2024-07-01"
  },
@@ -593,7 +593,7 @@
   "lawyer_date": "2026-01-01",
   "lawyer_note": "OK (2026 amounts).",
   "current_id": "r-0053",
-  "current_citation": "Berkeley Mun. Code § 13.77.055(A)",
+  "current_citation": "Berkeley Mun. Code § 13.77.055(A) (Ord. 7507-NS); see also id. § 13.77.055(A)(2), (C)",
   "current_status": "in_force",
   "current_date": "2026-01-01"
  },
@@ -632,7 +632,7 @@
   "lawyer_date": "2026-01-01",
   "lawyer_note": "OK.",
   "current_id": "r-0053",
-  "current_citation": "Berkeley Mun. Code § 13.77.055(A)",
+  "current_citation": "Berkeley Mun. Code § 13.77.055(A) (Ord. 7507-NS); see also id. § 13.77.055(A)(2), (C)",
   "current_status": "in_force",
   "current_date": "2026-01-01"
  },
@@ -892,7 +892,7 @@
   "lawyer_date": "2026-07-01",
   "lawyer_note": "FLAGGED — resolved: keep 2026-07-01 as the date of the FY 2026-27 AMOUNTS and say in the note that the obligation itself is older (RSO 1979; JCO 2023-01-27). Bulletin A's chart (July 1, 2026–June 30, 2027) is the current one; Bulletin B's label (2025-26) is the prior year. '3 days' vs '3 business days': use '3 business days' (the more specific text) and keep the discrepancy in conflict_note. Not test-affecting.",
   "current_id": "r-0081",
-  "current_citation": "L.A. Mun. Code § 151.09(G) (Ord. No. 184822; Ord. No. 187737, as amended through Ord. No. 188795); L.A. Mun. Code § 165.06 (Just Cause for Eviction Ordinance) (Ord. No. 187737, as amended through Ord. No. 188795); see also id. §§ 165.03(H)-(N), 165.05(B)(2)-(4), 165.07, 151.09(A), 151.30(E), 47.06, 47.07; Rent Adjustment Commission Regulations § 960.00",
+  "current_citation": "L.A. Mun. Code § 151.09(G) (Rent Stabilization Ordinance) (as amended through Ord. No. 188795); L.A. Mun. Code § 165.06(A) (Just Cause for Eviction Ordinance) (Ord. No. 187737, as amended through Ord. No. 188795); see also id. § 165.06(G), § 165.06(A)(6), § 165.05(B)(2), § 165.05(B)(3), § 165.05(B)(4), § 165.07; L.A. Mun. Code § 151.09(A), § 151.30(E), §§ 47.06, 47.07",
   "current_status": "in_force",
   "current_date": "2026-07-01"
  },
@@ -996,7 +996,7 @@
   "lawyer_date": "2023-06-24",
   "lawyer_note": "OK. Same rolling 15-year CO exemption as the state rule; local supersedes r-0007 at San Diego addresses.",
   "current_id": "r-0093",
-  "current_citation": "San Diego Mun. Code § 98.0704 (Ord. O-21647 N.S., as amended through Ord. O-21769 N.S.); see also id. § 98.0706(b)(1), (e)",
+  "current_citation": "San Diego Mun. Code § 98.0704 (Ord. O-21647 N.S., as amended through Ord. O-21769 N.S.); see also id. §§ 98.0704(a), (b), 98.0706(b)(1), (e)",
   "current_status": "in_force",
   "current_date": "2023-06-24"
  },
@@ -1061,7 +1061,7 @@
   "lawyer_date": "2026-03-01",
   "lawyer_note": "OK. Duplicate of r-0090 — merge.",
   "current_id": "r-0098",
-  "current_citation": "S.F. Admin. Code § 37.9A(e) (as amended through Ord. No. 03-26)",
+  "current_citation": "S.F. Admin. Code § 37.9A(e)",
   "current_status": "in_force",
   "current_date": "2026-03-01"
  },
@@ -1074,7 +1074,7 @@
   "lawyer_date": "2026-03-01",
   "lawyer_note": "OK.",
   "current_id": "r-0099",
-  "current_citation": "S.F. Admin. Code § 37.9C(e)(1) (Prop. H, eff. Dec. 22, 2006); see also id. § 37.9C(a)(1), (e)(2), (e)(3)",
+  "current_citation": "S.F. Admin. Code § 37.9C(e)(1) (Prop. H, eff. Dec. 22, 2006); see also id. § 37.9C(b), (e)(2), (e)(3)",
   "current_status": "in_force",
   "current_date": "2026-03-01"
  },
@@ -1087,7 +1087,7 @@
   "lawyer_date": "2026-03-01",
   "lawyer_note": "Duplicate of r-0088. Merge.",
   "current_id": "r-0098",
-  "current_citation": "S.F. Admin. Code § 37.9A(e) (as amended through Ord. No. 03-26)",
+  "current_citation": "S.F. Admin. Code § 37.9A(e)",
   "current_status": "in_force",
   "current_date": "2026-03-01"
  },
@@ -1152,7 +1152,7 @@
   "lawyer_date": "2021-11-19",
   "lawyer_note": "OK. Rolling 15-year new-construction exemption as in r-0007; local supersedes state at Santa Ana addresses.",
   "current_id": "r-0107",
-  "current_citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3120(a) (Rent Stabilization and Just Cause Eviction Ordinance, Ord. No. NS-3073); see also id. § 8-3120(c), (d)",
+  "current_citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3120(a) (Rent Stabilization and Just Cause Eviction Ordinance; Ord. No. NS-3027, as amended by Ord. No. NS-3052 and as amended through Ord. No. NS-3073); see also id. § 8-3120(b), (c), (d)",
   "current_status": "in_force",
   "current_date": "2021-11-19"
  },
@@ -1165,7 +1165,7 @@
   "lawyer_date": "",
   "lawyer_note": "Duplicate of r-0096 (secondary page). Merge.",
   "current_id": "r-0107",
-  "current_citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3120(a) (Rent Stabilization and Just Cause Eviction Ordinance, Ord. No. NS-3073); see also id. § 8-3120(c), (d)",
+  "current_citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3120(a) (Rent Stabilization and Just Cause Eviction Ordinance; Ord. No. NS-3027, as amended by Ord. No. NS-3052 and as amended through Ord. No. NS-3073); see also id. § 8-3120(b), (c), (d)",
   "current_status": "in_force",
   "current_date": "2021-11-19"
  },

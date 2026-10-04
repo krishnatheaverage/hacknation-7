@@ -61,6 +61,7 @@ function RuleCard({ it, L, lang }: { it: MemoItem; L: S; lang: Lang }) {
       </div>
       <h4 className="mt-2 font-semibold leading-snug text-stone-900">{it.title}</h4>
       <p className="mt-1 text-sm leading-relaxed text-stone-700">{it.requirement}</p>
+      {it.condition && <p className="mt-1 text-sm leading-relaxed text-stone-800">{L.lawAdds} {it.condition}</p>}
       {it.key_value && (
         <p className="mt-2 text-sm">
           <span className="text-stone-500">{L.keyFigure} </span>
@@ -69,6 +70,8 @@ function RuleCard({ it, L, lang }: { it: MemoItem; L: S; lang: Lang }) {
       )}
       {it.result === "superseded" && it.governed_by && <p className="mt-2 text-sm text-slate-600">{L.supersededBy(it.governed_by.title, it.governed_by.citation)}</p>}
       {it.result === "not_yet_effective" && it.effective_date && <p className="mt-2 text-sm text-sky-800">{L.takesEffect(fmtDate(it.effective_date, lang))}</p>}
+      {it.figure_from && <p className="mt-2 text-sm text-amber-800">{L.figureLater(fmtDate(it.figure_from, lang))}</p>}
+      {it.figure_ended && <p className="mt-2 text-sm text-amber-800">{L.figureEnded(fmtDate(it.figure_ended, lang))}</p>}
       {detail && (
         <p className="mt-2 text-xs leading-relaxed text-stone-500">
           {L.why} {detail}.
@@ -121,7 +124,7 @@ function RuleCard({ it, L, lang }: { it: MemoItem; L: S; lang: Lang }) {
             </p>
           )}
           {it.second_check && <p className="mt-1 text-stone-500">{lang === "es" ? `Segunda revisión (en inglés): ${it.second_check}.` : `Second check: ${it.second_check}.`}</p>}
-          <p className="mt-1 text-stone-400">{L.ruleMeta(it.team_rule_id, it.status.replaceAll("_", " "), Math.round(it.confidence * 100))}</p>
+          <p className="mt-1 text-stone-400">{L.ruleMeta(it.team_rule_id, L.results[it.result], Math.round(it.confidence * 100))}</p>
         </div>
       )}
     </li>
@@ -144,7 +147,11 @@ function Glance({ memo, L, lang }: { memo: Memo; L: S; lang: Lang }) {
             const unknown = c.items.filter((i) => i.result === "unknown");
             const coming = c.items.filter((i) => i.result === "pending" || i.result === "not_yet_effective");
             const main = applies[0] ?? unknown[0] ?? coming[0];
-            const cites = [...applies.slice(0, 2), ...superseded.slice(0, 1)].map((i) => i.citation.replace(/\s*\(.*$/, ""));
+            // Short cites: drop a trailing "(Ord. No. ...)" but keep "§ 1950.5(c)".
+            const short = (c: string) => c.replace(/\s+\(.*$/, "").replace(/;\s*see also.*$/, "");
+            const cites = [...applies.slice(0, 2), ...superseded.slice(0, 1)].map((i) => short(i.citation));
+            // A state "no cap" line should not hide a city rule that may apply.
+            const localMaybe = main && main.level === "state" ? unknown.find((i) => i.level === "city") : undefined;
             return (
               <tr key={c.category} className="border-b border-stone-100 align-top last:border-0">
                 <th className="w-40 px-4 py-2 text-left text-xs font-semibold uppercase tracking-wide text-stone-500">{L.categories[c.category]}</th>
@@ -153,7 +160,8 @@ function Glance({ memo, L, lang }: { memo: Memo; L: S; lang: Lang }) {
                     <>
                       <Chip result={main.result} L={L} /> <span className="font-medium">{main.key_value ?? main.title}</span>
                       {main.result === "unknown" && <span className="text-stone-500"> ({L.glanceMaybe})</span>}
-                      {superseded.length > 0 && <span className="text-stone-500">; {L.glanceYields(superseded[0].citation.replace(/\s*\(.*$/, ""))}</span>}
+                      {localMaybe && <span className="text-stone-600">; {L.glanceLocalMaybe(localMaybe.key_value ?? localMaybe.title)}</span>}
+                      {superseded.length > 0 && <span className="text-stone-500">; {L.glanceYields(short(superseded[0].citation))}</span>}
                       {main.result === "applies" && coming.length > 0 && <span className="text-violet-800">; {L.glanceComing(coming[0].title)}</span>}
                       {cites.length > 0 && <span className="block font-mono text-xs text-stone-500">{[...new Set(cites)].join(" · ")}</span>}
                     </>

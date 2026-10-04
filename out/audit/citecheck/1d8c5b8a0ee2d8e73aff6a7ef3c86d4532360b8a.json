@@ -1,0 +1,26 @@
+{
+ "key": "1d8c5b8a0ee2d8e73aff6a7ef3c86d4532360b8a",
+ "team_rule_id": "r-0107",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D085",
+  "D084",
+  "O063",
+  "O064",
+  "O098",
+  "D086",
+  "O060"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Santa Ana Mun. Code ch. 8, art. XIX, § 8-3120(a) (Rent Stabilization and Just Cause Eviction Ordinance; Ord. No. NS-3027, as amended by Ord. No. NS-3052 and as amended through Ord. No. NS-3073); see also id. § 8-3120(b), (c), (d)",
+  "citation_basis": "ch. 8, art. XIX, § 8-3120(a), Rent Stabilization and Just Cause Eviction Ordinance (§ 8-3100 title), Ord. Nos. NS-3027, NS-3052, NS-3073: O098; § 8-3120(b), (c), (d): O063",
+  "source_is_law_text": false,
+  "official_doc_id": "O098",
+  "official_quote": "After a Tenant has continuously and lawfully occupied a Residential Real Property for thirty (30) days, the Owner of the Residential Real Property shall not terminate the Tenancy without just cause, which shall be stated in the written notice to terminate Tenancy.",
+  "is_city_policy": false,
+  "condition": "You are protected only after you have lived in the unit continuously and lawfully for 30 days.",
+  "condition_quote": "After a Tenant has continuously and lawfully occupied a Residential Real Property for thirty (30) days",
+  "note": "Kept the lawyer's ch. 8 form but changed art. XX to art. XIX, added the § 8-3120(a) pinpoint, and replaced Ord. NS-3011 (not in any document) with Ord. Nos. NS-3027, NS-3052 and NS-3073 per the Municode text and history notes in O098 (consistent with O063), replacing 'just cause' with the title the code itself uses in § 8-3100; the card's own quote stays from D085, a city press release in the supplied corpus, not the law's text."
+ }
+}

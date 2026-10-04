@@ -49,7 +49,9 @@ export default function ChangesPage() {
           }
           const flips = new Map<string, number>();
           for (const v of Object.values(c.before_after ?? {})) {
-            const k = `${(v.before ?? "not reported").replaceAll("_", " ")} → ${(v.after ?? "not reported").replaceAll("_", " ")}`;
+            // A one-date test (the boundary test) has no "before".
+            const after = (v.after ?? "not reported").replaceAll("_", " ");
+            const k = t.as_of_before || v.before ? `${(v.before ?? "not reported").replaceAll("_", " ")} → ${after}` : after;
             flips.set(k, (flips.get(k) ?? 0) + 1);
           }
           const sample = c.affected_address_ids[0];

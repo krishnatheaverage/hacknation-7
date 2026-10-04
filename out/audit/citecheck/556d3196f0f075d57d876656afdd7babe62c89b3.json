@@ -1,0 +1,25 @@
+{
+ "key": "556d3196f0f075d57d876656afdd7babe62c89b3",
+ "team_rule_id": "r-0081",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D043",
+  "O032",
+  "O030",
+  "O091",
+  "O090",
+  "O034"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "L.A. Mun. Code § 151.09(G) (Rent Stabilization Ordinance) (as amended through Ord. No. 188795); L.A. Mun. Code § 165.06(A) (Just Cause for Eviction Ordinance) (Ord. No. 187737, as amended through Ord. No. 188795); see also id. § 165.06(G), § 165.06(A)(6), § 165.05(B)(2), § 165.05(B)(3), § 165.05(B)(4), § 165.07; L.A. Mun. Code § 151.09(A), § 151.30(E), §§ 47.06, 47.07",
+  "citation_basis": "§ 151.09(G): O034, O032, D043; § 151.09(A): D043, O034; Ord. No. 188795: O032, O091; § 165.06(A), (A)(6), (G): O091, O030; Ord. No. 187737: O030, O090; § 165.05(B)(2)-(4) and § 165.07: O030; § 151.30(E): O032, O091; §§ 47.06, 47.07: D043, O032; 'Just Cause for Eviction Ordinance': O090 § 165.00; 'Rent Stabilization Ordinance': O032 title",
+  "source_is_law_text": false,
+  "official_doc_id": "O091",
+  "official_quote": "The landlord shall perform the acts described in this section within 15 days of service of a written notice of termination described in California Civil Code Section 1946.",
+  "is_city_policy": false,
+  "condition": "You are not owed relocation assistance under the Just Cause Ordinance if the Housing Department finds your unit became unsafe because of a fire, flood, earthquake or other event the owner did not cause or contribute to, or if you are a resident manager being replaced by a new manager in the same unit.",
+  "condition_quote": "The Department determines that the unit or structure became unsafe or hazardous as the result of a fire, flood, earthquake, or other event beyond the control of the owner or the designated agent and the owner or designated agent did not cause or contribute to the condition.",
+  "note": "Replaced the 'LAMC' shorthand and nickname-only forms with house-style 'L.A. Mun. Code' cites naming Ord. No. 187737 (which added the JCO, per O090) and Ord. No. 188795 (which last amended §§ 151.09(G) and 165.06, per O032/O091), split the old range into separate pinpoints for the declaration (§ 165.05(B)) and remedies (§ 165.07) rules, and dropped RAC Regulations § 960.00 since the card states no escrow rule; the card's own quote stays from the LAHD bulletin D043, which is agency guidance rather than the law's text."
+ }
+}

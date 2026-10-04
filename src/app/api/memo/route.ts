@@ -2,7 +2,7 @@ import { z } from "zod";
 import { checkProposal } from "@/lib/law/check";
 import { buildingFrom, factSheet } from "@/lib/law/facts";
 import { buildMemo, targetFromRow, type MemoTarget } from "@/lib/law/memo";
-import { findAddress, isDate, RULES, RULES_ES } from "@/lib/law/store";
+import { ADDRESSES, findAddress, isDate, RULES, RULES_ES } from "@/lib/law/store";
 import { geocode } from "@/lib/geocode";
 import { clientKey, rateLimit } from "@/lib/rate-limit";
 
@@ -46,8 +46,12 @@ export async function POST(request: Request) {
     try {
       const j = await geocode(address, request.signal);
       if (!j) return Response.json({ error: "Address not found. Include street, city, state and ZIP." }, { status: 404 });
-      const st = STATE_CODES[j.state.name] ?? j.state.name;
-      target = {
+      // Out-of-state names are not in STATE_CODES; the matched address ends in ", ST, 12345".
+      const st = STATE_CODES[j.state.name] ?? j.matchedAddress.match(/,\s*([A-Z]{2}),\s*\d{5}/)?.[1] ?? j.state.name;
+      // A typed address that is one of the sample buildings gets that building's facts.
+      const sample = ADDRESSES.find((a) => a.matched_address && a.matched_address.toUpperCase() === j.matchedAddress.toUpperCase());
+      if (sample) target = targetFromRow(sample);
+      else target = {
         id: null,
         street_address: j.matchedAddress.split(",")[0] ?? address,
         postal_city: j.matchedAddress.split(",")[1]?.trim() ?? "",
@@ -66,7 +70,9 @@ export async function POST(request: Request) {
   if (!target) return Response.json({ error: "Pick a sample address or enter a full US address." }, { status: 404 });
 
   const memo = buildMemo(RULES, target, as_of, facts);
-  const check = proposal ? checkProposal(RULES, buildingFrom(target.state, target.legal_city, factSheet(target.parcel, facts)), as_of, proposal, memo.jurisdiction.local_gap) : null;
+  const supportedState = ["CA", "NJ", "MA"].includes(target.state);
+  const gap = memo.jurisdiction.local_gap ?? (supportedState ? null : "This state is not in our sources; its own rent and eviction rules may apply.");
+  const check = proposal ? checkProposal(RULES, buildingFrom(target.state, target.legal_city, factSheet(target.parcel, facts)), as_of, proposal, gap) : null;
   if (lang === "es") {
     // Swap in the Spanish card text. Citations, quotes and the engine's reasons stay in English.
     const es = (id: string) => RULES_ES[id];
@@ -80,6 +86,15 @@ export async function POST(request: Request) {
       const t = es(it.team_rule_id);
       if (t) it.title = t.title;
     }
+    // The governing rule's title in Spanish, and flags marked as English.
+    const byCitation = new Map(RULES.map((r) => [r.citation, r.team_rule_id]));
+    for (const c of memo.categories)
+      for (const it of c.items) {
+        const gid = it.governed_by ? byCitation.get(it.governed_by.citation) : undefined;
+        const gt = gid ? es(gid) : undefined;
+        if (it.governed_by && gt) it.governed_by = { ...it.governed_by, title: gt.title };
+      }
+    for (const f of memo.flags) f.text = `(en inglés) ${f.text}`;
     if (check) {
       for (const l of [...check.blocking, ...check.within, ...check.unsettled, ...check.could_change, ...check.context]) {
         const t = es(l.team_rule_id);
@@ -90,7 +105,7 @@ export async function POST(request: Request) {
   return Response.json({
     memo,
     check,
-    supported: ["CA", "NJ", "MA"].includes(target.state),
+    supported: supportedState,
     notice: "Not legal advice. Summaries of public law for a prototype; check with a lawyer or your local rent board.",
   });
 }

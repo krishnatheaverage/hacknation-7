@@ -59,6 +59,10 @@ export function factSheet(a: Pick<Address, "state" | "year_built" | "units" | "u
 
   let units: Fact<number> = none();
   if (user.units != null) units = { value: user.units, source: "you entered" };
+  // A parcel count below what its own land-use code implies (a 4C apartment class
+  // recorded as 2 units) is not trusted; the code's range is used and the clash noted.
+  else if (a.units != null && fromUse?.min != null && a.units < fromUse.min)
+    units = { value: null, source: "not in data", note: `the parcel record says ${a.units} units but its land-use code means at least ${fromUse.min}` };
   else if (a.units != null) units = { value: a.units, source: "public record" };
   else if (fromUse?.exact != null) units = { value: fromUse.exact, source: "land-use code", note: fromUse.basis };
 

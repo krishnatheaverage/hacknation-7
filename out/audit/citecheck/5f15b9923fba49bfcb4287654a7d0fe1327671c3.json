@@ -1,0 +1,23 @@
+{
+ "key": "5f15b9923fba49bfcb4287654a7d0fe1327671c3",
+ "team_rule_id": "r-0099",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D083",
+  "O040",
+  "O041",
+  "O042"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "S.F. Admin. Code § 37.9C(e)(1) (Prop. H, eff. Dec. 22, 2006); see also id. § 37.9C(b), (e)(2), (e)(3)",
+  "citation_basis": "§ 37.9C(b), (e)(1), (e)(2), (e)(3): O040 (section heading and subsection text); Proposition H, effective December 22, 2006: O040 history bracket for Sec. 37.9C; the current dollar amounts: D083",
+  "source_is_law_text": false,
+  "official_doc_id": "O040",
+  "official_quote": "Each Eligible Tenant who receives a Covered No-Fault Eviction Notice, in addition to all rights under any other provision of law, shall be entitled to receive relocation expenses from the landlord, in the amounts specified in section 37.9C(e).",
+  "is_city_policy": false,
+  "condition": "You qualify for these relocation payments only if you are an authorized occupant who has lived in the unit for 12 months or more.",
+  "condition_quote": "Eligible Tenant. For purposes of this section 37.9C, an Eligible Tenant shall mean any authorized occupant of a rental unit, regardless of age, who has resided in the unit for 12 or more months.",
+  "note": "The citation now pinpoints § 37.9C(e)(1), the per-tenant and per-unit amounts, with see-also cites to (b) for the right to payment, (e)(2) for the elderly, disabled and minor-child add-on, and (e)(3) for the annual adjustment; it adds Proposition H as the enacting measure per O040's history bracket and drops the redundant 'Rent Ordinance Section 37.9C' parenthetical. Note that O040 is the Rent Board's published copy and carries a disclaimer that it is not the official record. The card's quoted span is still from D083, a Rent Board rates page in the supplied corpus that is not the law's text, and that page's current amounts ($8,245/$24,733/$5,497) are the adjusted figures, not the base amounts in the ordinance text."
+ }
+}

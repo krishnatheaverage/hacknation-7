@@ -17,7 +17,8 @@ export type Building = {
 };
 
 // "No local rent control", "Prohibition on local rent control": a rule that rules out a cap.
-export const BARS_RENT_CONTROL = /\bno\b[^.;]{0,30}\b(cap|rent control)|\bbars?\b[^.;]{0,30}rent control|\bprohibit\w*\b[^.;]{0,30}rent control/i;
+// ("No statewide rent cap" is not one: New Jersey cities still have rent control.)
+export const BARS_RENT_CONTROL = /\bno\b[^.;]{0,30}\brent control|\bbars?\b[^.;]{0,30}rent control|\bprohibit\w*\b[^.;]{0,30}rent control/i;
 
 // A state rule that yields to local law can't also preempt it (extraction marked 1946.2 both ways).
 const preempts = (r: RuleRecord) => r.may_preempt_local_rules && !r.yields_to_local_rule;
@@ -40,14 +41,16 @@ export function figureStart(r: RuleRecord): string | null {
   const d = r.effective_date;
   if (r.level !== "city" || !d) return null;
   const text = `${r.title} ${r.key_value ?? ""}`;
-  if (figurePeriod(text)?.start === d) return d;
+  if (figurePeriod(text)?.start === d || figurePeriod(r.requirement)?.start === d) return d;
+  // Relocation amounts are reset every year ("2026 inflation adjustment"); the duty is older.
+  if (/relocation/i.test(text) && /inflation|adjust/i.test(text) && text.includes(d.slice(0, 4))) return d;
   const cut = r.coverage_conditions.built_on_or_before;
   if (r.category !== "rent_increase_limits" || !cut || yearOf(cut) >= yearOf(d) - 1) return null;
   return /\b(annual|AGA|allowable)\b/i.test(text) && text.includes(d.slice(0, 4)) ? d : null;
 }
 
 // After a published figure's period ends, the rule still applies but its figure is old.
-export const figureEnd = (r: RuleRecord): string | null => figurePeriod(`${r.title} ${r.key_value ?? ""}`)?.end ?? null;
+export const figureEnd = (r: RuleRecord): string | null => (figurePeriod(`${r.title} ${r.key_value ?? ""}`) ?? figurePeriod(r.requirement))?.end ?? null;
 
 function yearsBefore(date: string, years: number): string {
   return `${String(Number.parseInt(date.slice(0, 4), 10) - years).padStart(4, "0")}${date.slice(4)}`;
@@ -139,8 +142,9 @@ export function coverage(rule: RuleRecord, b: Building, asOf: string): { tri: Tr
   }
   if (c.owner_based_exemption_max_units != null) {
     const m = c.owner_based_exemption_max_units;
-    if (lo != null && lo > m) reasons.push(`${unitText}, so the owner-type exemption (up to ${m} units) cannot apply`);
-    else if (hi != null && hi <= m) unsure(`${unitText}: the owner-type exemption (up to ${m} units) may apply, and owner information is not in the data`);
+    const upTo = `up to ${m} unit${m === 1 ? "" : "s"}`;
+    if (lo != null && lo > m) reasons.push(`${unitText}, so the owner-type exemption (${upTo}) cannot apply`);
+    else if (hi != null && hi <= m) unsure(`${unitText}: the owner-type exemption (${upTo}) may apply, and owner information is not in the data`);
     else unsure(`an owner-type exemption exists for buildings of up to ${m} units; the exact unit count and the owner are not in the data${unitText ? ` (${unitText})` : ""}`);
   }
   for (const f of c.required_facts_not_in_data ?? []) unsure(`coverage requires a fact not in the data: ${f}`);
@@ -268,7 +272,10 @@ export function lookup(rules: RuleRecord[], b: Building, asOf: string): Evaluati
     const locals = byCat(e.rule.category, "city");
     // Name the local rule itself, not a relocation-payment rule in the same category.
     const applying = locals.filter((l) => l.result === "applies");
-    const governing = applying.find((l) => !/relocation/i.test(`${l.rule.title} ${l.rule.citation}`)) ?? applying[0];
+    const governing =
+      applying.find((l) => /just cause|good cause|legal reasons/i.test(l.rule.title) && !/^relocation/i.test(l.rule.title)) ??
+      applying.find((l) => !/relocation/i.test(`${l.rule.title} ${l.rule.citation}`)) ??
+      applying[0];
     if (governing) e.governed_by = { title: governing.rule.title, citation: governing.rule.citation };
     if (governing && e.result === "applies") {
       e.result = "superseded";

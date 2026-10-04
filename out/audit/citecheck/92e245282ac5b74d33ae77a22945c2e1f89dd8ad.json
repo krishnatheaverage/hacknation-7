@@ -1,0 +1,24 @@
+{
+ "key": "92e245282ac5b74d33ae77a22945c2e1f89dd8ad",
+ "team_rule_id": "r-0098",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D083",
+  "D082",
+  "O040",
+  "O041",
+  "O042"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "S.F. Admin. Code § 37.9A(e)",
+  "citation_basis": "§ 37.9A: D083 ('578 Multilingual Relocation Payments 37.9A') and O040; subsection (e), including (e)(1)(C), (e)(1)(D) and (e)(2): O040",
+  "source_is_law_text": false,
+  "official_doc_id": null,
+  "official_quote": null,
+  "is_city_policy": false,
+  "condition": null,
+  "condition_quote": null,
+  "note": "Adopted the lawyer's pinpoint § 37.9A(e), which O040 (the Rent Board's 6/29/26 copy of the Rent Ordinance) shows holds the Ellis Act relocation payments in (e)(1)(C), (e)(1)(D) and (e)(2), and dropped the 'Rent Ordinance Section 37.9A' nickname. The card's own quote stays from D083, a Rent Board rate page in the supplied corpus that is not the law's text. No official text is cited because O040 says it is not the official record and names American Legal as the official publisher, so no condition is quoted either, though O040 shows the payments go to Eligible Tenants and that the current amounts apply where the notice of intent to withdraw is filed on or after September 1, 2022."
+ }
+}

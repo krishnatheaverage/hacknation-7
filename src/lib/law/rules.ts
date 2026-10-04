@@ -104,6 +104,12 @@ function similar(a: RuleRecord, b: RuleRecord, min = 0.25): boolean {
 const MONTHS: Record<string, number> = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12 };
 // A published figure's period, "March 1, 2026 – February 28, 2027", as ISO dates.
 export function figurePeriod(text: string | null): { start: string; end: string } | null {
+  // "between 3/1/26 and 2/28/27"
+  const n = (text ?? "").match(/\b(\d{1,2})\/(\d{1,2})\/(\d{2,4})\s*(?:and|to|through|–|-)\s*(\d{1,2})\/(\d{1,2})\/(\d{2,4})\b/);
+  if (n) {
+    const y = (v: string) => (v.length === 2 ? `20${v}` : v);
+    return { start: `${y(n[3])}-${n[1].padStart(2, "0")}-${n[2].padStart(2, "0")}`, end: `${y(n[6])}-${n[4].padStart(2, "0")}-${n[5].padStart(2, "0")}` };
+  }
   const m = (text ?? "").match(/([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2}),\s*(\d{4})\s*(?:–|—|-|\bto\b|\bthrough\b)\s*([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2}),\s*(\d{4})/);
   if (!m) return null;
   const iso = (mo: string, d: string, y: string) => (MONTHS[mo.toLowerCase()] ? `${y}-${String(MONTHS[mo.toLowerCase()]).padStart(2, "0")}-${d.padStart(2, "0")}` : null);
@@ -508,6 +514,7 @@ export function normalizeRules(input: unknown, opts: { consolidate?: boolean } =
       verification: r.verification && typeof r.verification === "object" ? (r.verification as RuleRecord["verification"]) : undefined,
       official_text: r.official_text && typeof r.official_text === "object" ? (r.official_text as RuleRecord["official_text"]) : null,
       citation_note: typeof r.citation_note === "string" ? r.citation_note : null,
+      official_condition: typeof r.official_condition === "string" ? r.official_condition : null,
     });
     if (typeof r.effective_date === "string" && r.effective_date && !dateOrNull(r.effective_date)) {
       warnings.push(`${id}: effective_date "${r.effective_date}" is not YYYY-MM-DD; ignored`);

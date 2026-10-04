@@ -43,6 +43,9 @@ export type MemoItem = {
   source_added: boolean; // the source is a text we captured, outside the supplied corpus
   official_text: RuleRecord["official_text"]; // the cited law's own words, when the source is a summary
   missing: string[]; // what the public data lacks, when the answer is unknown
+  condition: string | null; // who qualifies, from the law's own text
+  figure_from: string | null; // the card's figure starts after the query date
+  figure_ended: string | null; // the card's figure ran out before the query date
   governed_by: { title: string; citation: string } | null; // the local rule that supersedes this one here
 };
 
@@ -123,6 +126,9 @@ function item(e: Evaluation, facts: FactSheet): MemoItem {
     source_added: r.source_in_starter_corpus === false,
     official_text: r.official_text && r.official_text.doc_id !== r.source_doc_id ? r.official_text : null,
     missing: e.missing,
+    condition: r.official_condition ?? null,
+    figure_from: e.figure_from ?? null,
+    figure_ended: e.figure_ended ?? null,
     governed_by: e.governed_by ?? null,
   };
 }
@@ -147,7 +153,7 @@ export function targetFromRow(a: AddressRow): MemoTarget {
     street_address: a.street_address,
     postal_city: a.postal_city,
     state: a.state,
-    zip: a.zip,
+    zip: a.matched_address?.match(/\b(\d{5})\s*$/)?.[1] ?? a.zip, // the geocoder's ZIP when the record's is off
     legal_city: a.legal_city,
     county: a.county,
     geocode_method: a.geocode_method,
@@ -161,7 +167,10 @@ export function targetFromRow(a: AddressRow): MemoTarget {
 // plainly that its local (or county) ordinances are not in our sources.
 export function localGap(rules: RuleRecord[], t: Pick<MemoTarget, "state" | "legal_city">): string | null {
   if (!["CA", "NJ", "MA"].includes(t.state)) return null;
-  if (!t.legal_city) return "This address is outside any incorporated city; county ordinances are not in our sources, so only state law is shown.";
+  if (!t.legal_city)
+    return t.state === "CA"
+      ? "This address is outside any incorporated city; county ordinances are not in our sources, so only state law is shown."
+      : "Local ordinances or bylaws for this town are not in our sources, so only state law is shown.";
   const covered = rules.some((r) => r.level === "city" && r.jurisdiction.toLowerCase() === `${t.legal_city}, ${t.state}`.toLowerCase());
   return covered ? null : `Local ordinances for ${t.legal_city} are not in our sources, so only ${t.state} state law is shown. ${t.legal_city} may have its own rent or eviction rules.`;
 }

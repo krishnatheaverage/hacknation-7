@@ -143,6 +143,7 @@ export type RuleRecord = {
   verification?: Verification; // second check (scripts/verify.ts)
   official_text?: OfficialText | null; // the cited law's own words (scripts/citecheck.ts)
   citation_note?: string | null; // what the cite-check changed in the citation, and why
+  official_condition?: string | null; // who qualifies, from the law's own text, when the card's summary leaves it out
 };
 
 // A quote from the text of the law the citation names. The card's own quote stays

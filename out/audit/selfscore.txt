@@ -14,7 +14,7 @@ Address coverage   20.0 / 20   (no silver address key yet; using the brief's inv
      71/71  SF pre-1979: local rent cap applies
      25/25  LA post-1978: RSO does not apply
       7/7   SF post-1979: local rent cap does not apply
-Citations          14.3 / 15   (3947/4136 'applies' answers quote the supplied corpus; the rest quote official texts we added, which the organizers don't count)
+Citations          14.3 / 15   (3953/4142 'applies' answers quote the supplied corpus; the rest quote official texts we added, which the organizers don't count)
 Change tracking    15.0 / 15
     T1: overlap 1.00 (ours 250, expected 250)
     T2: overlap 1.00 (ours 90, expected 90)

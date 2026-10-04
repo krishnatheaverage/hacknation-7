@@ -35,6 +35,9 @@ function main() {
   // Merging is done by now, so a renamed citation never merges two cards.
   const checked = fs.existsSync("out/citecheck.json") ? JSON.parse(fs.readFileSync("out/citecheck.json", "utf8")) : null;
   const rules = applyCiteCheck(loaded.rules, checked);
+  // overrides can name cards that were merged away; keep only ids that still exist.
+  const ids = new Set(rules.map((r) => r.team_rule_id));
+  for (const r of rules) r.overrides = r.overrides.filter((id) => ids.has(id));
 
   const jur: Record<string, ResolvedAddress> = JSON.parse(fs.readFileSync("data/derived/jurisdictions.json", "utf8"));
   const overrides = new Map(

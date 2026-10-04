@@ -1,0 +1,25 @@
+{
+ "key": "a77665d4a58dbd1167a68eed41333d128f165626",
+ "team_rule_id": "r-0053",
+ "model": "claude-opus-5-5",
+ "docs": [
+  "D004",
+  "O050",
+  "O051",
+  "O096",
+  "O092",
+  "O053"
+ ],
+ "retried": false,
+ "result": {
+  "citation": "Berkeley Mun. Code § 13.77.055(A) (Ord. 7507-NS); see also id. § 13.77.055(A)(2), (C)",
+  "citation_basis": "§ 13.77.055(A), (A)(2), (C) and Ord. 7507-NS: O092; ch. 13.77 and § 13.77.055.A.2 also referenced in O051",
+  "source_is_law_text": false,
+  "official_doc_id": "O092",
+  "official_quote": "The tenants of any residential rental unit who are required to move as a result of the owner’s withdrawal of the accommodation from rent or lease shall be entitled to a relocation payment in the sum of $15,000 from the owner. The landlord is required to provide an additional $5,000 relocation assistance to tenant households that qualify as low-income; or include disabled or elderly tenants; minor children; or tenancies which began prior to January 1, 1999. The relocation fees set forth above shall be increased in accordance with the rules set forth in subsection 13.77.055A.2 below.",
+  "is_city_policy": false,
+  "condition": "You count as a tenant for these payments only if you have a written or oral agreement with the owner to live in the unit or have paid rent to the owner.",
+  "condition_quote": "Only those persons who have a written or oral agreement with the owner for possession of the rental unit or who have paid rent to the owner shall be deemed tenants for purposes of this section.",
+  "note": "The lawyer's chapter cite was narrowed to § 13.77.055(A), with (A)(2) (inflation indexing) and (C) (additional payment) as see-also subsections, and Ord. 7507-NS was added as the last amendment, all per the codified text in O092; her parenthetical \"Ellis Implementation Ordinance\" was dropped because that name appears only on the Rent Board news page (D004) and, as \"Ellis Act Implementation Ordinance,\" in the staff report (O051), not in the code text captured in O092. The card's own quote comes from D004, a Rent Board news page in the supplied corpus, which is not the law's text, and the 2026 amounts ($19,413 and $6,471) are stated only in D004 and the O051 staff report."
+ }
+}

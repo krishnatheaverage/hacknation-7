@@ -40,6 +40,8 @@ const Check = z.object({
   official_doc_id: z.string().nullable().describe("The document that is the official text of the cited law, or null if none is"),
   official_quote: z.string().nullable().describe("One to three sentences copied word for word from that document, stating this card's rule. No ellipses."),
   is_city_policy: z.boolean().describe("True if the rule is an agency policy, not an ordinance, statute or regulation"),
+  condition: z.string().nullable().describe("If the law's own text limits who gets this rule's benefit (for example a minimum time in the unit) and the card's requirement leaves that out, one plain sentence stating the condition for a renter; otherwise null"),
+  condition_quote: z.string().nullable().describe("The words from the official document that state that condition, copied exactly"),
   note: z.string().describe("One sentence on what changed in the citation and why, or 'unchanged'"),
 });
 type Check = z.infer<typeof Check>;
@@ -61,7 +63,9 @@ const SYSTEM = `You cite-check one rule card from a housing-law database, for a 
 - A name in parentheses (a short title such as "Fair Chance Ordinance") must be a name the law's own text uses; leave out names that only agency pages or news use.
 - If the citation is already right, return it unchanged.
 
-2. Find the law's own words. If one of the documents is the official text of the law the citation names (a statute, code section, ordinance, regulation, bill or ballot text as published by the legislature, the city, or the city's code publisher), copy one to three sentences from it, word for word, that state this card's rule, and give its id. Start the passage at the beginning of a sentence of the law itself and end it at the end of a sentence; never include history notes, amendment notes or editor's notes. When the current codified code and an ordinance as enacted both hold the passage, quote the code. Agency web pages, guides, FAQs, bulletins, rate notices, newsletters, news stories, law-firm alerts and third-party copies are not the law's text. Prefer the card's own source when it is the law's text. Return null when no document is.`;
+2. Find the law's own words. If one of the documents is the official text of the law the citation names (a statute, code section, ordinance, regulation, bill or ballot text as published by the legislature, the city, or the city's code publisher), copy one to three sentences from it, word for word, that state this card's rule, and give its id. Start the passage at the beginning of a sentence of the law itself and end it at the end of a sentence; never include history notes, amendment notes or editor's notes. When the current codified code and an ordinance as enacted both hold the passage, quote the code. Agency web pages, guides, FAQs, bulletins, rate notices, newsletters, news stories, law-firm alerts and third-party copies are not the law's text. Prefer the card's own source when it is the law's text. Return null when no document is.
+
+3. Check the card's requirement against the law's own text for a missing condition on who qualifies, such as a minimum time living in the unit or a household rule. If the card leaves one out, state it in one plain sentence addressed to a renter and copy the words that state it from the same official document. Otherwise return null for both.`;
 
 type Doc = CorpusDoc & { cites: string | null; where: "supplied" | "extra" | "crosscheck" };
 
@@ -377,6 +381,9 @@ async function main() {
             quoteNote = `official quote from ${od.doc_id}${v.repaired ? " (snapped to the source text)" : ""}`;
           } else quoteNote = `quote from ${od.doc_id} not found word for word; dropped`;
         }
+        // A condition the card leaves out, backed by a quote that is word for word in the law's text.
+        let condition: string | null = null;
+        if (c.condition && c.condition_quote && od && lawText(od) && verifySpan(c.condition_quote, body(od.text)).verified) condition = c.condition;
         const title = c.is_city_policy && !/\bpolicy\b[^.]*\bnot\b|not an ordinance/i.test(card.title) ? `${card.title} (a city policy, not an ordinance)` : null;
         out[card.team_rule_id] = {
           from_citation: card.citation,
@@ -385,6 +392,7 @@ async function main() {
           official_text: official,
           note: citation !== standardize(card.citation) ? c.note : null,
           history: historyFor(card, citation, all),
+          condition,
         };
         log.push(
           [

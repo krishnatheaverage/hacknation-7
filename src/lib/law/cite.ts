@@ -33,6 +33,7 @@ export type CiteCheckEntry = {
   official_text: OfficialText | null;
   note: string | null;
   history?: string | null; // what the official code's history notes say about the cited section's dates
+  condition?: string | null; // who qualifies, from the law's own text, when the card leaves it out
 };
 
 export function applyCiteCheck(rules: RuleRecord[], checked: Record<string, CiteCheckEntry> | null): RuleRecord[] {
@@ -40,17 +41,27 @@ export function applyCiteCheck(rules: RuleRecord[], checked: Record<string, Cite
     const c = checked?.[r.team_rule_id];
     const out = { ...r, citation: standardize(r.citation) };
     if (!c || (c.from_citation !== r.citation && c.citation !== r.citation)) return out;
+    // Our consolidation flags a state rule stated only on a city page; a quote from the
+    // statute itself settles that, so the flag goes and the note says what settled it.
+    const cityPage = /Stated on a city agency's page[^.]*\.[^.]*official state source\./;
+    if (c.official_text && cityPage.test(r.conflict_note ?? "")) {
+      const rest = (r.conflict_note ?? "").replace(cityPage, "").trim();
+      out.conflict_note = rest || null;
+      out.conflict_flag = Boolean(rest);
+      out.citation_note = [out.citation_note, `Checked against the statute's own text (${c.official_text.doc_id}).`].filter(Boolean).join(" ");
+    }
     return {
       ...out,
       citation: standardize(c.citation),
       title: c.title ?? r.title,
       official_text: c.official_text,
-      citation_note: [c.note, c.history].filter(Boolean).join(" ") || null,
+      official_condition: c.condition ?? null,
+      citation_note: [c.note, c.history, out.citation_note].filter(Boolean).join(" ") || null,
       // On a card already flagged for a date dispute, the code's own history note goes in the reviewer note.
       conflict_note:
         c.history && r.conflict_flag && /effective date/i.test(r.conflict_note ?? "") && !(r.conflict_note ?? "").includes(c.history)
           ? `${r.conflict_note} ${c.history}`
-          : r.conflict_note,
+          : out.conflict_note,
     };
   });
 }

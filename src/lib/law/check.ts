@@ -38,7 +38,7 @@ export const UNIT: Record<ProposalKind, (n: number) => string> = {
 };
 
 // Pull the max (and whether it moves with CPI) out of a rule's key_value text.
-export type Bound = { max: number | null; floor: number | null; cpi: boolean; why?: string };
+export type Bound = { max: number | null; floor: number | null; cpi: boolean; why?: string; ceiling?: number };
 
 const WORD_NUM: Record<string, number> = { one: 1, two: 2, three: 3, "one and one-half": 1.5, "one and a half": 1.5, "one-half": 0.5 };
 
@@ -74,18 +74,26 @@ export function readBound(kind: ProposalKind, kv: string | null, requirement = "
       nums.push(Number(m[1]));
     }
     if (!nums.length) return null;
-    if (nums.length > 1 && !/lesser|lower|max|cap|not (?:to )?exceed/i.test(text)) return null;
+    if (nums.length > 1 && !/lesser|lower|max|cap|(?:not|never) (?:to )?exceed/i.test(text)) return null;
     return { max: Math.min(...nums), floor, cpi };
   }
   if (kind === "deposit_months") {
     const m = text.match(/(\d+(?:\.\d+)?)\s*months?/i) ?? text.match(/\b(one and one-half|one and a half|one-half|one|two|three)\s+months?/i);
     if (!m) return null;
     const n = Number.isFinite(Number(m[1])) ? Number(m[1]) : WORD_NUM[m[1].toLowerCase()];
+    // "1 month rent (2 months for qualifying small landlords)": the higher figure is the
+    // most any landlord may take; between the two depends on who the owner is.
+    const alt = text.match(/\((\d+(?:\.\d+)?)\s*months?[^)]*small landlord/i);
+    if (n != null && alt) return { max: n, floor: null, cpi: false, ceiling: Number(alt[1]) };
     return n != null ? { max: n, floor: null, cpi: false } : null;
   }
   const m = text.match(/\$\s*(\d+(?:\.\d+)?)/);
   // A fee "adjusted annually" for CPI from a base year: the dollar figure is the base,
   // and today's cap is higher by an amount our sources may not give.
+  // ...unless the inflation adjustment has not started yet ("starting January 1, 2027").
+  const starts = `${text} ${requirement}`.match(/(?:starting|beginning)\s+([A-Z][a-z]+ \d{1,2}, \d{4})/)?.[1];
+  const startIso = starts ? new Date(`${starts} UTC`).toISOString().slice(0, 10) : null;
+  if (m && cpi && startIso && asOf && asOf < startIso) return { max: Number(m[1]), floor: null, cpi: false };
   if (m && cpi && /\b(?:since|from|adjusted)\b/i.test(text)) return { max: null, floor: Number(m[1]), cpi };
   return m ? { max: Number(m[1]), floor: null, cpi } : null;
 }
@@ -144,6 +152,16 @@ export function checkProposal(rules: RuleRecord[], b: Building, asOf: string, p:
       }
       continue;
     }
+    if (bound.ceiling != null && bound.max != null && p.amount > bound.max) {
+      // Small-landlord exception: above the ceiling is always too much; between the two
+      // figures it depends on the owner, unless the building is too big for the exception.
+      const most = b.units ?? b.units_min ?? null;
+      const ownMax = e.rule.coverage_conditions.owner_based_exemption_max_units;
+      if (p.amount > bound.ceiling) blocking.push(line(e, `Caps this at ${show(bound.max)} (${show(bound.ceiling)} for a qualifying small landlord); ${amount} is above both.`));
+      else if (ownMax != null && most != null && most > ownMax) blocking.push(line(e, `Caps this at ${show(bound.max)} here; the small-landlord exception (${show(bound.ceiling)}) cannot apply to a building with more than ${ownMax} units.`));
+      else unsettled.push(line(e, `Caps this at ${show(bound.max)}, or ${show(bound.ceiling)} if the owner is a qualifying small landlord, which public data does not show.`));
+      continue;
+    }
     const over = bound.max != null && p.amount > bound.max;
     const surelyUnder = bound.cpi ? bound.floor != null && p.amount <= bound.floor : bound.max != null && p.amount <= bound.max;
     if (e.result === "applies") {
@@ -152,7 +170,13 @@ export function checkProposal(rules: RuleRecord[], b: Building, asOf: string, p:
       else if (bound.max == null) unsettled.push(line(e, `The limit is ${e.rule.key_value}: it moves with the CPI, and the current figure is not in our sources.`));
       else unsettled.push(line(e, `The limit is ${e.rule.key_value}: it depends on the regional CPI, which is not in our sources, and is never more than ${show(bound.max)}.`));
     } else if (e.result === "unknown") {
-      const why = e.explanation.match(/Unknown: [^;)]*/)?.[0]?.replace("Unknown: ", "") ?? "a fact the public data does not have";
+      const why = (e.missing[0] ?? "a fact the public data does not have").replace(/\.$/, "");
+      // A state cap that is unknown only because a stricter local rule may cover the unit
+      // still bounds the answer: either it or the stricter local rule applies.
+      if (over && e.rule.level === "state" && e.rule.yields_to_local_rule && e.missing.length && e.missing.every((m) => /^whether .* covers this unit$/.test(m))) {
+        blocking.push(line(e, `Either this cap or a stricter local rule applies here, and ${amount} is above this cap of ${show(bound.max)}.`));
+        continue;
+      }
       if (surelyUnder) within.push(line(e, `If it covers this unit, ${amount} is within its limit (${e.rule.key_value}).`));
       else unsettled.push(line(e, `${bound.max == null ? `Would limit this (${e.rule.key_value})` : `Would cap this at ${show(bound.max)}`} if it covers the unit; that depends on this: ${why}.`));
     }
