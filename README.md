@@ -104,6 +104,6 @@ We cover three states and nine cities with sample addresses (Santa Ana has rules
 
 ## Team
 
-Aayush (@Aayush7788) took rule extraction, Krishna Harish (@krishnatheaverage) took the rules engine and the app, and Gulnur Bekmukhanbetova took addresses and legal review.
+Gulnur Bekmukhanbetova led the legal work: the acceptance criteria, the precedence rules, the review of every rule card and the cite-check. Krishna Harish (@krishnatheaverage) built the extraction pipeline, the rules engine, the geocoding and the app. Our one-page method note for the submission is in `docs/METHOD_NOTE.md`.
 
 The organizers' participant guide is in `docs/PARTICIPANT_GUIDE.md`.
